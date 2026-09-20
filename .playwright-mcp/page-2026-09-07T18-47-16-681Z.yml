@@ -1,0 +1,270 @@
+- generic [ref=e830]:
+  - banner [ref=e831]:
+    - generic [ref=e832]:
+      - generic [ref=e835]:
+        - generic [ref=e837]: dashboard
+        - generic [ref=e838]: "|"
+        - generic [ref=e839]: 08 Sept 2026
+      - generic [ref=e840]:
+        - button "Toggle theme" [ref=e841] [cursor=pointer]
+        - button "Daily Entry" [ref=e848] [cursor=pointer]
+        - button "Open profile panel" [ref=e854] [cursor=pointer]:
+          - generic [ref=e878]: Ravi
+  - generic [ref=e880]:
+    - complementary [ref=e881]:
+      - generic [ref=e889]:
+        - heading "G. V. MILK AGENCY" [level=2] [ref=e890]
+        - paragraph [ref=e891]: CHENNAI - 600109 Distribution
+      - generic [ref=e892]:
+        - paragraph [ref=e893]: MAIN MENU
+        - button "Dashboard" [ref=e894] [cursor=pointer]
+        - button "Shops" [ref=e902] [cursor=pointer]
+        - button "Brands" [ref=e910] [cursor=pointer]
+        - button "Products" [ref=e917] [cursor=pointer]
+        - button "Daily Entry" [ref=e924] [cursor=pointer]
+        - button "Reports" [ref=e930] [cursor=pointer]
+        - button "Settings" [ref=e937] [cursor=pointer]
+      - generic [ref=e943]:
+        - generic [ref=e944]: Universal POS v1.0
+        - generic [ref=e945]: Offline Ready
+    - main [ref=e947]:
+      - generic [ref=e949]:
+        - generic [ref=e950]:
+          - generic [ref=e951]:
+            - generic [ref=e952]:
+              - img "Milk Glass" [ref=e953]: 🥛
+              - heading "Good Morning! Delivery Hub is Live" [level=1] [ref=e954]
+            - paragraph [ref=e955]: Tracking all milk & dairy product distributions for G. V. MILK AGENCY
+          - generic [ref=e957]:
+            - generic [ref=e958]: TODAY
+            - generic [ref=e959]: Tuesday
+        - generic [ref=e960]:
+          - generic [ref=e961]:
+            - generic [ref=e970]:
+              - generic [ref=e971]: SHOPS DELIVERED
+              - generic [ref=e972]: "0"
+            - generic [ref=e980]:
+              - generic [ref=e981]: PRODUCTS SOLD
+              - generic [ref=e982]: "0"
+            - generic [ref=e989]:
+              - generic [ref=e990]: TOTAL QUANTITY
+              - generic [ref=e991]: "0"
+            - generic [ref=e997]:
+              - generic [ref=e998]: TODAY'S REVENUE
+              - generic [ref=e999]: ₹0.00
+            - generic [ref=e1006]:
+              - generic [ref=e1007]: WEEKLY REVENUE
+              - generic [ref=e1008]: ₹0.00
+          - generic [ref=e1015]:
+            - generic [ref=e1016]: MONTHLY REVENUE
+            - generic [ref=e1017]: ₹0.00
+        - generic [ref=e1019]:
+          - generic [ref=e1020]:
+            - generic [ref=e1021]:
+              - generic [ref=e1022]:
+                - heading "Daily Sales" [level=3] [ref=e1023]
+                - generic [ref=e1024]: Last 7 Days
+              - img [ref=e1026]:
+                - generic [ref=e1027]: "0"
+                - generic [ref=e1029]: "10"
+                - generic [ref=e1031]: "20"
+                - generic [ref=e1033]: "30"
+                - generic [ref=e1035]: "40"
+                - generic [ref=e1037]: "50"
+                - generic [ref=e1039]: "60"
+                - generic [ref=e1041]: "70"
+                - generic [ref=e1043]: "80"
+                - generic [ref=e1045]: "90"
+                - generic [ref=e1047]: 02 Sept
+                - generic [ref=e1048]: 03 Sept
+                - generic [ref=e1049]: 04 Sept
+                - generic [ref=e1050]: 05 Sept
+                - generic [ref=e1051]: 06 Sept
+                - generic [ref=e1052]: 07 Sept
+                - generic [ref=e1053]: 08 Sept
+                - generic [ref=e1054] [cursor=pointer]
+                - generic [ref=e1056] [cursor=pointer]
+                - generic [ref=e1058] [cursor=pointer]
+                - generic [ref=e1060] [cursor=pointer]
+                - generic [ref=e1062] [cursor=pointer]
+                - generic [ref=e1064] [cursor=pointer]
+                - generic [ref=e1066] [cursor=pointer]
+            - generic [ref=e1068]:
+              - generic [ref=e1069]:
+                - heading "Weekly Sales" [level=3] [ref=e1070]
+                - generic [ref=e1071]: Last 4 Weeks
+              - img [ref=e1073]:
+                - generic [ref=e1074]: "0"
+                - generic [ref=e1076]: "10"
+                - generic [ref=e1078]: "20"
+                - generic [ref=e1080]: "30"
+                - generic [ref=e1082]: "40"
+                - generic [ref=e1084]: "50"
+                - generic [ref=e1086]: "60"
+                - generic [ref=e1088]: "70"
+                - generic [ref=e1090]: "80"
+                - generic [ref=e1092]: "90"
+                - generic [ref=e1094]: 2026-W32
+                - generic [ref=e1096]: 2026-W33
+                - generic [ref=e1098]: 2026-W34
+                - generic [ref=e1100]: 2026-W35
+          - generic [ref=e1102]:
+            - generic [ref=e1103]:
+              - heading "Monthly Sales" [level=3] [ref=e1104]
+              - generic [ref=e1105]: Monthly Growth
+            - img [ref=e1107]:
+              - generic [ref=e1108]: "0"
+              - generic [ref=e1110]: "20"
+              - generic [ref=e1112]: "40"
+              - generic [ref=e1114]: "60"
+              - generic [ref=e1116]: "80"
+              - generic [ref=e1118]: "100"
+              - generic [ref=e1120]: "120"
+              - generic [ref=e1122]: "140"
+              - generic [ref=e1124]: "160"
+              - generic [ref=e1126]: "180"
+              - generic [ref=e1128]: Jan
+              - generic [ref=e1129]: Feb
+              - generic [ref=e1130]: Mar
+              - generic [ref=e1131]: Apr
+              - generic [ref=e1132]: May
+              - generic [ref=e1133]: Jun
+              - generic [ref=e1134]: Jul
+              - generic [ref=e1135]: Aug
+              - generic [ref=e1136]: Sep
+              - generic [ref=e1137]: Oct
+              - generic [ref=e1138]: Nov
+              - generic [ref=e1139]: Dec
+              - generic [ref=e1140] [cursor=pointer]
+              - generic [ref=e1142] [cursor=pointer]
+              - generic [ref=e1144] [cursor=pointer]
+              - generic [ref=e1146] [cursor=pointer]
+              - generic [ref=e1148] [cursor=pointer]
+              - generic [ref=e1150] [cursor=pointer]
+              - generic [ref=e1152] [cursor=pointer]
+              - generic [ref=e1154] [cursor=pointer]
+              - generic [ref=e1156] [cursor=pointer]
+              - generic [ref=e1158] [cursor=pointer]
+              - generic [ref=e1160] [cursor=pointer]
+              - generic [ref=e1162] [cursor=pointer]
+        - generic [ref=e1164]:
+          - heading "Quick Actions" [level=3] [ref=e1165]
+          - generic [ref=e1166]:
+            - button "Daily Entry Fast billing POS" [ref=e1167] [cursor=pointer]:
+              - generic [ref=e1172]:
+                - generic [ref=e1173]: Daily Entry
+                - text: Fast billing POS
+            - button "Shops 5 outlets" [ref=e1174] [cursor=pointer]:
+              - generic [ref=e1181]:
+                - generic [ref=e1182]: Shops
+                - generic [ref=e1183]: 5 outlets
+            - button "Brands 4 companies" [ref=e1184] [cursor=pointer]:
+              - generic [ref=e1190]:
+                - generic [ref=e1191]: Brands
+                - generic [ref=e1192]: 4 companies
+            - button "Products 8 items & rates" [ref=e1193] [cursor=pointer]:
+              - generic [ref=e1199]:
+                - generic [ref=e1200]: Products
+                - generic [ref=e1201]: 8 items & rates
+            - button "Reports Previous records" [ref=e1202] [cursor=pointer]:
+              - generic [ref=e1208]:
+                - generic [ref=e1209]: Reports
+                - text: Previous records
+        - generic [ref=e1210]:
+          - generic [ref=e1211]:
+            - heading "Recent Delivery Entries & Bills" [level=3] [ref=e1216]
+            - button "+ Add Another Entry" [ref=e1218] [cursor=pointer]
+          - generic [ref=e1222]:
+            - paragraph [ref=e1226]: No delivery entries recorded yet.
+            - button "+ Create Your First Delivery Entry" [ref=e1227] [cursor=pointer]
+  - complementary "Profile Panel" [ref=e1228]:
+    - generic [ref=e1229]:
+      - generic [ref=e1235]:
+        - heading "Profile & Identity" [level=2] [ref=e1236]
+        - paragraph [ref=e1237]: Business credentials & operator profile
+      - button "Close panel" [ref=e1239] [cursor=pointer]
+    - generic [ref=e1243]:
+      - generic [ref=e1245]:
+        - generic [ref=e1246]:
+          - generic "Click to change profile photo" [ref=e1247] [cursor=pointer]
+          - button "Upload profile photo" [ref=e1271] [cursor=pointer]
+        - generic [ref=e1275]:
+          - generic [ref=e1276]:
+            - generic [ref=e1277]: ACTIVE POS
+            - generic [ref=e1279]: Verified Operator
+          - heading "Store Administrator" [level=3] [ref=e1283]
+          - paragraph [ref=e1284]: G. V. MILK AGENCY
+          - paragraph [ref=e1285]: CHENNAI - 600109
+          - button "Upload Photo" [ref=e1287] [cursor=pointer]
+          - paragraph [ref=e1292]: JPG, PNG or WebP • Auto-crops to circular profile photo
+      - generic [ref=e1293]:
+        - generic [ref=e1294]:
+          - generic [ref=e1299]: "0"
+          - generic [ref=e1300]: Today Bills
+        - generic [ref=e1301]:
+          - generic [ref=e1308]: "5"
+          - generic [ref=e1309]: Total Shops
+        - generic [ref=e1310]:
+          - generic [ref=e1316]: "8"
+          - generic [ref=e1317]: Products
+      - generic [ref=e1318]:
+        - generic [ref=e1319]:
+          - heading "Business Details" [level=4] [ref=e1320]
+          - generic [ref=e1321]: Prints on receipts
+        - generic [ref=e1322]:
+          - generic [ref=e1323]: Business Name *
+          - textbox "e.g. G. V. MILK AGENCY" [ref=e1330]: G. V. MILK AGENCY
+        - generic [ref=e1331]:
+          - generic [ref=e1332]: Owner / Manager Name
+          - textbox "e.g. Store Owner / Cashier" [ref=e1337]: Store Administrator
+        - generic [ref=e1338]:
+          - generic [ref=e1339]:
+            - generic [ref=e1340]: Mobile / WhatsApp
+            - textbox "e.g. 9840865510" [ref=e1344]: "9840865510"
+          - generic [ref=e1345]:
+            - generic [ref=e1346]: Email Address
+            - textbox "owner@agency.com" [ref=e1351]
+        - generic [ref=e1352]:
+          - generic [ref=e1353]: Street / Area
+          - textbox "e.g. SOLAN NAGAR" [ref=e1358]: SOLAN NAGAR
+        - generic [ref=e1359]:
+          - generic [ref=e1360]:
+            - generic [ref=e1361]: City / State / Pincode
+            - textbox "e.g. CHENNAI - 600109" [ref=e1362]: CHENNAI - 600109
+          - generic [ref=e1363]:
+            - generic [ref=e1364]: GSTIN / Tax ID
+            - textbox "Optional GSTIN" [ref=e1369]
+        - generic [ref=e1370]:
+          - generic [ref=e1371]:
+            - generic [ref=e1372]: Currency Symbol
+            - combobox [ref=e1373]:
+              - option "₹ (INR Rupee)" [selected]
+              - option "$ (USD Dollar)"
+              - option "€ (Euro)"
+              - option "£ (GBP Pound)"
+              - option "AED (Dirham)"
+          - generic [ref=e1374]:
+            - generic [ref=e1375]: Receipt Paper Size
+            - combobox [ref=e1376]:
+              - option "58mm (2-Inch Thermal)" [selected]
+              - option "80mm (3-Inch Thermal)"
+      - generic [ref=e1377]:
+        - heading "System Shortcuts" [level=4] [ref=e1378]
+        - generic [ref=e1379]:
+          - generic [ref=e1380]: Interface Theme
+          - button "Dark Mode" [ref=e1384] [cursor=pointer]
+        - generic [ref=e1385]:
+          - generic [ref=e1386]: Thermal Printer Setup
+          - button "Configure" [ref=e1392] [cursor=pointer]
+      - generic [ref=e1397]:
+        - generic [ref=e1398]:
+          - generic [ref=e1399]: ACTIVE TERMINAL OPERATOR
+          - generic [ref=e1400]: Ravi Kumar
+          - generic [ref=e1401]: +91 9876543210 • Cashier
+        - button "Sign Out" [ref=e1402] [cursor=pointer]
+    - generic [ref=e1407]:
+      - button "Save Profile" [ref=e1408] [cursor=pointer]
+      - button "Close" [ref=e1413] [cursor=pointer]
+  - generic [ref=e1414]:
+    - generic [ref=e1415]: Switched operator to Ravi Kumar
+    - button [ref=e1420] [cursor=pointer]

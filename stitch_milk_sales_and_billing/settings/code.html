@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Settings - G.V. MILK AGENCY</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=Public+Sans:wght@400;500&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed-variant": "#572c00",
+                        "on-primary": "#583a11",
+                        "on-secondary-container": "#f1b617",
+                        "on-secondary": "#533c00",
+                        "error-dim": "#c44f34",
+                        "inverse-on-surface": "#595451",
+                        "on-secondary-fixed-variant": "#755600",
+                        "inverse-primary": "#7b582d",
+                        "error-container": "#85230a",
+                        "on-surface": "#eee3dd",
+                        "primary-dim": "#ddb17d",
+                        "on-tertiary-fixed": "#240f00",
+                        "primary-container": "#6d4c22",
+                        "surface-bright": "#312b27",
+                        "primary-fixed": "#fecf99",
+                        "tertiary-container": "#fe932c",
+                        "tertiary-dim": "#ed871e",
+                        "on-error": "#450900",
+                        "primary-fixed-dim": "#efc18c",
+                        "secondary-dim": "#e9b00a",
+                        "inverse-surface": "#fff8f5",
+                        "tertiary": "#ffa85d",
+                        "on-error-container": "#ff9b82",
+                        "surface-container": "#1d1916",
+                        "on-primary-fixed-variant": "#6f4e23",
+                        "primary": "#ecbf8a",
+                        "on-primary-fixed": "#4f3209",
+                        "surface-container-lowest": "#000000",
+                        "on-primary-container": "#ffdeba",
+                        "on-surface-variant": "#b3a9a4",
+                        "surface-dim": "#100e0c",
+                        "secondary-fixed": "#ffdf9f",
+                        "outline": "#7c746f",
+                        "surface-container-highest": "#2a2521",
+                        "secondary-fixed-dim": "#ffcd61",
+                        "on-background": "#eee3dd",
+                        "surface-tint": "#ecbf8a",
+                        "on-secondary-fixed": "#523c00",
+                        "surface-container-high": "#231f1c",
+                        "tertiary-fixed-dim": "#ed871e",
+                        "secondary": "#f9bd22",
+                        "background": "#100e0c",
+                        "outline-variant": "#4d4742",
+                        "secondary-container": "#4d3800",
+                        "on-tertiary": "#592d00",
+                        "surface-variant": "#2a2521",
+                        "surface": "#100e0c",
+                        "on-tertiary-container": "#4a2500",
+                        "error": "#f97758",
+                        "tertiary-fixed": "#fe932c",
+                        "surface-container-low": "#161310"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "display": ["Plus Jakarta Sans"],
+                        "body": ["Inter"],
+                        "label": ["Public Sans"],
+                        "mono": ["JetBrains Mono"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass-card {
+            background: rgba(42, 37, 33, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(77, 71, 66, 0.5);
+        }
+        /* Hide scrollbar for clean UI */
+        ::-webkit-scrollbar { width: 0px; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background antialiased min-h-screen flex flex-col pt-16 pb-24">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface-container dark:bg-surface-container bg-surface-container-high border-b border-outline-variant shadow-sm flex items-center justify-between px-4 h-16 w-full">
+<button class="text-primary dark:text-primary active:scale-95 duration-100 hover:bg-surface-variant transition-colors p-2 rounded-full">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="font-headline text-headline-sm font-semibold text-primary dark:text-primary">Settings</h1>
+<button class="text-primary dark:text-primary active:scale-95 duration-100 hover:bg-surface-variant transition-colors p-2 rounded-full">
+<span class="material-symbols-outlined">help_outline</span>
+</button>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-1 overflow-y-auto px-4 py-6 space-y-6 max-w-2xl mx-auto w-full">
+<!-- Business Information Card -->
+<section class="glass-card rounded-xl p-5 shadow-lg">
+<div class="flex items-center gap-3 mb-5 border-b border-outline-variant pb-3">
+<div class="bg-primary-container text-on-primary-container p-2 rounded-lg">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">store</span>
+</div>
+<h2 class="font-headline text-lg font-bold text-primary">Business Information</h2>
+</div>
+<form class="space-y-4">
+<div>
+<label class="block font-label text-sm font-medium text-on-surface-variant mb-1">Business Name</label>
+<input class="w-full bg-surface-container-highest border border-outline-variant rounded-lg px-4 py-3 text-on-surface focus:border-primary focus:ring-1 focus:ring-primary transition-colors font-body" type="text" value="G.V. MILK AGENCY"/>
+</div>
+<div>
+<label class="block font-label text-sm font-medium text-on-surface-variant mb-1">Address</label>
+<input class="w-full bg-surface-container-highest border border-outline-variant rounded-lg px-4 py-3 text-on-surface focus:border-primary focus:ring-1 focus:ring-primary transition-colors font-body" type="text" value="Solan Nagar"/>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div>
+<label class="block font-label text-sm font-medium text-on-surface-variant mb-1">City</label>
+<input class="w-full bg-surface-container-highest border border-outline-variant rounded-lg px-4 py-3 text-on-surface focus:border-primary focus:ring-1 focus:ring-primary transition-colors font-body" type="text" value="Chennai - 600109"/>
+</div>
+<div>
+<label class="block font-label text-sm font-medium text-on-surface-variant mb-1">Phone</label>
+<input class="w-full bg-surface-container-highest border border-outline-variant rounded-lg px-4 py-3 text-on-surface focus:border-primary focus:ring-1 focus:ring-primary transition-colors font-mono" type="tel" value="9840865510"/>
+</div>
+</div>
+<div>
+<label class="block font-label text-sm font-medium text-on-surface-variant mb-1">GSTIN</label>
+<input class="w-full bg-surface-container-highest border border-outline-variant rounded-lg px-4 py-3 text-on-surface focus:border-primary focus:ring-1 focus:ring-primary transition-colors font-mono uppercase" placeholder="Enter GSTIN (optional)" type="text"/>
+</div>
+<button class="w-full mt-6 bg-primary text-on-primary font-headline font-bold py-3.5 rounded-lg active:scale-[0.98] transition-transform flex items-center justify-center gap-2 shadow-md" type="button">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">save</span>
+                    Save Changes
+                </button>
+</form>
+</section>
+<!-- Bluetooth Printer Card -->
+<section class="glass-card rounded-xl p-5 shadow-lg">
+<div class="flex items-center gap-3 mb-5 border-b border-outline-variant pb-3">
+<div class="bg-secondary-container text-on-secondary-container p-2 rounded-lg">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">print</span>
+</div>
+<h2 class="font-headline text-lg font-bold text-secondary">Bluetooth Printer</h2>
+</div>
+<div class="flex items-center justify-between mb-6 bg-surface-container-highest p-4 rounded-lg">
+<div class="flex items-center gap-3">
+<div class="w-3 h-3 rounded-full bg-error animate-pulse"></div>
+<div>
+<p class="font-label text-sm font-medium text-on-surface">Status</p>
+<p class="font-body text-xs text-error-dim">Not Connected</p>
+</div>
+</div>
+<button class="border border-secondary text-secondary font-label font-medium px-4 py-2 rounded-lg hover:bg-secondary/10 active:scale-95 transition-all">
+                    Connect Printer
+                </button>
+</div>
+<div>
+<label class="block font-label text-sm font-medium text-on-surface-variant mb-2">Paper Size</label>
+<div class="flex bg-surface-container-highest p-1 rounded-lg">
+<button class="flex-1 py-2 text-center font-label font-medium rounded-md bg-surface-variant text-on-surface shadow-sm">58mm</button>
+<button class="flex-1 py-2 text-center font-label font-medium rounded-md text-on-surface-variant hover:text-on-surface transition-colors">80mm</button>
+</div>
+</div>
+</section>
+<!-- Data Management Card -->
+<section class="glass-card rounded-xl p-5 shadow-lg">
+<div class="flex items-center gap-3 mb-5 border-b border-outline-variant pb-3">
+<div class="bg-surface-variant text-on-surface-variant p-2 rounded-lg">
+<span class="material-symbols-outlined">database</span>
+</div>
+<h2 class="font-headline text-lg font-bold text-on-surface">Data Management</h2>
+</div>
+<div class="space-y-3">
+<button class="w-full flex items-center justify-between p-4 bg-surface-container-highest rounded-lg hover:bg-surface-variant transition-colors border border-outline-variant">
+<div class="flex items-center gap-3 text-on-surface">
+<span class="material-symbols-outlined text-primary">download</span>
+<span class="font-label font-medium">Export Bills (JSON)</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant">chevron_right</span>
+</button>
+<button class="w-full flex items-center justify-between p-4 bg-surface-container-highest rounded-lg hover:bg-surface-variant transition-colors border border-outline-variant">
+<div class="flex items-center gap-3 text-on-surface">
+<span class="material-symbols-outlined text-secondary">upload</span>
+<span class="font-label font-medium">Import Data</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant">chevron_right</span>
+</button>
+<button class="w-full flex items-center justify-center gap-2 p-4 mt-4 bg-error-container/20 border border-error-container rounded-lg hover:bg-error-container/30 transition-colors text-error">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">warning</span>
+<span class="font-label font-bold">Clear All Data</span>
+</button>
+</div>
+</section>
+<!-- About Section -->
+<div class="text-center py-6">
+<p class="font-headline font-bold text-on-surface-variant opacity-50">Milk Sales &amp; Billing</p>
+<p class="font-mono text-xs text-on-surface-variant opacity-40 mt-1">v1.0.0</p>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full z-50 rounded-t-xl bg-surface-container dark:bg-surface-container bg-surface-container-highest border-t border-outline-variant shadow-lg flex justify-around items-center h-20 px-2 md:hidden">
+<button class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary active:scale-90 transition-transform duration-150 w-16">
+<span class="material-symbols-outlined mb-1">dashboard</span>
+<span class="font-label text-[10px] font-medium">Dashboard</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary active:scale-90 transition-transform duration-150 w-16">
+<span class="material-symbols-outlined mb-1">receipt_long</span>
+<span class="font-label text-[10px] font-medium">Billing</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary active:scale-90 transition-transform duration-150 w-16">
+<span class="material-symbols-outlined mb-1">inventory_2</span>
+<span class="font-label text-[10px] font-medium">Products</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary active:scale-90 transition-transform duration-150 w-16">
+<span class="material-symbols-outlined mb-1">history</span>
+<span class="font-label text-[10px] font-medium">History</span>
+</button>
+<!-- Active Tab: Settings -->
+<button class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-xl px-4 py-1.5 active:scale-90 transition-transform duration-150 min-w-16">
+<span class="material-symbols-outlined mb-0.5" style="font-variation-settings: 'FILL' 1;">settings</span>
+<span class="font-label text-[10px] font-bold">Settings</span>
+</button>
+</nav>
+</body></html>

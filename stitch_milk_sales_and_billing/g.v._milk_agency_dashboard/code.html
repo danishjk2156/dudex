@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>G.V. MILK AGENCY - Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;900&amp;family=Inter:wght@400;500;600&amp;family=Public+Sans:wght@500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface": "#eee3dd",
+                        "on-error-container": "#ff9b82",
+                        "inverse-primary": "#7b582d",
+                        "surface": "#100e0c",
+                        "surface-container-lowest": "#000000",
+                        "on-tertiary-fixed": "#240f00",
+                        "secondary-container": "#4d3800",
+                        "on-error": "#450900",
+                        "surface-container-low": "#161310",
+                        "tertiary-dim": "#ed871e",
+                        "on-primary-container": "#ffdeba",
+                        "outline-variant": "#4d4742",
+                        "on-primary": "#583a11",
+                        "on-tertiary": "#592d00",
+                        "error": "#f97758",
+                        "outline": "#7c746f",
+                        "on-tertiary-fixed-variant": "#572c00",
+                        "tertiary-fixed": "#fe932c",
+                        "on-primary-fixed": "#4f3209",
+                        "tertiary": "#ffa85d",
+                        "on-secondary-container": "#f1b617",
+                        "surface-container-highest": "#2a2521",
+                        "surface-variant": "#2a2521",
+                        "on-secondary-fixed": "#523c00",
+                        "secondary-fixed": "#ffdf9f",
+                        "inverse-surface": "#fff8f5",
+                        "surface-container": "#1d1916",
+                        "on-tertiary-container": "#4a2500",
+                        "surface-tint": "#ecbf8a",
+                        "secondary": "#f9bd22",
+                        "primary-dim": "#ddb17d",
+                        "tertiary-fixed-dim": "#ed871e",
+                        "secondary-dim": "#e9b00a",
+                        "on-primary-fixed-variant": "#6f4e23",
+                        "on-secondary": "#533c00",
+                        "surface-dim": "#100e0c",
+                        "secondary-fixed-dim": "#ffcd61",
+                        "background": "#100e0c",
+                        "on-background": "#eee3dd",
+                        "on-secondary-fixed-variant": "#755600",
+                        "surface-container-high": "#231f1c",
+                        "primary-container": "#6d4c22",
+                        "primary": "#ecbf8a",
+                        "tertiary-container": "#fe932c",
+                        "error-container": "#85230a",
+                        "inverse-on-surface": "#595451",
+                        "primary-fixed-dim": "#efc18c",
+                        "error-dim": "#c44f34",
+                        "surface-bright": "#312b27",
+                        "on-surface-variant": "#b3a9a4",
+                        "primary-fixed": "#fecf99"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "display": ["Plus Jakarta Sans"],
+                        "body": ["Inter"],
+                        "label": ["Public Sans"],
+                        "mono": ["JetBrains Mono"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(42, 37, 33, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(77, 71, 66, 0.3);
+        }
+        .glass-card-primary {
+            background: rgba(236, 191, 138, 0.15);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(236, 191, 138, 0.4);
+        }
+        body {
+            -webkit-tap-highlight-color: transparent;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body antialiased pb-24 overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-lg border-b border-outline-variant/30 shadow-sm flex justify-between items-center px-4 h-16 max-w-md mx-auto left-0 right-0">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest overflow-hidden border border-outline-variant/50">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="A close-up portrait of a professional individual in warm, inviting light. The style is modern corporate photography, set against a subtle dark background with a hint of gold ambient light. The mood is friendly and trustworthy, fitting a premium service app avatar." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpInpyYwI3VGzyJLrB4i4q5wnnvbOO7meWWJAw2zGBrwwZ0iaHjRocTO-HNQcVRnW3sVAaRJx5rizb-08GDd1Yd26BssIm0chq0QNGzFyuHb0PPiC-2YTiXINfOrP6N1buiUMHNspm-FF_bFGiulDuRriZwpxZlyn9wnocV_qsUVjgzeB6UXtqFPxfl34PkoXZrGn8-mkdPz7NdBjtSI2vzS3jW0Ne65T4dZnuCs4q0ybYpgMAz5QbDEdXUf3e5RFlI9nyLqwX3kk"/>
+</div>
+<div>
+<p class="text-[10px] font-label font-medium text-on-surface-variant uppercase tracking-wider">Good Morning</p>
+<h1 class="text-lg font-display font-black text-primary tracking-tighter">G.V. MILK AGENCY</h1>
+</div>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-variant/50 transition-colors active:scale-95 duration-100 text-on-surface-variant relative">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-2 right-2 w-2 h-2 bg-error rounded-full"></span>
+</button>
+</header>
+<!-- Main Content Canvas -->
+<main class="pt-20 px-4 max-w-md mx-auto space-y-6">
+<!-- Stats Row -->
+<div class="grid grid-cols-2 gap-3">
+<div class="glass-card rounded-xl p-4 flex flex-col justify-between h-24 relative overflow-hidden group">
+<div class="absolute -right-4 -bottom-4 w-16 h-16 bg-primary/5 rounded-full blur-xl group-hover:bg-primary/10 transition-colors"></div>
+<p class="text-xs font-label text-on-surface-variant font-medium">Today's Bills</p>
+<div class="flex items-end justify-between">
+<p class="text-2xl font-headline font-bold text-on-surface">12</p>
+<span class="material-symbols-outlined text-primary/70 text-xl" style="font-variation-settings: 'FILL' 1;">receipt_long</span>
+</div>
+</div>
+<div class="glass-card rounded-xl p-4 flex flex-col justify-between h-24 relative overflow-hidden group">
+<div class="absolute -right-4 -bottom-4 w-16 h-16 bg-secondary/5 rounded-full blur-xl group-hover:bg-secondary/10 transition-colors"></div>
+<p class="text-xs font-label text-on-surface-variant font-medium">Today's Revenue</p>
+<div class="flex items-end justify-between">
+<p class="text-xl font-headline font-bold text-secondary">₹4,280</p>
+<span class="material-symbols-outlined text-secondary/70 text-xl" style="font-variation-settings: 'FILL' 1;">payments</span>
+</div>
+</div>
+</div>
+<!-- Quick Actions (Bento Grid) -->
+<section>
+<h2 class="text-sm font-label font-semibold text-on-surface-variant mb-3 tracking-wide">QUICK ACTIONS</h2>
+<div class="grid grid-cols-2 gap-3">
+<!-- Primary Action -->
+<button class="glass-card-primary rounded-xl p-4 flex flex-col items-center justify-center gap-3 aspect-square active:scale-95 transition-transform duration-200">
+<div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary shadow-[0_0_15px_rgba(236,191,138,0.2)]">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">receipt</span>
+</div>
+<span class="font-headline font-bold text-primary text-sm">New Bill</span>
+</button>
+<!-- Secondary Actions -->
+<div class="grid grid-rows-2 gap-3">
+<button class="glass-card rounded-xl p-3 flex items-center gap-3 active:scale-95 transition-transform duration-200 hover:bg-surface-container-high">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary-dim">
+<span class="material-symbols-outlined text-lg">inventory_2</span>
+</div>
+<span class="font-headline font-medium text-sm text-on-surface">Products</span>
+</button>
+<button class="glass-card rounded-xl p-3 flex items-center gap-3 active:scale-95 transition-transform duration-200 hover:bg-surface-container-high">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary-dim">
+<span class="material-symbols-outlined text-lg">domain</span>
+</div>
+<span class="font-headline font-medium text-sm text-on-surface">Companies</span>
+</button>
+</div>
+<!-- Full Width Secondary Action -->
+<button class="col-span-2 glass-card rounded-xl p-4 flex items-center justify-between active:scale-95 transition-transform duration-200 hover:bg-surface-container-high">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary-dim">
+<span class="material-symbols-outlined">history</span>
+</div>
+<div class="text-left">
+<span class="block font-headline font-bold text-on-surface text-sm">Bill History</span>
+<span class="block text-xs text-on-surface-variant mt-0.5">View past transactions</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant">chevron_right</span>
+</button>
+</div>
+</section>
+<!-- Recent Bills -->
+<section>
+<div class="flex justify-between items-center mb-3">
+<h2 class="text-sm font-label font-semibold text-on-surface-variant tracking-wide">RECENT BILLS</h2>
+<button class="text-xs font-medium text-primary hover:text-primary-fixed transition-colors">View All</button>
+</div>
+<div class="glass-card rounded-xl overflow-hidden flex flex-col divide-y divide-outline-variant/20">
+<!-- Bill Item 1 -->
+<div class="p-4 flex items-center justify-between hover:bg-surface-container-highest/30 transition-colors cursor-pointer active:bg-surface-container-highest">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center border border-outline-variant/30">
+<span class="material-symbols-outlined text-on-surface-variant text-sm" style="font-variation-settings: 'FILL' 1;">receipt_long</span>
+</div>
+<div>
+<p class="font-mono font-medium text-on-surface text-sm">#0045</p>
+<p class="text-[10px] text-on-surface-variant mt-0.5">31/07/26 10:05 AM</p>
+</div>
+</div>
+<p class="font-mono font-bold text-secondary text-sm">₹154.00</p>
+</div>
+<!-- Bill Item 2 -->
+<div class="p-4 flex items-center justify-between hover:bg-surface-container-highest/30 transition-colors cursor-pointer active:bg-surface-container-highest">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center border border-outline-variant/30">
+<span class="material-symbols-outlined text-on-surface-variant text-sm" style="font-variation-settings: 'FILL' 1;">receipt_long</span>
+</div>
+<div>
+<p class="font-mono font-medium text-on-surface text-sm">#0044</p>
+<p class="text-[10px] text-on-surface-variant mt-0.5">31/07/26 09:30 AM</p>
+</div>
+</div>
+<p class="font-mono font-bold text-secondary text-sm">₹280.00</p>
+</div>
+<!-- Bill Item 3 -->
+<div class="p-4 flex items-center justify-between hover:bg-surface-container-highest/30 transition-colors cursor-pointer active:bg-surface-container-highest">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center border border-outline-variant/30">
+<span class="material-symbols-outlined text-on-surface-variant text-sm" style="font-variation-settings: 'FILL' 1;">receipt_long</span>
+</div>
+<div>
+<p class="font-mono font-medium text-on-surface text-sm">#0043</p>
+<p class="text-[10px] text-on-surface-variant mt-0.5">30/07/26 06:15 PM</p>
+</div>
+</div>
+<p class="font-mono font-bold text-on-surface text-sm">₹95.00</p>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 pb-4 pt-2 max-w-md mx-auto bg-surface-container/90 backdrop-blur-xl border-t border-outline-variant/20 shadow-[0_-4px_12px_rgba(0,0,0,0.4)] rounded-t-xl md:hidden">
+<!-- Active: Dashboard -->
+<button class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-xl px-3 py-1.5 transition-all duration-300 active:scale-90 ease-out group">
+<span class="material-symbols-outlined mb-1 transition-transform group-active:scale-90" style="font-variation-settings: 'FILL' 1;">dashboard</span>
+<span class="font-label text-[10px] font-medium uppercase tracking-widest">Dashboard</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 px-3 py-1.5 hover:bg-surface-container-high transition-colors rounded-xl active:scale-90 duration-200 ease-out group">
+<span class="material-symbols-outlined mb-1 group-hover:text-primary-dim transition-colors">receipt_long</span>
+<span class="font-label text-[10px] font-medium uppercase tracking-widest group-hover:text-primary-dim transition-colors">Billing</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 px-3 py-1.5 hover:bg-surface-container-high transition-colors rounded-xl active:scale-90 duration-200 ease-out group">
+<span class="material-symbols-outlined mb-1 group-hover:text-primary-dim transition-colors">inventory_2</span>
+<span class="font-label text-[10px] font-medium uppercase tracking-widest group-hover:text-primary-dim transition-colors">Products</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 px-3 py-1.5 hover:bg-surface-container-high transition-colors rounded-xl active:scale-90 duration-200 ease-out group">
+<span class="material-symbols-outlined mb-1 group-hover:text-primary-dim transition-colors">history</span>
+<span class="font-label text-[10px] font-medium uppercase tracking-widest group-hover:text-primary-dim transition-colors">History</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 px-3 py-1.5 hover:bg-surface-container-high transition-colors rounded-xl active:scale-90 duration-200 ease-out group">
+<span class="material-symbols-outlined mb-1 group-hover:text-primary-dim transition-colors">settings</span>
+<span class="font-label text-[10px] font-medium uppercase tracking-widest group-hover:text-primary-dim transition-colors">Settings</span>
+</button>
+</nav>
+</body></html>

@@ -1,0 +1,715 @@
+- generic [ref=f10e3]:
+  - banner [ref=f10e4]:
+    - generic [ref=f10e5]:
+      - generic [ref=f10e8]:
+        - generic [ref=f10e10]: history
+        - generic [ref=f10e11]: "|"
+        - generic [ref=f10e12]: 10 Sept 2026
+      - generic [ref=f10e13]:
+        - button "Toggle theme" [active] [ref=f10e14] [cursor=pointer]
+        - button "Daily Entry" [ref=f10e21] [cursor=pointer]
+        - button "Open profile panel" [ref=f10e27] [cursor=pointer]:
+          - generic [ref=f10e51]: Ravi
+  - generic [ref=f10e53]:
+    - complementary [ref=f10e54]:
+      - generic [ref=f10e62]:
+        - heading "G. V. MILK AGENCY" [level=2] [ref=f10e63]
+        - paragraph [ref=f10e64]: CHENNAI - 600109 Hub
+      - generic [ref=f10e65]:
+        - paragraph [ref=f10e66]: MAIN MENU
+        - button "Dashboard" [ref=f10e67] [cursor=pointer]
+        - button "Billing" [ref=f10e75] [cursor=pointer]
+        - button "Brands" [ref=f10e81] [cursor=pointer]
+        - button "Products" [ref=f10e88] [cursor=pointer]
+        - button "Shops" [ref=f10e95] [cursor=pointer]
+        - button "Bill History" [ref=f10e103] [cursor=pointer]
+        - button "Settings" [ref=f10e110] [cursor=pointer]
+      - generic [ref=f10e116]:
+        - generic [ref=f10e117]: Stitch POS v2.0
+        - generic [ref=f10e118]: Hub Live
+    - main [ref=f10e120]:
+      - generic [ref=f10e465]:
+        - generic [ref=f10e466]:
+          - generic [ref=f10e467]:
+            - heading "Bill History & Records" [level=2] [ref=f10e473]
+            - paragraph [ref=f10e474]: Search by bill number, date, amount, or product details. View, re-share, or re-print past bills.
+          - button "Create New Bill" [ref=f10e475] [cursor=pointer]
+        - generic [ref=f10e481]:
+          - button "All Bills" [ref=f10e482] [cursor=pointer]
+          - button "Today's Bills" [ref=f10e483] [cursor=pointer]
+          - button "Yesterday" [ref=f10e484] [cursor=pointer]
+          - button "Last 7 Days" [ref=f10e485] [cursor=pointer]
+          - button "Last 30 Days" [ref=f10e486] [cursor=pointer]
+          - button "Custom Range..." [ref=f10e487] [cursor=pointer]
+        - 'textbox "Search by Bill #, Customer name/phone, product name..." [ref=f10e489]'
+        - generic [ref=f10e490]:
+          - generic [ref=f10e491]:
+            - generic [ref=f10e492]: Total Bills Found
+            - generic [ref=f10e493]: 22 bills
+          - generic [ref=f10e494]:
+            - generic [ref=f10e495]: Total Quantity Sold
+            - generic [ref=f10e496]: 77 units
+          - generic [ref=f10e497]:
+            - generic [ref=f10e498]: Total Revenue
+            - text: ₹1686.30
+        - generic [ref=f10e499]:
+          - generic [ref=f10e500] [cursor=pointer]:
+            - generic [ref=f10e501]:
+              - generic [ref=f10e502]: "#0020"
+              - generic [ref=f10e503]:
+                - generic [ref=f10e504]:
+                  - 'heading "Bill #0020" [level=3] [ref=f10e505]'
+                  - generic [ref=f10e506]: Walk-in Retail Customer
+                  - generic [ref=f10e510]: Fully Paid
+                - generic [ref=f10e511]:
+                  - generic [ref=f10e512]: 08/09/26
+                  - generic [ref=f10e513]: •
+                  - generic [ref=f10e514]: 14:13
+                  - generic [ref=f10e515]: •
+                  - generic [ref=f10e516]: 2 item(s)
+                  - generic [ref=f10e517]: •
+                  - generic [ref=f10e518]: 4 total units
+                - generic [ref=f10e519]: "Items: Aavin Blue (x2), Aavin Green (x2)"
+            - generic [ref=f10e520]:
+              - generic [ref=f10e521]:
+                - generic [ref=f10e522]: ₹88.20
+                - generic [ref=f10e523]: 2 line item(s)
+              - generic [ref=f10e524]:
+                - 'button "Download PDF for Bill #0020" [ref=f10e525]'
+                - 'button "Print Receipt for Bill #0020" [ref=f10e529]'
+                - 'button "Update Bill #0020" [ref=f10e534]'
+                - 'button "Delete Bill #0020" [ref=f10e537]'
+          - generic [ref=f10e541] [cursor=pointer]:
+            - generic [ref=f10e542]:
+              - generic [ref=f10e543]: "#0021"
+              - generic [ref=f10e544]:
+                - generic [ref=f10e545]:
+                  - 'heading "Bill #0021" [level=3] [ref=f10e546]'
+                  - generic [ref=f10e547]: Walk-in Retail Customer
+                  - generic [ref=f10e551]: Fully Paid
+                - generic [ref=f10e552]:
+                  - generic [ref=f10e553]: 08/09/26
+                  - generic [ref=f10e554]: •
+                  - generic [ref=f10e555]: 15:03
+                  - generic [ref=f10e556]: •
+                  - generic [ref=f10e557]: 2 item(s)
+                  - generic [ref=f10e558]: •
+                  - generic [ref=f10e559]: 3 total units
+                - generic [ref=f10e560]: "Items: Aavin Blue (x2), Aavin Green (x1)"
+            - generic [ref=f10e561]:
+              - generic [ref=f10e562]:
+                - generic [ref=f10e563]: ₹65.10
+                - generic [ref=f10e564]: 2 line item(s)
+              - generic [ref=f10e565]:
+                - 'button "Download PDF for Bill #0021" [ref=f10e566]'
+                - 'button "Print Receipt for Bill #0021" [ref=f10e570]'
+                - 'button "Update Bill #0021" [ref=f10e575]'
+                - 'button "Delete Bill #0021" [ref=f10e578]'
+          - generic [ref=f10e582] [cursor=pointer]:
+            - generic [ref=f10e583]:
+              - generic [ref=f10e584]: "#0022"
+              - generic [ref=f10e585]:
+                - generic [ref=f10e586]:
+                  - 'heading "Bill #0022" [level=3] [ref=f10e587]'
+                  - generic [ref=f10e588]: Walk-in Retail Customer
+                  - generic [ref=f10e592]: Fully Paid
+                - generic [ref=f10e593]:
+                  - generic [ref=f10e594]: 08/09/26
+                  - generic [ref=f10e595]: •
+                  - generic [ref=f10e596]: 14:13
+                  - generic [ref=f10e597]: •
+                  - generic [ref=f10e598]: 2 item(s)
+                  - generic [ref=f10e599]: •
+                  - generic [ref=f10e600]: 4 total units
+                - generic [ref=f10e601]: "Items: Aavin Blue (x2), Aavin Green (x2)"
+            - generic [ref=f10e602]:
+              - generic [ref=f10e603]:
+                - generic [ref=f10e604]: ₹88.20
+                - generic [ref=f10e605]: 2 line item(s)
+              - generic [ref=f10e606]:
+                - 'button "Download PDF for Bill #0022" [ref=f10e607]'
+                - 'button "Print Receipt for Bill #0022" [ref=f10e611]'
+                - 'button "Update Bill #0022" [ref=f10e616]'
+                - 'button "Delete Bill #0022" [ref=f10e619]'
+          - generic [ref=f10e623] [cursor=pointer]:
+            - generic [ref=f10e624]:
+              - generic [ref=f10e625]: "#0023"
+              - generic [ref=f10e626]:
+                - generic [ref=f10e627]:
+                  - 'heading "Bill #0023" [level=3] [ref=f10e628]'
+                  - generic [ref=f10e629]: Walk-in Retail Customer
+                  - generic [ref=f10e633]: Fully Paid
+                - generic [ref=f10e634]:
+                  - generic [ref=f10e635]: 08/09/26
+                  - generic [ref=f10e636]: •
+                  - generic [ref=f10e637]: 15:03
+                  - generic [ref=f10e638]: •
+                  - generic [ref=f10e639]: 2 item(s)
+                  - generic [ref=f10e640]: •
+                  - generic [ref=f10e641]: 3 total units
+                - generic [ref=f10e642]: "Items: Aavin Blue (x2), Aavin Green (x1)"
+            - generic [ref=f10e643]:
+              - generic [ref=f10e644]:
+                - generic [ref=f10e645]: ₹65.10
+                - generic [ref=f10e646]: 2 line item(s)
+              - generic [ref=f10e647]:
+                - 'button "Download PDF for Bill #0023" [ref=f10e648]'
+                - 'button "Print Receipt for Bill #0023" [ref=f10e652]'
+                - 'button "Update Bill #0023" [ref=f10e657]'
+                - 'button "Delete Bill #0023" [ref=f10e660]'
+          - generic [ref=f10e664] [cursor=pointer]:
+            - generic [ref=f10e665]:
+              - generic [ref=f10e666]: "#0024"
+              - generic [ref=f10e667]:
+                - generic [ref=f10e668]:
+                  - 'heading "Bill #0024" [level=3] [ref=f10e669]'
+                  - generic [ref=f10e670]: Walk-in Retail Customer
+                  - generic [ref=f10e674]: Fully Paid
+                - generic [ref=f10e675]:
+                  - generic [ref=f10e676]: 08/09/26
+                  - generic [ref=f10e677]: •
+                  - generic [ref=f10e678]: 14:13
+                  - generic [ref=f10e679]: •
+                  - generic [ref=f10e680]: 2 item(s)
+                  - generic [ref=f10e681]: •
+                  - generic [ref=f10e682]: 4 total units
+                - generic [ref=f10e683]: "Items: Aavin Blue (x2), Aavin Green (x2)"
+            - generic [ref=f10e684]:
+              - generic [ref=f10e685]:
+                - generic [ref=f10e686]: ₹88.20
+                - generic [ref=f10e687]: 2 line item(s)
+              - generic [ref=f10e688]:
+                - 'button "Download PDF for Bill #0024" [ref=f10e689]'
+                - 'button "Print Receipt for Bill #0024" [ref=f10e693]'
+                - 'button "Update Bill #0024" [ref=f10e698]'
+                - 'button "Delete Bill #0024" [ref=f10e701]'
+          - generic [ref=f10e705] [cursor=pointer]:
+            - generic [ref=f10e706]:
+              - generic [ref=f10e707]: "#0025"
+              - generic [ref=f10e708]:
+                - generic [ref=f10e709]:
+                  - 'heading "Bill #0025" [level=3] [ref=f10e710]'
+                  - generic [ref=f10e711]: Walk-in Retail Customer
+                  - generic [ref=f10e715]: Fully Paid
+                - generic [ref=f10e716]:
+                  - generic [ref=f10e717]: 08/09/26
+                  - generic [ref=f10e718]: •
+                  - generic [ref=f10e719]: 15:03
+                  - generic [ref=f10e720]: •
+                  - generic [ref=f10e721]: 2 item(s)
+                  - generic [ref=f10e722]: •
+                  - generic [ref=f10e723]: 3 total units
+                - generic [ref=f10e724]: "Items: Aavin Blue (x2), Aavin Green (x1)"
+            - generic [ref=f10e725]:
+              - generic [ref=f10e726]:
+                - generic [ref=f10e727]: ₹65.10
+                - generic [ref=f10e728]: 2 line item(s)
+              - generic [ref=f10e729]:
+                - 'button "Download PDF for Bill #0025" [ref=f10e730]'
+                - 'button "Print Receipt for Bill #0025" [ref=f10e734]'
+                - 'button "Update Bill #0025" [ref=f10e739]'
+                - 'button "Delete Bill #0025" [ref=f10e742]'
+          - generic [ref=f10e746] [cursor=pointer]:
+            - generic [ref=f10e747]:
+              - generic [ref=f10e748]: "#0026"
+              - generic [ref=f10e749]:
+                - generic [ref=f10e750]:
+                  - 'heading "Bill #0026" [level=3] [ref=f10e751]'
+                  - generic [ref=f10e752]: Walk-in Retail Customer
+                  - generic [ref=f10e756]: Fully Paid
+                - generic [ref=f10e757]:
+                  - generic [ref=f10e758]: 08/09/26
+                  - generic [ref=f10e759]: •
+                  - generic [ref=f10e760]: 14:13
+                  - generic [ref=f10e761]: •
+                  - generic [ref=f10e762]: 2 item(s)
+                  - generic [ref=f10e763]: •
+                  - generic [ref=f10e764]: 4 total units
+                - generic [ref=f10e765]: "Items: Aavin Blue (x2), Aavin Green (x2)"
+            - generic [ref=f10e766]:
+              - generic [ref=f10e767]:
+                - generic [ref=f10e768]: ₹88.20
+                - generic [ref=f10e769]: 2 line item(s)
+              - generic [ref=f10e770]:
+                - 'button "Download PDF for Bill #0026" [ref=f10e771]'
+                - 'button "Print Receipt for Bill #0026" [ref=f10e775]'
+                - 'button "Update Bill #0026" [ref=f10e780]'
+                - 'button "Delete Bill #0026" [ref=f10e783]'
+          - generic [ref=f10e787] [cursor=pointer]:
+            - generic [ref=f10e788]:
+              - generic [ref=f10e789]: "#0027"
+              - generic [ref=f10e790]:
+                - generic [ref=f10e791]:
+                  - 'heading "Bill #0027" [level=3] [ref=f10e792]'
+                  - generic [ref=f10e793]: Walk-in Retail Customer
+                  - generic [ref=f10e797]: Fully Paid
+                - generic [ref=f10e798]:
+                  - generic [ref=f10e799]: 08/09/26
+                  - generic [ref=f10e800]: •
+                  - generic [ref=f10e801]: 15:03
+                  - generic [ref=f10e802]: •
+                  - generic [ref=f10e803]: 2 item(s)
+                  - generic [ref=f10e804]: •
+                  - generic [ref=f10e805]: 3 total units
+                - generic [ref=f10e806]: "Items: Aavin Blue (x2), Aavin Green (x1)"
+            - generic [ref=f10e807]:
+              - generic [ref=f10e808]:
+                - generic [ref=f10e809]: ₹65.10
+                - generic [ref=f10e810]: 2 line item(s)
+              - generic [ref=f10e811]:
+                - 'button "Download PDF for Bill #0027" [ref=f10e812]'
+                - 'button "Print Receipt for Bill #0027" [ref=f10e816]'
+                - 'button "Update Bill #0027" [ref=f10e821]'
+                - 'button "Delete Bill #0027" [ref=f10e824]'
+          - generic [ref=f10e828] [cursor=pointer]:
+            - generic [ref=f10e829]:
+              - generic [ref=f10e830]: "#0028"
+              - generic [ref=f10e831]:
+                - generic [ref=f10e832]:
+                  - 'heading "Bill #0028" [level=3] [ref=f10e833]'
+                  - generic [ref=f10e834]: Walk-in Retail Customer
+                  - generic [ref=f10e838]: Fully Paid
+                - generic [ref=f10e839]:
+                  - generic [ref=f10e840]: 08/09/26
+                  - generic [ref=f10e841]: •
+                  - generic [ref=f10e842]: 14:13
+                  - generic [ref=f10e843]: •
+                  - generic [ref=f10e844]: 2 item(s)
+                  - generic [ref=f10e845]: •
+                  - generic [ref=f10e846]: 4 total units
+                - generic [ref=f10e847]: "Items: Aavin Blue (x2), Aavin Green (x2)"
+            - generic [ref=f10e848]:
+              - generic [ref=f10e849]:
+                - generic [ref=f10e850]: ₹88.20
+                - generic [ref=f10e851]: 2 line item(s)
+              - generic [ref=f10e852]:
+                - 'button "Download PDF for Bill #0028" [ref=f10e853]'
+                - 'button "Print Receipt for Bill #0028" [ref=f10e857]'
+                - 'button "Update Bill #0028" [ref=f10e862]'
+                - 'button "Delete Bill #0028" [ref=f10e865]'
+          - generic [ref=f10e869] [cursor=pointer]:
+            - generic [ref=f10e870]:
+              - generic [ref=f10e871]: "#0029"
+              - generic [ref=f10e872]:
+                - generic [ref=f10e873]:
+                  - 'heading "Bill #0029" [level=3] [ref=f10e874]'
+                  - generic [ref=f10e875]: Walk-in Retail Customer
+                  - generic [ref=f10e879]: Fully Paid
+                - generic [ref=f10e880]:
+                  - generic [ref=f10e881]: 08/09/26
+                  - generic [ref=f10e882]: •
+                  - generic [ref=f10e883]: 15:03
+                  - generic [ref=f10e884]: •
+                  - generic [ref=f10e885]: 2 item(s)
+                  - generic [ref=f10e886]: •
+                  - generic [ref=f10e887]: 3 total units
+                - generic [ref=f10e888]: "Items: Aavin Blue (x2), Aavin Green (x1)"
+            - generic [ref=f10e889]:
+              - generic [ref=f10e890]:
+                - generic [ref=f10e891]: ₹65.10
+                - generic [ref=f10e892]: 2 line item(s)
+              - generic [ref=f10e893]:
+                - 'button "Download PDF for Bill #0029" [ref=f10e894]'
+                - 'button "Print Receipt for Bill #0029" [ref=f10e898]'
+                - 'button "Update Bill #0029" [ref=f10e903]'
+                - 'button "Delete Bill #0029" [ref=f10e906]'
+          - generic [ref=f10e910] [cursor=pointer]:
+            - generic [ref=f10e911]:
+              - generic [ref=f10e912]: "#0014"
+              - generic [ref=f10e913]:
+                - generic [ref=f10e914]:
+                  - 'heading "Bill #0014" [level=3] [ref=f10e915]'
+                  - generic [ref=f10e916]: Walk-in Retail Customer
+                  - generic [ref=f10e920]: Fully Paid
+                - generic [ref=f10e921]:
+                  - generic [ref=f10e922]: 08/09/26
+                  - generic [ref=f10e923]: •
+                  - generic [ref=f10e924]: 14:13
+                  - generic [ref=f10e925]: •
+                  - generic [ref=f10e926]: 2 item(s)
+                  - generic [ref=f10e927]: •
+                  - generic [ref=f10e928]: 4 total units
+                - generic [ref=f10e929]: "Items: Aavin Blue (x2), Aavin Green (x2)"
+            - generic [ref=f10e930]:
+              - generic [ref=f10e931]:
+                - generic [ref=f10e932]: ₹88.20
+                - generic [ref=f10e933]: 2 line item(s)
+              - generic [ref=f10e934]:
+                - 'button "Download PDF for Bill #0014" [ref=f10e935]'
+                - 'button "Print Receipt for Bill #0014" [ref=f10e939]'
+                - 'button "Update Bill #0014" [ref=f10e944]'
+                - 'button "Delete Bill #0014" [ref=f10e947]'
+          - generic [ref=f10e951] [cursor=pointer]:
+            - generic [ref=f10e952]:
+              - generic [ref=f10e953]: "#0015"
+              - generic [ref=f10e954]:
+                - generic [ref=f10e955]:
+                  - 'heading "Bill #0015" [level=3] [ref=f10e956]'
+                  - generic [ref=f10e957]: Walk-in Retail Customer
+                  - generic [ref=f10e961]: Fully Paid
+                - generic [ref=f10e962]:
+                  - generic [ref=f10e963]: 08/09/26
+                  - generic [ref=f10e964]: •
+                  - generic [ref=f10e965]: 15:03
+                  - generic [ref=f10e966]: •
+                  - generic [ref=f10e967]: 2 item(s)
+                  - generic [ref=f10e968]: •
+                  - generic [ref=f10e969]: 3 total units
+                - generic [ref=f10e970]: "Items: Aavin Blue (x2), Aavin Green (x1)"
+            - generic [ref=f10e971]:
+              - generic [ref=f10e972]:
+                - generic [ref=f10e973]: ₹65.10
+                - generic [ref=f10e974]: 2 line item(s)
+              - generic [ref=f10e975]:
+                - 'button "Download PDF for Bill #0015" [ref=f10e976]'
+                - 'button "Print Receipt for Bill #0015" [ref=f10e980]'
+                - 'button "Update Bill #0015" [ref=f10e985]'
+                - 'button "Delete Bill #0015" [ref=f10e988]'
+          - generic [ref=f10e992] [cursor=pointer]:
+            - generic [ref=f10e993]:
+              - generic [ref=f10e994]: "#0016"
+              - generic [ref=f10e995]:
+                - generic [ref=f10e996]:
+                  - 'heading "Bill #0016" [level=3] [ref=f10e997]'
+                  - generic [ref=f10e998]: Walk-in Retail Customer
+                  - generic [ref=f10e1002]: Fully Paid
+                - generic [ref=f10e1003]:
+                  - generic [ref=f10e1004]: 08/09/26
+                  - generic [ref=f10e1005]: •
+                  - generic [ref=f10e1006]: 14:13
+                  - generic [ref=f10e1007]: •
+                  - generic [ref=f10e1008]: 2 item(s)
+                  - generic [ref=f10e1009]: •
+                  - generic [ref=f10e1010]: 4 total units
+                - generic [ref=f10e1011]: "Items: Aavin Blue (x2), Aavin Green (x2)"
+            - generic [ref=f10e1012]:
+              - generic [ref=f10e1013]:
+                - generic [ref=f10e1014]: ₹88.20
+                - generic [ref=f10e1015]: 2 line item(s)
+              - generic [ref=f10e1016]:
+                - 'button "Download PDF for Bill #0016" [ref=f10e1017]'
+                - 'button "Print Receipt for Bill #0016" [ref=f10e1021]'
+                - 'button "Update Bill #0016" [ref=f10e1026]'
+                - 'button "Delete Bill #0016" [ref=f10e1029]'
+          - generic [ref=f10e1033] [cursor=pointer]:
+            - generic [ref=f10e1034]:
+              - generic [ref=f10e1035]: "#0017"
+              - generic [ref=f10e1036]:
+                - generic [ref=f10e1037]:
+                  - 'heading "Bill #0017" [level=3] [ref=f10e1038]'
+                  - generic [ref=f10e1039]: Walk-in Retail Customer
+                  - generic [ref=f10e1043]: Fully Paid
+                - generic [ref=f10e1044]:
+                  - generic [ref=f10e1045]: 08/09/26
+                  - generic [ref=f10e1046]: •
+                  - generic [ref=f10e1047]: 15:03
+                  - generic [ref=f10e1048]: •
+                  - generic [ref=f10e1049]: 2 item(s)
+                  - generic [ref=f10e1050]: •
+                  - generic [ref=f10e1051]: 3 total units
+                - generic [ref=f10e1052]: "Items: Aavin Blue (x2), Aavin Green (x1)"
+            - generic [ref=f10e1053]:
+              - generic [ref=f10e1054]:
+                - generic [ref=f10e1055]: ₹65.10
+                - generic [ref=f10e1056]: 2 line item(s)
+              - generic [ref=f10e1057]:
+                - 'button "Download PDF for Bill #0017" [ref=f10e1058]'
+                - 'button "Print Receipt for Bill #0017" [ref=f10e1062]'
+                - 'button "Update Bill #0017" [ref=f10e1067]'
+                - 'button "Delete Bill #0017" [ref=f10e1070]'
+          - generic [ref=f10e1074] [cursor=pointer]:
+            - generic [ref=f10e1075]:
+              - generic [ref=f10e1076]: "#0018"
+              - generic [ref=f10e1077]:
+                - generic [ref=f10e1078]:
+                  - 'heading "Bill #0018" [level=3] [ref=f10e1079]'
+                  - generic [ref=f10e1080]: Walk-in Retail Customer
+                  - generic [ref=f10e1084]: Fully Paid
+                - generic [ref=f10e1085]:
+                  - generic [ref=f10e1086]: 08/09/26
+                  - generic [ref=f10e1087]: •
+                  - generic [ref=f10e1088]: 14:13
+                  - generic [ref=f10e1089]: •
+                  - generic [ref=f10e1090]: 2 item(s)
+                  - generic [ref=f10e1091]: •
+                  - generic [ref=f10e1092]: 4 total units
+                - generic [ref=f10e1093]: "Items: Aavin Blue (x2), Aavin Green (x2)"
+            - generic [ref=f10e1094]:
+              - generic [ref=f10e1095]:
+                - generic [ref=f10e1096]: ₹88.20
+                - generic [ref=f10e1097]: 2 line item(s)
+              - generic [ref=f10e1098]:
+                - 'button "Download PDF for Bill #0018" [ref=f10e1099]'
+                - 'button "Print Receipt for Bill #0018" [ref=f10e1103]'
+                - 'button "Update Bill #0018" [ref=f10e1108]'
+                - 'button "Delete Bill #0018" [ref=f10e1111]'
+          - generic [ref=f10e1115] [cursor=pointer]:
+            - generic [ref=f10e1116]:
+              - generic [ref=f10e1117]: "#0019"
+              - generic [ref=f10e1118]:
+                - generic [ref=f10e1119]:
+                  - 'heading "Bill #0019" [level=3] [ref=f10e1120]'
+                  - generic [ref=f10e1121]: Walk-in Retail Customer
+                  - generic [ref=f10e1125]: Fully Paid
+                - generic [ref=f10e1126]:
+                  - generic [ref=f10e1127]: 08/09/26
+                  - generic [ref=f10e1128]: •
+                  - generic [ref=f10e1129]: 15:03
+                  - generic [ref=f10e1130]: •
+                  - generic [ref=f10e1131]: 2 item(s)
+                  - generic [ref=f10e1132]: •
+                  - generic [ref=f10e1133]: 3 total units
+                - generic [ref=f10e1134]: "Items: Aavin Blue (x2), Aavin Green (x1)"
+            - generic [ref=f10e1135]:
+              - generic [ref=f10e1136]:
+                - generic [ref=f10e1137]: ₹65.10
+                - generic [ref=f10e1138]: 2 line item(s)
+              - generic [ref=f10e1139]:
+                - 'button "Download PDF for Bill #0019" [ref=f10e1140]'
+                - 'button "Print Receipt for Bill #0019" [ref=f10e1144]'
+                - 'button "Update Bill #0019" [ref=f10e1149]'
+                - 'button "Delete Bill #0019" [ref=f10e1152]'
+          - generic [ref=f10e1156] [cursor=pointer]:
+            - generic [ref=f10e1157]:
+              - generic [ref=f10e1158]: "#0011"
+              - generic [ref=f10e1159]:
+                - generic [ref=f10e1160]:
+                  - 'heading "Bill #0011" [level=3] [ref=f10e1161]'
+                  - generic [ref=f10e1162]: Walk-in Retail Customer
+                  - generic [ref=f10e1166]: Fully Paid
+                - generic [ref=f10e1167]:
+                  - generic [ref=f10e1168]: 08/09/26
+                  - generic [ref=f10e1169]: •
+                  - generic [ref=f10e1170]: 15:03
+                  - generic [ref=f10e1171]: •
+                  - generic [ref=f10e1172]: 2 item(s)
+                  - generic [ref=f10e1173]: •
+                  - generic [ref=f10e1174]: 3 total units
+                - generic [ref=f10e1175]: "Items: Aavin Blue (x2), Aavin Green (x1)"
+            - generic [ref=f10e1176]:
+              - generic [ref=f10e1177]:
+                - generic [ref=f10e1178]: ₹65.10
+                - generic [ref=f10e1179]: 2 line item(s)
+              - generic [ref=f10e1180]:
+                - 'button "Download PDF for Bill #0011" [ref=f10e1181]'
+                - 'button "Print Receipt for Bill #0011" [ref=f10e1185]'
+                - 'button "Update Bill #0011" [ref=f10e1190]'
+                - 'button "Delete Bill #0011" [ref=f10e1193]'
+          - generic [ref=f10e1197] [cursor=pointer]:
+            - generic [ref=f10e1198]:
+              - generic [ref=f10e1199]: "#0012"
+              - generic [ref=f10e1200]:
+                - generic [ref=f10e1201]:
+                  - 'heading "Bill #0012" [level=3] [ref=f10e1202]'
+                  - generic [ref=f10e1203]: Walk-in Retail Customer
+                  - generic [ref=f10e1207]: Fully Paid
+                - generic [ref=f10e1208]:
+                  - generic [ref=f10e1209]: 08/09/26
+                  - generic [ref=f10e1210]: •
+                  - generic [ref=f10e1211]: 14:13
+                  - generic [ref=f10e1212]: •
+                  - generic [ref=f10e1213]: 2 item(s)
+                  - generic [ref=f10e1214]: •
+                  - generic [ref=f10e1215]: 4 total units
+                - generic [ref=f10e1216]: "Items: Aavin Blue (x2), Aavin Green (x2)"
+            - generic [ref=f10e1217]:
+              - generic [ref=f10e1218]:
+                - generic [ref=f10e1219]: ₹88.20
+                - generic [ref=f10e1220]: 2 line item(s)
+              - generic [ref=f10e1221]:
+                - 'button "Download PDF for Bill #0012" [ref=f10e1222]'
+                - 'button "Print Receipt for Bill #0012" [ref=f10e1226]'
+                - 'button "Update Bill #0012" [ref=f10e1231]'
+                - 'button "Delete Bill #0012" [ref=f10e1234]'
+          - generic [ref=f10e1238] [cursor=pointer]:
+            - generic [ref=f10e1239]:
+              - generic [ref=f10e1240]: "#0013"
+              - generic [ref=f10e1241]:
+                - generic [ref=f10e1242]:
+                  - 'heading "Bill #0013" [level=3] [ref=f10e1243]'
+                  - generic [ref=f10e1244]: Walk-in Retail Customer
+                  - generic [ref=f10e1248]: Fully Paid
+                - generic [ref=f10e1249]:
+                  - generic [ref=f10e1250]: 08/09/26
+                  - generic [ref=f10e1251]: •
+                  - generic [ref=f10e1252]: 15:03
+                  - generic [ref=f10e1253]: •
+                  - generic [ref=f10e1254]: 2 item(s)
+                  - generic [ref=f10e1255]: •
+                  - generic [ref=f10e1256]: 3 total units
+                - generic [ref=f10e1257]: "Items: Aavin Blue (x2), Aavin Green (x1)"
+            - generic [ref=f10e1258]:
+              - generic [ref=f10e1259]:
+                - generic [ref=f10e1260]: ₹65.10
+                - generic [ref=f10e1261]: 2 line item(s)
+              - generic [ref=f10e1262]:
+                - 'button "Download PDF for Bill #0013" [ref=f10e1263]'
+                - 'button "Print Receipt for Bill #0013" [ref=f10e1267]'
+                - 'button "Update Bill #0013" [ref=f10e1272]'
+                - 'button "Delete Bill #0013" [ref=f10e1275]'
+          - generic [ref=f10e1279] [cursor=pointer]:
+            - generic [ref=f10e1280]:
+              - generic [ref=f10e1281]: "#0010"
+              - generic [ref=f10e1282]:
+                - generic [ref=f10e1283]:
+                  - 'heading "Bill #0010" [level=3] [ref=f10e1284]'
+                  - generic [ref=f10e1285]: Walk-in Retail Customer
+                  - generic [ref=f10e1289]: Fully Paid
+                - generic [ref=f10e1290]:
+                  - generic [ref=f10e1291]: 08/09/26
+                  - generic [ref=f10e1292]: •
+                  - generic [ref=f10e1293]: 14:13
+                  - generic [ref=f10e1294]: •
+                  - generic [ref=f10e1295]: 2 item(s)
+                  - generic [ref=f10e1296]: •
+                  - generic [ref=f10e1297]: 4 total units
+                - generic [ref=f10e1298]: "Items: Aavin Blue (x2), Aavin Green (x2)"
+            - generic [ref=f10e1299]:
+              - generic [ref=f10e1300]:
+                - generic [ref=f10e1301]: ₹88.20
+                - generic [ref=f10e1302]: 2 line item(s)
+              - generic [ref=f10e1303]:
+                - 'button "Download PDF for Bill #0010" [ref=f10e1304]'
+                - 'button "Print Receipt for Bill #0010" [ref=f10e1308]'
+                - 'button "Update Bill #0010" [ref=f10e1313]'
+                - 'button "Delete Bill #0010" [ref=f10e1316]'
+          - generic [ref=f10e1320] [cursor=pointer]:
+            - generic [ref=f10e1321]:
+              - generic [ref=f10e1322]: "#0002"
+              - generic [ref=f10e1323]:
+                - generic [ref=f10e1324]:
+                  - 'heading "Bill #0002" [level=3] [ref=f10e1325]'
+                  - generic [ref=f10e1326]: Walk-in Retail Customer
+                  - generic [ref=f10e1330]: Fully Paid
+                - generic [ref=f10e1331]:
+                  - generic [ref=f10e1332]: 08/09/26
+                  - generic [ref=f10e1333]: •
+                  - generic [ref=f10e1334]: 15:03
+                  - generic [ref=f10e1335]: •
+                  - generic [ref=f10e1336]: 2 item(s)
+                  - generic [ref=f10e1337]: •
+                  - generic [ref=f10e1338]: 3 total units
+                - generic [ref=f10e1339]: "Items: Aavin Blue (x2), Aavin Green (x1)"
+            - generic [ref=f10e1340]:
+              - generic [ref=f10e1341]:
+                - generic [ref=f10e1342]: ₹65.10
+                - generic [ref=f10e1343]: 2 line item(s)
+              - generic [ref=f10e1344]:
+                - 'button "Download PDF for Bill #0002" [ref=f10e1345]'
+                - 'button "Print Receipt for Bill #0002" [ref=f10e1349]'
+                - 'button "Update Bill #0002" [ref=f10e1354]'
+                - 'button "Delete Bill #0002" [ref=f10e1357]'
+          - generic [ref=f10e1361] [cursor=pointer]:
+            - generic [ref=f10e1362]:
+              - generic [ref=f10e1363]: "#0001"
+              - generic [ref=f10e1364]:
+                - generic [ref=f10e1365]:
+                  - 'heading "Bill #0001" [level=3] [ref=f10e1366]'
+                  - generic [ref=f10e1367]: Walk-in Retail Customer
+                  - generic [ref=f10e1371]: Fully Paid
+                - generic [ref=f10e1372]:
+                  - generic [ref=f10e1373]: 08/09/26
+                  - generic [ref=f10e1374]: •
+                  - generic [ref=f10e1375]: 14:13
+                  - generic [ref=f10e1376]: •
+                  - generic [ref=f10e1377]: 2 item(s)
+                  - generic [ref=f10e1378]: •
+                  - generic [ref=f10e1379]: 4 total units
+                - generic [ref=f10e1380]: "Items: Aavin Blue (x2), Aavin Green (x2)"
+            - generic [ref=f10e1381]:
+              - generic [ref=f10e1382]:
+                - generic [ref=f10e1383]: ₹88.20
+                - generic [ref=f10e1384]: 2 line item(s)
+              - generic [ref=f10e1385]:
+                - 'button "Download PDF for Bill #0001" [ref=f10e1386]'
+                - 'button "Print Receipt for Bill #0001" [ref=f10e1390]'
+                - 'button "Update Bill #0001" [ref=f10e1395]'
+                - 'button "Delete Bill #0001" [ref=f10e1398]'
+  - complementary "Profile Panel" [ref=f10e278]:
+    - generic [ref=f10e279]:
+      - generic [ref=f10e285]:
+        - heading "Profile & Identity" [level=2] [ref=f10e286]
+        - paragraph [ref=f10e287]: Business credentials & operator profile
+      - button "Close panel" [ref=f10e289] [cursor=pointer]
+    - generic [ref=f10e293]:
+      - generic [ref=f10e295]:
+        - generic [ref=f10e296]:
+          - generic "Click to change profile photo" [ref=f10e297] [cursor=pointer]
+          - button "Upload profile photo" [ref=f10e321] [cursor=pointer]
+        - generic [ref=f10e325]:
+          - generic [ref=f10e326]:
+            - generic [ref=f10e327]: ACTIVE POS
+            - generic [ref=f10e329]: Verified Operator
+          - heading "Store Administrator" [level=3] [ref=f10e333]
+          - paragraph [ref=f10e334]: G. V. MILK AGENCY
+          - paragraph [ref=f10e335]: CHENNAI - 600109
+          - button "Upload Photo" [ref=f10e337] [cursor=pointer]
+          - paragraph [ref=f10e342]: JPG, PNG or WebP • Auto-crops to circular profile photo
+      - generic [ref=f10e343]:
+        - generic [ref=f10e344]:
+          - generic [ref=f10e349]: "0"
+          - generic [ref=f10e350]: Today Bills
+        - generic [ref=f10e351]:
+          - generic [ref=f10e358]: "5"
+          - generic [ref=f10e359]: Total Shops
+        - generic [ref=f10e360]:
+          - generic [ref=f10e366]: "8"
+          - generic [ref=f10e367]: Products
+      - generic [ref=f10e368]:
+        - generic [ref=f10e369]:
+          - heading "Business Details" [level=4] [ref=f10e370]
+          - generic [ref=f10e371]: Prints on receipts
+        - generic [ref=f10e372]:
+          - generic [ref=f10e373]: Business Name *
+          - textbox "e.g. G. V. MILK AGENCY" [ref=f10e380]: G. V. MILK AGENCY
+        - generic [ref=f10e381]:
+          - generic [ref=f10e382]: Owner / Manager Name
+          - textbox "e.g. Store Owner / Cashier" [ref=f10e387]: Store Administrator
+        - generic [ref=f10e388]:
+          - generic [ref=f10e389]:
+            - generic [ref=f10e390]: Mobile / WhatsApp
+            - textbox "e.g. 9840865510" [ref=f10e394]: "9840865510"
+          - generic [ref=f10e395]:
+            - generic [ref=f10e396]: Email Address
+            - textbox "owner@agency.com" [ref=f10e401]
+        - generic [ref=f10e402]:
+          - generic [ref=f10e403]: Street / Area
+          - textbox "e.g. SOLAN NAGAR" [ref=f10e408]: SOLAN NAGAR
+        - generic [ref=f10e409]:
+          - generic [ref=f10e410]:
+            - generic [ref=f10e411]: City / State / Pincode
+            - textbox "e.g. CHENNAI - 600109" [ref=f10e412]: CHENNAI - 600109
+          - generic [ref=f10e413]:
+            - generic [ref=f10e414]: GSTIN / Tax ID
+            - textbox "Optional GSTIN" [ref=f10e419]
+        - generic [ref=f10e420]:
+          - generic [ref=f10e421]:
+            - generic [ref=f10e422]: Currency Symbol
+            - combobox [ref=f10e423]:
+              - option "₹ (INR Rupee)" [selected]
+              - option "$ (USD Dollar)"
+              - option "€ (Euro)"
+              - option "£ (GBP Pound)"
+              - option "AED (Dirham)"
+          - generic [ref=f10e424]:
+            - generic [ref=f10e425]: Receipt Paper Size
+            - combobox [ref=f10e426]:
+              - option "58mm (2-Inch Thermal)" [selected]
+              - option "80mm (3-Inch Thermal)"
+      - generic [ref=f10e427]:
+        - heading "System Shortcuts" [level=4] [ref=f10e428]
+        - generic [ref=f10e429]:
+          - generic [ref=f10e430]: Interface Theme
+          - button "Light Mode" [ref=f10e1410] [cursor=pointer]
+        - generic [ref=f10e435]:
+          - generic [ref=f10e436]: Thermal Printer Setup
+          - button "Configure" [ref=f10e442] [cursor=pointer]
+      - generic [ref=f10e447]:
+        - generic [ref=f10e448]:
+          - generic [ref=f10e449]: ACTIVE TERMINAL OPERATOR
+          - generic [ref=f10e450]: Ravi Kumar
+          - generic [ref=f10e451]: +91 9876543210 • Cashier
+        - button "Sign Out" [ref=f10e452] [cursor=pointer]
+    - generic [ref=f10e457]:
+      - button "Save Profile" [ref=f10e458] [cursor=pointer]
+      - button "Close" [ref=f10e463] [cursor=pointer]

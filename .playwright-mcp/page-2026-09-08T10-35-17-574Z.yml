@@ -1,0 +1,236 @@
+- generic [ref=f5e3]:
+  - banner [ref=f5e4]:
+    - generic [ref=f5e5]:
+      - generic [ref=f5e8]:
+        - generic [ref=f5e10]: shops
+        - generic [ref=f5e11]: "|"
+        - generic [ref=f5e12]: 08 Sept 2026
+      - generic [ref=f5e13]:
+        - button "Toggle theme" [ref=f5e14] [cursor=pointer]
+        - button "Daily Entry 2 (₹62.00)" [ref=f5e21] [cursor=pointer]:
+          - generic [ref=f5e26]: Daily Entry
+          - generic [ref=f5e27]: "2"
+          - generic [ref=f5e28]: (₹62.00)
+        - button "Open profile panel" [ref=f5e29] [cursor=pointer]:
+          - generic [ref=f5e53]: Ravi
+  - generic [ref=f5e55]:
+    - complementary [ref=f5e56]:
+      - generic [ref=f5e64]:
+        - heading "G. V. MILK AGENCY" [level=2] [ref=f5e65]
+        - paragraph [ref=f5e66]: CHENNAI - 600109 Hub
+      - generic [ref=f5e67]:
+        - paragraph [ref=f5e68]: MAIN MENU
+        - button "Dashboard" [ref=f5e69] [cursor=pointer]
+        - button "Fast Billing 2" [ref=f5e77] [cursor=pointer]:
+          - generic [ref=f5e78]: Fast Billing
+          - generic [ref=f5e83]: "2"
+        - button "Products" [ref=f5e84] [cursor=pointer]
+        - button "Brands" [ref=f5e91] [cursor=pointer]
+        - button "Shops" [active] [ref=f5e98] [cursor=pointer]
+        - button "Bill History" [ref=f5e106] [cursor=pointer]
+        - button "Settings" [ref=f5e113] [cursor=pointer]
+      - generic [ref=f5e119]:
+        - generic [ref=f5e120]:
+          - generic [ref=f5e121]: Active Bill
+          - generic [ref=f5e122]: 2 item(s)
+        - generic [ref=f5e123]:
+          - generic [ref=f5e124]: "Total:"
+          - generic [ref=f5e125]: ₹62.00
+        - button "Review & Print" [ref=f5e126]
+      - generic [ref=f5e127]:
+        - generic [ref=f5e128]: Stitch POS v2.0
+        - generic [ref=f5e129]: Hub Live
+    - main [ref=f5e131]:
+      - generic [ref=f5e770]:
+        - generic [ref=f5e771]:
+          - generic [ref=f5e779]:
+            - generic [ref=f5e780]:
+              - heading "Shop Management" [level=1] [ref=f5e781]
+              - generic [ref=f5e782]: 5 OUTLETS
+            - paragraph [ref=f5e783]: Manage retail outlets and customer history
+          - textbox "Search shop, brand, date..." [ref=f5e788]
+        - generic [ref=f5e789]:
+          - generic [ref=f5e790]:
+            - generic [ref=f5e791]:
+              - heading "Outlet Directory" [level=2] [ref=f5e792]
+              - paragraph [ref=f5e793]: Maintain details, contact info, and delivery histories of retail stores.
+            - button "+ Add Shop" [ref=f5e794] [cursor=pointer]
+          - generic [ref=f5e797]:
+            - generic [ref=f5e798]:
+              - generic [ref=f5e799]: Search
+              - textbox "Search by name, owner, area..." [ref=f5e801]
+            - generic [ref=f5e802]:
+              - generic [ref=f5e803]: Area Filter
+              - combobox [ref=f5e804] [cursor=pointer]:
+                - option "All Areas" [selected]
+                - option "Solan Nagar"
+                - option "avadi"
+                - option "Velachery"
+                - option "Adyar"
+            - generic [ref=f5e805]:
+              - generic [ref=f5e806]: Status
+              - combobox [ref=f5e807] [cursor=pointer]:
+                - option "All Statuses" [selected]
+                - option "ACTIVE"
+                - option "INACTIVE"
+                - option "All Statuses"
+                - option "ACTIVE"
+                - option "INACTIVE"
+          - table [ref=f5e809]:
+            - rowgroup [ref=f5e810]:
+              - row [ref=f5e811]:
+                - columnheader "SHOP NAME" [ref=f5e812]
+                - columnheader "OWNER" [ref=f5e813]
+                - columnheader "PHONE" [ref=f5e814]
+                - columnheader "AREA" [ref=f5e815]
+                - columnheader "STATUS" [ref=f5e816]
+                - columnheader "ACTIONS" [ref=f5e817]
+            - rowgroup [ref=f5e818]:
+              - row [ref=f5e819]:
+                - cell [ref=f5e820]:
+                  - button "ABC Stores" [ref=f5e821] [cursor=pointer]
+                - cell "Kumar" [ref=f5e822]
+                - cell "9840123456" [ref=f5e823]
+                - cell "Solan Nagar" [ref=f5e824]
+                - cell "ACTIVE" [ref=f5e825]
+                - cell [ref=f5e827]:
+                  - generic [ref=f5e828]:
+                    - button "View Shop Details & History" [ref=f5e829] [cursor=pointer]
+                    - button "Edit Shop" [ref=f5e833] [cursor=pointer]
+                    - button "Delete Shop" [ref=f5e836] [cursor=pointer]
+              - row [ref=f5e840]:
+                - cell [ref=f5e841]:
+                  - button "Anbu Shop" [ref=f5e842] [cursor=pointer]
+                - cell "Anbu selvam" [ref=f5e843]
+                - cell "9836762329" [ref=f5e844]
+                - cell "avadi" [ref=f5e845]
+                - cell "ACTIVE" [ref=f5e846]
+                - cell [ref=f5e848]:
+                  - generic [ref=f5e849]:
+                    - button "View Shop Details & History" [ref=f5e850] [cursor=pointer]
+                    - button "Edit Shop" [ref=f5e854] [cursor=pointer]
+                    - button "Delete Shop" [ref=f5e857] [cursor=pointer]
+              - row [ref=f5e861]:
+                - cell [ref=f5e862]:
+                  - button "G. V. Milk Agency" [ref=f5e863] [cursor=pointer]
+                - cell "Venkatesh" [ref=f5e864]
+                - cell "9840865510" [ref=f5e865]
+                - cell "Solan Nagar" [ref=f5e866]
+                - cell "ACTIVE" [ref=f5e867]
+                - cell [ref=f5e869]:
+                  - generic [ref=f5e870]:
+                    - button "View Shop Details & History" [ref=f5e871] [cursor=pointer]
+                    - button "Edit Shop" [ref=f5e875] [cursor=pointer]
+                    - button "Delete Shop" [ref=f5e878] [cursor=pointer]
+              - row [ref=f5e882]:
+                - cell [ref=f5e883]:
+                  - button "Lakshmi Supermarket" [ref=f5e884] [cursor=pointer]
+                - cell "Lakshmi" [ref=f5e885]
+                - cell "9840234567" [ref=f5e886]
+                - cell "Velachery" [ref=f5e887]
+                - cell "ACTIVE" [ref=f5e888]
+                - cell [ref=f5e890]:
+                  - generic [ref=f5e891]:
+                    - button "View Shop Details & History" [ref=f5e892] [cursor=pointer]
+                    - button "Edit Shop" [ref=f5e896] [cursor=pointer]
+                    - button "Delete Shop" [ref=f5e899] [cursor=pointer]
+              - row [ref=f5e903]:
+                - cell [ref=f5e904]:
+                  - button "Metro Groceries" [ref=f5e905] [cursor=pointer]
+                - cell "Murugan" [ref=f5e906]
+                - cell "9840345678" [ref=f5e907]
+                - cell "Adyar" [ref=f5e908]
+                - cell "ACTIVE" [ref=f5e909]
+                - cell [ref=f5e911]:
+                  - generic [ref=f5e912]:
+                    - button "View Shop Details & History" [ref=f5e913] [cursor=pointer]
+                    - button "Edit Shop" [ref=f5e917] [cursor=pointer]
+                    - button "Delete Shop" [ref=f5e920] [cursor=pointer]
+  - complementary "Profile Panel" [ref=f5e403]:
+    - generic [ref=f5e404]:
+      - generic [ref=f5e410]:
+        - heading "Profile & Identity" [level=2] [ref=f5e411]
+        - paragraph [ref=f5e412]: Business credentials & operator profile
+      - button "Close panel" [ref=f5e414] [cursor=pointer]
+    - generic [ref=f5e418]:
+      - generic [ref=f5e420]:
+        - generic [ref=f5e421]:
+          - generic "Click to change profile photo" [ref=f5e422] [cursor=pointer]
+          - button "Upload profile photo" [ref=f5e446] [cursor=pointer]
+        - generic [ref=f5e450]:
+          - generic [ref=f5e451]:
+            - generic [ref=f5e452]: ACTIVE POS
+            - generic [ref=f5e454]: Verified Operator
+          - heading "Store Administrator" [level=3] [ref=f5e458]
+          - paragraph [ref=f5e459]: G. V. MILK AGENCY
+          - paragraph [ref=f5e460]: CHENNAI - 600109
+          - button "Upload Photo" [ref=f5e462] [cursor=pointer]
+          - paragraph [ref=f5e467]: JPG, PNG or WebP • Auto-crops to circular profile photo
+      - generic [ref=f5e468]:
+        - generic [ref=f5e469]:
+          - generic [ref=f5e474]: "1"
+          - generic [ref=f5e475]: Today Bills
+        - generic [ref=f5e476]:
+          - generic [ref=f5e483]: "5"
+          - generic [ref=f5e484]: Total Shops
+        - generic [ref=f5e485]:
+          - generic [ref=f5e491]: "8"
+          - generic [ref=f5e492]: Products
+      - generic [ref=f5e493]:
+        - generic [ref=f5e494]:
+          - heading "Business Details" [level=4] [ref=f5e495]
+          - generic [ref=f5e496]: Prints on receipts
+        - generic [ref=f5e497]:
+          - generic [ref=f5e498]: Business Name *
+          - textbox "e.g. G. V. MILK AGENCY" [ref=f5e505]: G. V. MILK AGENCY
+        - generic [ref=f5e506]:
+          - generic [ref=f5e507]: Owner / Manager Name
+          - textbox "e.g. Store Owner / Cashier" [ref=f5e512]: Store Administrator
+        - generic [ref=f5e513]:
+          - generic [ref=f5e514]:
+            - generic [ref=f5e515]: Mobile / WhatsApp
+            - textbox "e.g. 9840865510" [ref=f5e519]: "9840865510"
+          - generic [ref=f5e520]:
+            - generic [ref=f5e521]: Email Address
+            - textbox "owner@agency.com" [ref=f5e526]
+        - generic [ref=f5e527]:
+          - generic [ref=f5e528]: Street / Area
+          - textbox "e.g. SOLAN NAGAR" [ref=f5e533]: SOLAN NAGAR
+        - generic [ref=f5e534]:
+          - generic [ref=f5e535]:
+            - generic [ref=f5e536]: City / State / Pincode
+            - textbox "e.g. CHENNAI - 600109" [ref=f5e537]: CHENNAI - 600109
+          - generic [ref=f5e538]:
+            - generic [ref=f5e539]: GSTIN / Tax ID
+            - textbox "Optional GSTIN" [ref=f5e544]
+        - generic [ref=f5e545]:
+          - generic [ref=f5e546]:
+            - generic [ref=f5e547]: Currency Symbol
+            - combobox [ref=f5e548]:
+              - option "₹ (INR Rupee)" [selected]
+              - option "$ (USD Dollar)"
+              - option "€ (Euro)"
+              - option "£ (GBP Pound)"
+              - option "AED (Dirham)"
+          - generic [ref=f5e549]:
+            - generic [ref=f5e550]: Receipt Paper Size
+            - combobox [ref=f5e551]:
+              - option "58mm (2-Inch Thermal)" [selected]
+              - option "80mm (3-Inch Thermal)"
+      - generic [ref=f5e552]:
+        - heading "System Shortcuts" [level=4] [ref=f5e553]
+        - generic [ref=f5e554]:
+          - generic [ref=f5e555]: Interface Theme
+          - button "Light Mode" [ref=f5e619] [cursor=pointer]
+        - generic [ref=f5e560]:
+          - generic [ref=f5e561]: Thermal Printer Setup
+          - button "Configure" [ref=f5e567] [cursor=pointer]
+      - generic [ref=f5e572]:
+        - generic [ref=f5e573]:
+          - generic [ref=f5e574]: ACTIVE TERMINAL OPERATOR
+          - generic [ref=f5e575]: Ravi Kumar
+          - generic [ref=f5e576]: +91 9876543210 • Cashier
+        - button "Sign Out" [ref=f5e577] [cursor=pointer]
+    - generic [ref=f5e582]:
+      - button "Save Profile" [ref=f5e583] [cursor=pointer]
+      - button "Close" [ref=f5e588] [cursor=pointer]

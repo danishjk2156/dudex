@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bill History - DairyFlow Pro</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&amp;family=Inter:wght@400;500;600&amp;family=Public+Sans:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "primary-container": "#6d4c22",
+                      "on-tertiary-container": "#4a2500",
+                      "inverse-on-surface": "#595451",
+                      "on-primary-container": "#ffdeba",
+                      "tertiary-dim": "#ed871e",
+                      "surface-container-highest": "#2a2521",
+                      "primary": "#ecbf8a",
+                      "on-primary": "#583a11",
+                      "on-background": "#eee3dd",
+                      "on-surface": "#eee3dd",
+                      "surface": "#100e0c",
+                      "on-tertiary-fixed-variant": "#572c00",
+                      "outline": "#7c746f",
+                      "surface-tint": "#ecbf8a",
+                      "surface-bright": "#312b27",
+                      "primary-fixed": "#fecf99",
+                      "secondary-container": "#4d3800",
+                      "inverse-primary": "#7b582d",
+                      "tertiary-fixed": "#fe932c",
+                      "on-surface-variant": "#b3a9a4",
+                      "surface-variant": "#2a2521",
+                      "on-primary-fixed": "#4f3209",
+                      "surface-container-high": "#231f1c",
+                      "surface-dim": "#100e0c",
+                      "on-secondary-fixed": "#523c00",
+                      "on-primary-fixed-variant": "#6f4e23",
+                      "surface-container-lowest": "#000000",
+                      "on-secondary-container": "#f1b617",
+                      "primary-fixed-dim": "#efc18c",
+                      "outline-variant": "#4d4742",
+                      "tertiary": "#ffa85d",
+                      "error-container": "#85230a",
+                      "tertiary-fixed-dim": "#ed871e",
+                      "surface-container-low": "#161310",
+                      "on-error": "#450900",
+                      "surface-container": "#1d1916",
+                      "on-tertiary-fixed": "#240f00",
+                      "error-dim": "#c44f34",
+                      "secondary-fixed-dim": "#ffcd61",
+                      "primary-dim": "#ddb17d",
+                      "secondary": "#f9bd22",
+                      "on-tertiary": "#592d00",
+                      "tertiary-container": "#fe932c",
+                      "background": "#100e0c",
+                      "secondary-dim": "#e9b00a",
+                      "on-secondary-fixed-variant": "#755600",
+                      "on-secondary": "#533c00",
+                      "secondary-fixed": "#ffdf9f",
+                      "error": "#f97758",
+                      "inverse-surface": "#fff8f5",
+                      "on-error-container": "#ff9b82"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {},
+              "fontFamily": {
+                      "headline": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "display": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "body": [
+                              "Inter"
+                      ],
+                      "label": [
+                              "Public Sans"
+                      ],
+                      "mono": [
+                              "JetBrains Mono"
+                      ]
+              },
+              "fontSize": {}
+      },
+          },
+        }
+      </script>
+<style>
+        .glass-card {
+            background: rgba(42, 37, 33, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(77, 71, 66, 0.3);
+        }
+        
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .no-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+      </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body min-h-screen pb-24 pt-16 selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface/80 backdrop-blur-md shadow-sm border-b border-outline-variant/30 flex items-center justify-between px-4 h-16">
+<button class="w-10 h-10 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-primary-container/20 transition-colors active:scale-95 duration-150">
+<span class="material-symbols-outlined text-2xl" data-icon="local_shipping">local_shipping</span>
+</button>
+<h1 class="font-headline text-lg font-bold tracking-tight text-primary dark:text-primary">Bill History</h1>
+<button class="w-10 h-10 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-primary-container/20 transition-colors active:scale-95 duration-150">
+<span class="material-symbols-outlined text-2xl" data-icon="account_circle">account_circle</span>
+</button>
+</header>
+<main class="px-4 py-4 max-w-2xl mx-auto space-y-6">
+<!-- Date Filter Row -->
+<section class="flex overflow-x-auto no-scrollbar gap-2 -mx-4 px-4 pb-2 pt-2">
+<button class="whitespace-nowrap px-4 py-2 rounded-full font-label text-sm font-medium bg-primary text-on-primary shadow-md active:scale-95 transition-transform duration-150">
+                Today
+            </button>
+<button class="whitespace-nowrap px-4 py-2 rounded-full font-label text-sm font-medium bg-surface-variant text-on-surface-variant border border-outline-variant/50 hover:bg-surface-container-highest transition-colors active:scale-95 duration-150">
+                This Week
+            </button>
+<button class="whitespace-nowrap px-4 py-2 rounded-full font-label text-sm font-medium bg-surface-variant text-on-surface-variant border border-outline-variant/50 hover:bg-surface-container-highest transition-colors active:scale-95 duration-150">
+                This Month
+            </button>
+<button class="whitespace-nowrap px-4 py-2 rounded-full font-label text-sm font-medium bg-surface-variant text-on-surface-variant border border-outline-variant/50 hover:bg-surface-container-highest transition-colors active:scale-95 duration-150 flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">calendar_month</span> Custom
+            </button>
+</section>
+<!-- Search Bar -->
+<section>
+<div class="relative">
+<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-on-surface-variant">search</span>
+</div>
+<input class="w-full bg-surface-container-high border-outline-variant/50 text-on-surface rounded-xl pl-10 pr-4 py-3.5 focus:ring-1 focus:ring-primary focus:border-primary placeholder-on-surface-variant/70 font-body text-sm transition-shadow" placeholder="Search by bill number or amount..." type="text"/>
+</div>
+</section>
+<!-- Summary Stats -->
+<section class="glass-card rounded-xl p-4 flex justify-between items-center">
+<div class="text-sm text-on-surface-variant font-medium">
+                Showing 12 bills
+            </div>
+<div class="text-sm font-bold text-on-surface bg-surface-container-lowest/50 px-3 py-1.5 rounded-lg border border-outline-variant/30 shadow-inner">
+                Total: <span class="text-primary font-mono ml-1">₹4,280.00</span>
+</div>
+</section>
+<!-- Bill History List -->
+<section class="space-y-4">
+<!-- Bill Card 1 -->
+<article class="glass-card rounded-xl p-4 active:scale-[0.98] transition-transform duration-200 cursor-pointer relative overflow-hidden group">
+<div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/[0.03] to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></div>
+<div class="flex justify-between items-start mb-3 relative z-10">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="font-mono text-xl font-bold text-on-surface">#0045</span>
+<span class="bg-primary/20 text-primary text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider">Paid</span>
+</div>
+<div class="text-xs text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+                            31/07/26 10:05 AM
+                        </div>
+</div>
+<div class="text-right">
+<div class="font-mono text-xl font-bold text-primary mb-1">₹154.00</div>
+<div class="text-xs text-on-surface-variant bg-surface-container-lowest/50 inline-block px-2 py-0.5 rounded-full border border-outline-variant/20">3 items</div>
+</div>
+</div>
+<div class="border-t border-outline-variant/20 pt-3 flex justify-between items-center mt-1 relative z-10">
+<p class="text-xs text-on-surface-variant truncate max-w-[85%] font-medium">
+                        Aavin Blue, Aavin Green <span class="text-primary-dim opacity-80">+1 more</span>
+</p>
+<span class="material-symbols-outlined text-on-surface-variant opacity-60">chevron_right</span>
+</div>
+</article>
+<!-- Bill Card 2 -->
+<article class="glass-card rounded-xl p-4 active:scale-[0.98] transition-transform duration-200 cursor-pointer relative overflow-hidden group">
+<div class="flex justify-between items-start mb-3 relative z-10">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="font-mono text-xl font-bold text-on-surface">#0044</span>
+</div>
+<div class="text-xs text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+                            31/07/26 09:30 AM
+                        </div>
+</div>
+<div class="text-right">
+<div class="font-mono text-xl font-bold text-primary mb-1">₹280.00</div>
+<div class="text-xs text-on-surface-variant bg-surface-container-lowest/50 inline-block px-2 py-0.5 rounded-full border border-outline-variant/20">5 items</div>
+</div>
+</div>
+<div class="border-t border-outline-variant/20 pt-3 flex justify-between items-center mt-1 relative z-10">
+<p class="text-xs text-on-surface-variant truncate max-w-[85%] font-medium">
+                        Aavin Blue, Heritage Curd <span class="text-primary-dim opacity-80">+3 more</span>
+</p>
+<span class="material-symbols-outlined text-on-surface-variant opacity-60">chevron_right</span>
+</div>
+</article>
+<!-- Bill Card 3 -->
+<article class="glass-card rounded-xl p-4 active:scale-[0.98] transition-transform duration-200 cursor-pointer relative overflow-hidden group">
+<div class="flex justify-between items-start mb-3 relative z-10">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="font-mono text-xl font-bold text-on-surface">#0043</span>
+</div>
+<div class="text-xs text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+                            30/07/26 06:15 PM
+                        </div>
+</div>
+<div class="text-right">
+<div class="font-mono text-xl font-bold text-primary mb-1">₹95.00</div>
+<div class="text-xs text-on-surface-variant bg-surface-container-lowest/50 inline-block px-2 py-0.5 rounded-full border border-outline-variant/20">2 items</div>
+</div>
+</div>
+<div class="border-t border-outline-variant/20 pt-3 flex justify-between items-center mt-1 relative z-10">
+<p class="text-xs text-on-surface-variant truncate max-w-[85%] font-medium">
+                        Aavin Green, Heritage TM
+                    </p>
+<span class="material-symbols-outlined text-on-surface-variant opacity-60">chevron_right</span>
+</div>
+</article>
+<!-- Bill Card 4 -->
+<article class="glass-card rounded-xl p-4 active:scale-[0.98] transition-transform duration-200 cursor-pointer relative overflow-hidden group">
+<div class="flex justify-between items-start mb-3 relative z-10">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="font-mono text-xl font-bold text-on-surface">#0042</span>
+</div>
+<div class="text-xs text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+                            30/07/26 08:00 AM
+                        </div>
+</div>
+<div class="text-right">
+<div class="font-mono text-xl font-bold text-primary mb-1">₹412.00</div>
+<div class="text-xs text-on-surface-variant bg-surface-container-lowest/50 inline-block px-2 py-0.5 rounded-full border border-outline-variant/20">7 items</div>
+</div>
+</div>
+<div class="border-t border-outline-variant/20 pt-3 flex justify-between items-center mt-1 relative z-10">
+<p class="text-xs text-on-surface-variant truncate max-w-[85%] font-medium">
+                        Aavin Orange, Aavin Blue <span class="text-primary-dim opacity-80">+5 more</span>
+</p>
+<span class="material-symbols-outlined text-on-surface-variant opacity-60">chevron_right</span>
+</div>
+</article>
+<!-- Bill Card 5 -->
+<article class="glass-card rounded-xl p-4 active:scale-[0.98] transition-transform duration-200 cursor-pointer relative overflow-hidden group opacity-80">
+<div class="flex justify-between items-start mb-3 relative z-10">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="font-mono text-xl font-bold text-on-surface">#0041</span>
+</div>
+<div class="text-xs text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+                            29/07/26 05:45 PM
+                        </div>
+</div>
+<div class="text-right">
+<div class="font-mono text-xl font-bold text-primary mb-1">₹180.00</div>
+<div class="text-xs text-on-surface-variant bg-surface-container-lowest/50 inline-block px-2 py-0.5 rounded-full border border-outline-variant/20">4 items</div>
+</div>
+</div>
+<div class="border-t border-outline-variant/20 pt-3 flex justify-between items-center mt-1 relative z-10">
+<p class="text-xs text-on-surface-variant truncate max-w-[85%] font-medium">
+                        Heritage Curd, Aavin Green <span class="text-primary-dim opacity-80">+2 more</span>
+</p>
+<span class="material-symbols-outlined text-on-surface-variant opacity-60">chevron_right</span>
+</div>
+</article>
+<!-- Load More Indicator -->
+<div class="py-4 text-center">
+<span class="inline-block w-6 h-6 border-2 border-primary/30 border-t-primary rounded-full animate-spin"></span>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-2 py-3 bg-surface/90 dark:bg-surface/90 backdrop-blur-xl z-50 rounded-t-xl border-t border-outline-variant/20 shadow-[0_-4px_12px_rgba(0,0,0,0.1)] pb-safe">
+<button class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-all active:scale-90 duration-200 w-16">
+<span class="material-symbols-outlined text-2xl mb-1" data-icon="dashboard">dashboard</span>
+<span class="font-label text-xs font-medium">Dashboard</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-all active:scale-90 duration-200 w-16">
+<span class="material-symbols-outlined text-2xl mb-1" data-icon="receipt_long">receipt_long</span>
+<span class="font-label text-xs font-medium">Billing</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-all active:scale-90 duration-200 w-16">
+<span class="material-symbols-outlined text-2xl mb-1" data-icon="inventory_2">inventory_2</span>
+<span class="font-label text-xs font-medium">Products</span>
+</button>
+<!-- Active State -->
+<button class="flex flex-col items-center justify-center text-primary bg-primary-container/30 rounded-xl px-3 py-1 transition-all active:scale-90 duration-200 w-16">
+<span class="material-symbols-outlined text-2xl mb-1" data-icon="history" data-weight="fill" style="font-variation-settings: 'FILL' 1;">history</span>
+<span class="font-label text-[10px] font-bold">History</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-all active:scale-90 duration-200 w-16">
+<span class="material-symbols-outlined text-2xl mb-1" data-icon="settings">settings</span>
+<span class="font-label text-xs font-medium">Settings</span>
+</button>
+</nav>
+<style>
+        @keyframes shimmer {
+            100% {
+                transform: translateX(100%);
+            }
+        }
+        /* Safe area padding for modern mobile browsers */
+        .pb-safe {
+            padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
+        }
+    </style>
+</body></html>

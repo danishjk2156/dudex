@@ -1,0 +1,239 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e8]:
+        - generic [ref=e10]: dashboard
+        - generic [ref=e11]: "|"
+        - generic [ref=e12]: 09 Sept 2026
+      - generic [ref=e13]:
+        - button "Toggle theme" [ref=e14] [cursor=pointer]
+        - button "Daily Entry 2 (₹62.00)" [ref=e17] [cursor=pointer]:
+          - generic [ref=e22]: Daily Entry
+          - generic [ref=e23]: "2"
+          - generic [ref=e24]: (₹62.00)
+        - button "Open profile panel" [ref=e25] [cursor=pointer]:
+          - generic [ref=e49]: Ravi
+  - generic [ref=e51]:
+    - complementary [ref=e52]:
+      - generic [ref=e60]:
+        - heading "G. V. MILK AGENCY" [level=2] [ref=e61]
+        - paragraph [ref=e62]: CHENNAI - 600109 Hub
+      - generic [ref=e63]:
+        - paragraph [ref=e64]: MAIN MENU
+        - button "Dashboard" [ref=e65] [cursor=pointer]
+        - button "Billing 2" [ref=e73] [cursor=pointer]:
+          - generic [ref=e74]: Billing
+          - generic [ref=e79]: "2"
+        - button "Brands" [ref=e80] [cursor=pointer]
+        - button "Products" [ref=e87] [cursor=pointer]
+        - button "Shops" [ref=e94] [cursor=pointer]
+        - button "Bill History" [ref=e102] [cursor=pointer]
+        - button "Settings" [ref=e109] [cursor=pointer]
+      - generic [ref=e115]:
+        - generic [ref=e116]:
+          - generic [ref=e117]: Active Bill
+          - generic [ref=e118]: 2 item(s)
+        - generic [ref=e119]:
+          - generic [ref=e120]: "Total:"
+          - generic [ref=e121]: ₹62.00
+        - button "Review & Print" [ref=e122]
+      - generic [ref=e123]:
+        - generic [ref=e124]: Stitch POS v2.0
+        - generic [ref=e125]: Hub Live
+    - main [ref=e127]:
+      - generic [ref=e129]:
+        - generic [ref=e130]:
+          - generic [ref=e131]:
+            - generic [ref=e132]: GV
+            - generic [ref=e134]:
+              - heading "Dashboard" [level=1] [ref=e135]
+              - paragraph [ref=e136]: G. V. MILK AGENCY • Good Evening
+          - generic [ref=e137]:
+            - generic [ref=e138]:
+              - generic [ref=e139]: TODAY
+              - text: Wednesday
+            - button "Create Bill" [ref=e140] [cursor=pointer]
+        - generic [ref=e143]:
+          - generic [ref=e144]:
+            - generic [ref=e145]: Daily Delivery Entry In Progress
+            - paragraph [ref=e148]:
+              - text: Customer Entry •
+              - generic [ref=e149]: 2 item(s)
+              - text: "entered • Total: ₹62.00"
+          - generic [ref=e150]:
+            - button "Resume Entry" [ref=e151]
+            - button "Save Now" [ref=e152] [cursor=pointer]
+            - button "Discard" [ref=e153] [cursor=pointer]
+        - generic [ref=e154]:
+          - generic [ref=e155]:
+            - generic [ref=e156]:
+              - generic [ref=e157]:
+                - heading "Sales Revenue" [level=2] [ref=e158]
+                - paragraph [ref=e159]: Overview of milk & curd billing volume
+              - generic [ref=e160]:
+                - button "Daily" [ref=e161] [cursor=pointer]
+                - button "Weekly" [ref=e162] [cursor=pointer]
+                - button "Monthly" [ref=e163] [cursor=pointer]
+            - generic [ref=e164]:
+              - generic [ref=e165]:
+                - generic [ref=e166]: Counter Sales
+                - text: ₹0.00
+              - generic [ref=e167]:
+                - generic [ref=e168]: Shop Deliveries
+                - text: ₹0.00
+              - generic [ref=e169]:
+                - generic [ref=e170]: Total Volume
+                - text: ₹0.00
+            - img [ref=e172]:
+              - generic [ref=e173]: "0"
+              - generic [ref=e175]: "33"
+              - generic [ref=e177]: "66"
+              - generic [ref=e179]: "100"
+              - generic [ref=e181] [cursor=pointer]: Thu
+              - generic [ref=e184] [cursor=pointer]: Fri
+              - generic [ref=e187] [cursor=pointer]: Sat
+              - generic [ref=e190] [cursor=pointer]: Sun
+              - generic [ref=e193] [cursor=pointer]: Mon
+              - generic [ref=e196] [cursor=pointer]: Tue
+              - generic [ref=e199] [cursor=pointer]: Wed
+          - generic [ref=e202]:
+            - heading "Route Progress" [level=2] [ref=e204]
+            - generic [ref=e210]:
+              - generic [ref=e211]: 0%
+              - generic [ref=e212]: On Track
+            - generic [ref=e218] [cursor=pointer]:
+              - paragraph [ref=e219]: 0 of 0 Outlets Delivered
+              - paragraph [ref=e220]: Live outlet delivery count
+        - generic [ref=e223]:
+          - generic [ref=e224]:
+            - generic [ref=e225]: Today Revenue
+            - paragraph [ref=e226]: ₹0.00
+            - generic [ref=e227]:
+              - generic [ref=e228]: +8.4%
+              - generic [ref=e232]: vs yesterday
+          - generic [ref=e233]:
+            - generic [ref=e234]: Weekly Revenue
+            - paragraph [ref=e235]: ₹0.00
+            - generic [ref=e236]:
+              - generic [ref=e237]: +14.2%
+              - generic [ref=e241]: last 7 days
+          - generic [ref=e242] [cursor=pointer]:
+            - generic [ref=e243]: Today's Invoices
+            - paragraph [ref=e244]: 0 Bills
+            - generic [ref=e245]:
+              - generic [ref=e246]: ● Active POS
+              - generic [ref=e247]: recorded today
+          - generic [ref=e248] [cursor=pointer]:
+            - generic [ref=e249]: Dairy Varieties
+            - paragraph [ref=e250]: 0 Items
+            - generic [ref=e251]:
+              - generic [ref=e252]: All In Stock
+              - generic [ref=e255]: ready to bill
+        - generic [ref=e256]:
+          - generic [ref=e257]:
+            - generic [ref=e258]:
+              - heading "5 Top Products" [level=2] [ref=e259]
+              - generic [ref=e260]: "#1 of 1"
+            - generic [ref=e261]:
+              - generic [ref=e268]:
+                - paragraph [ref=e269]: 0 Sold
+                - paragraph [ref=e270]: Aavin Blue 500ml • ₹20.00
+                - generic [ref=e271]: High Demand
+              - generic [ref=e275]:
+                - button "Previous Top Product" [ref=e276] [cursor=pointer]
+                - button "Next Top Product" [ref=e279] [cursor=pointer]
+            - button "See All Products" [ref=e282] [cursor=pointer]
+          - generic [ref=e286]:
+            - generic [ref=e287]:
+              - heading "Recent Activity" [level=2] [ref=e288]
+              - button "See All" [ref=e289] [cursor=pointer]
+            - generic [ref=e290]: No recent billing transactions found.
+            - button "View Full Ledger Records" [ref=e292] [cursor=pointer]
+  - complementary "Profile Panel" [ref=e296]:
+    - generic [ref=e297]:
+      - generic [ref=e303]:
+        - heading "Profile & Identity" [level=2] [ref=e304]
+        - paragraph [ref=e305]: Business credentials & operator profile
+      - button "Close panel" [ref=e307] [cursor=pointer]
+    - generic [ref=e311]:
+      - generic [ref=e313]:
+        - generic [ref=e314]:
+          - generic "Click to change profile photo" [ref=e315] [cursor=pointer]
+          - button "Upload profile photo" [ref=e339] [cursor=pointer]
+        - generic [ref=e343]:
+          - generic [ref=e344]:
+            - generic [ref=e345]: ACTIVE POS
+            - generic [ref=e347]: Verified Operator
+          - heading "Store Administrator" [level=3] [ref=e351]
+          - paragraph [ref=e352]: G. V. MILK AGENCY
+          - paragraph [ref=e353]: CHENNAI - 600109
+          - button "Upload Photo" [ref=e355] [cursor=pointer]
+          - paragraph [ref=e360]: JPG, PNG or WebP • Auto-crops to circular profile photo
+      - generic [ref=e361]:
+        - generic [ref=e362]:
+          - generic [ref=e367]: "0"
+          - generic [ref=e368]: Today Bills
+        - generic [ref=e369]:
+          - generic [ref=e376]: "0"
+          - generic [ref=e377]: Total Shops
+        - generic [ref=e378]:
+          - generic [ref=e384]: "0"
+          - generic [ref=e385]: Products
+      - generic [ref=e386]:
+        - generic [ref=e387]:
+          - heading "Business Details" [level=4] [ref=e388]
+          - generic [ref=e389]: Prints on receipts
+        - generic [ref=e390]:
+          - generic [ref=e391]: Business Name *
+          - textbox "e.g. G. V. MILK AGENCY" [ref=e398]: G. V. MILK AGENCY
+        - generic [ref=e399]:
+          - generic [ref=e400]: Owner / Manager Name
+          - textbox "e.g. Store Owner / Cashier" [ref=e405]: Store Administrator
+        - generic [ref=e406]:
+          - generic [ref=e407]:
+            - generic [ref=e408]: Mobile / WhatsApp
+            - textbox "e.g. 9840865510" [ref=e412]: "9840865510"
+          - generic [ref=e413]:
+            - generic [ref=e414]: Email Address
+            - textbox "owner@agency.com" [ref=e419]
+        - generic [ref=e420]:
+          - generic [ref=e421]: Street / Area
+          - textbox "e.g. SOLAN NAGAR" [ref=e426]: SOLAN NAGAR
+        - generic [ref=e427]:
+          - generic [ref=e428]:
+            - generic [ref=e429]: City / State / Pincode
+            - textbox "e.g. CHENNAI - 600109" [ref=e430]: CHENNAI - 600109
+          - generic [ref=e431]:
+            - generic [ref=e432]: GSTIN / Tax ID
+            - textbox "Optional GSTIN" [ref=e437]
+        - generic [ref=e438]:
+          - generic [ref=e439]:
+            - generic [ref=e440]: Currency Symbol
+            - combobox [ref=e441]:
+              - option "₹ (INR Rupee)" [selected]
+              - option "$ (USD Dollar)"
+              - option "€ (Euro)"
+              - option "£ (GBP Pound)"
+              - option "AED (Dirham)"
+          - generic [ref=e442]:
+            - generic [ref=e443]: Receipt Paper Size
+            - combobox [ref=e444]:
+              - option "58mm (2-Inch Thermal)" [selected]
+              - option "80mm (3-Inch Thermal)"
+      - generic [ref=e445]:
+        - heading "System Shortcuts" [level=4] [ref=e446]
+        - generic [ref=e447]:
+          - generic [ref=e448]: Interface Theme
+          - button "Light Mode" [ref=e456] [cursor=pointer]
+        - generic [ref=e457]:
+          - generic [ref=e458]: Thermal Printer Setup
+          - button "Configure" [ref=e464] [cursor=pointer]
+      - generic [ref=e469]:
+        - generic [ref=e470]:
+          - generic [ref=e471]: ACTIVE TERMINAL OPERATOR
+          - generic [ref=e472]: Ravi Kumar
+          - generic [ref=e473]: +91 9876543210 • Cashier
+        - button "Sign Out" [ref=e474] [cursor=pointer]
+    - generic [ref=e479]:
+      - button "Save Profile" [ref=e480] [cursor=pointer]
+      - button "Close" [ref=e485] [cursor=pointer]

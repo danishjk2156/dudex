@@ -1,0 +1,364 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e8]:
+        - generic [ref=e10]: history
+        - generic [ref=e11]: "|"
+        - generic [ref=e12]: 09 Sept 2026
+      - generic [ref=e13]:
+        - button "Toggle theme" [ref=e14] [cursor=pointer]
+        - button "Daily Entry 2 (₹62.00)" [ref=e17] [cursor=pointer]:
+          - generic [ref=e22]: Daily Entry
+          - generic [ref=e23]: "2"
+          - generic [ref=e24]: (₹62.00)
+        - button "Open profile panel" [ref=e25] [cursor=pointer]:
+          - generic [ref=e49]: Ravi
+  - generic [ref=e51]:
+    - complementary [ref=e52]:
+      - generic [ref=e60]:
+        - heading "G. V. MILK AGENCY" [level=2] [ref=e61]
+        - paragraph [ref=e62]: CHENNAI - 600109 Hub
+      - generic [ref=e63]:
+        - paragraph [ref=e64]: MAIN MENU
+        - button "Dashboard" [ref=e65] [cursor=pointer]
+        - button "Billing 2" [ref=e73] [cursor=pointer]:
+          - generic [ref=e74]: Billing
+          - generic [ref=e79]: "2"
+        - button "Brands" [ref=e80] [cursor=pointer]
+        - button "Products" [ref=e87] [cursor=pointer]
+        - button "Shops" [ref=e94] [cursor=pointer]
+        - button "Bill History" [ref=e102] [cursor=pointer]
+        - button "Settings" [ref=e109] [cursor=pointer]
+      - generic [ref=e115]:
+        - generic [ref=e116]:
+          - generic [ref=e117]: Active Bill
+          - generic [ref=e118]: 2 item(s)
+        - generic [ref=e119]:
+          - generic [ref=e120]: "Total:"
+          - generic [ref=e121]: ₹62.00
+        - button "Review & Print" [ref=e122]
+      - generic [ref=e123]:
+        - generic [ref=e124]: Stitch POS v2.0
+        - generic [ref=e125]: Hub Live
+    - main [ref=e127]:
+      - generic [ref=e500]:
+        - generic [ref=e501]:
+          - generic [ref=e502]:
+            - heading "Bill History & Records" [level=2] [ref=e508]
+            - paragraph [ref=e509]: Search by bill number, date, amount, or product details. View, re-share, or re-print past bills.
+          - button "Create New Bill" [ref=e510] [cursor=pointer]
+        - generic [ref=e516]:
+          - button "All Bills" [ref=e517] [cursor=pointer]
+          - button "Today's Bills" [ref=e518] [cursor=pointer]
+          - button "Yesterday" [ref=e519] [cursor=pointer]
+          - button "Last 7 Days" [ref=e520] [cursor=pointer]
+          - button "Last 30 Days" [ref=e521] [cursor=pointer]
+          - button "Custom Range..." [ref=e522] [cursor=pointer]
+        - 'textbox "Search by Bill #, Customer name/phone, product name..." [ref=e524]'
+        - generic [ref=e525]:
+          - generic [ref=e526]:
+            - generic [ref=e527]: Total Bills Found
+            - generic [ref=e528]: 1 bills
+          - generic [ref=e529]:
+            - generic [ref=e530]: Total Quantity Sold
+            - generic [ref=e531]: 4 units
+          - generic [ref=e532]:
+            - generic [ref=e533]: Total Revenue
+            - text: ₹88.20
+        - generic [ref=e535] [cursor=pointer]:
+          - generic [ref=e536]:
+            - generic [ref=e537]: "#0001"
+            - generic [ref=e538]:
+              - generic [ref=e539]:
+                - 'heading "Bill #0001" [level=3] [ref=e540]'
+                - generic [ref=e541]: Walk-in Retail Customer
+                - generic [ref=e711]: Fully Paid
+              - generic [ref=e545]:
+                - generic [ref=e546]: 08/09/26 at 14:13
+                - generic [ref=e550]: •
+                - generic [ref=e551]: 2 item(s)
+                - generic [ref=e552]: •
+                - generic [ref=e553]: 4 total units
+              - generic [ref=e554]: "Items: Aavin Blue (x2), Aavin Green (x2)"
+          - generic [ref=e555]:
+            - generic [ref=e556]:
+              - generic [ref=e557]: ₹88.20
+              - generic [ref=e558]: 2 line item(s)
+            - generic [ref=e559]:
+              - 'button "Download PDF for Bill #0001" [ref=e560]'
+              - 'button "Print Receipt for Bill #0001" [ref=e564]'
+              - 'button "Update Bill #0001" [ref=e569]'
+              - 'button "Delete Bill #0001" [ref=e572]'
+  - complementary "Profile Panel" [ref=e296]:
+    - generic [ref=e297]:
+      - generic [ref=e303]:
+        - heading "Profile & Identity" [level=2] [ref=e304]
+        - paragraph [ref=e305]: Business credentials & operator profile
+      - button "Close panel" [ref=e307] [cursor=pointer]
+    - generic [ref=e311]:
+      - generic [ref=e313]:
+        - generic [ref=e314]:
+          - generic "Click to change profile photo" [ref=e315] [cursor=pointer]
+          - button "Upload profile photo" [ref=e339] [cursor=pointer]
+        - generic [ref=e343]:
+          - generic [ref=e344]:
+            - generic [ref=e345]: ACTIVE POS
+            - generic [ref=e347]: Verified Operator
+          - heading "Store Administrator" [level=3] [ref=e351]
+          - paragraph [ref=e352]: G. V. MILK AGENCY
+          - paragraph [ref=e353]: CHENNAI - 600109
+          - button "Upload Photo" [ref=e355] [cursor=pointer]
+          - paragraph [ref=e360]: JPG, PNG or WebP • Auto-crops to circular profile photo
+      - generic [ref=e361]:
+        - generic [ref=e362]:
+          - generic [ref=e367]: "0"
+          - generic [ref=e368]: Today Bills
+        - generic [ref=e369]:
+          - generic [ref=e376]: "5"
+          - generic [ref=e377]: Total Shops
+        - generic [ref=e378]:
+          - generic [ref=e384]: "8"
+          - generic [ref=e385]: Products
+      - generic [ref=e386]:
+        - generic [ref=e387]:
+          - heading "Business Details" [level=4] [ref=e388]
+          - generic [ref=e389]: Prints on receipts
+        - generic [ref=e390]:
+          - generic [ref=e391]: Business Name *
+          - textbox "e.g. G. V. MILK AGENCY" [ref=e398]: G. V. MILK AGENCY
+        - generic [ref=e399]:
+          - generic [ref=e400]: Owner / Manager Name
+          - textbox "e.g. Store Owner / Cashier" [ref=e405]: Store Administrator
+        - generic [ref=e406]:
+          - generic [ref=e407]:
+            - generic [ref=e408]: Mobile / WhatsApp
+            - textbox "e.g. 9840865510" [ref=e412]: "9840865510"
+          - generic [ref=e413]:
+            - generic [ref=e414]: Email Address
+            - textbox "owner@agency.com" [ref=e419]
+        - generic [ref=e420]:
+          - generic [ref=e421]: Street / Area
+          - textbox "e.g. SOLAN NAGAR" [ref=e426]: SOLAN NAGAR
+        - generic [ref=e427]:
+          - generic [ref=e428]:
+            - generic [ref=e429]: City / State / Pincode
+            - textbox "e.g. CHENNAI - 600109" [ref=e430]: CHENNAI - 600109
+          - generic [ref=e431]:
+            - generic [ref=e432]: GSTIN / Tax ID
+            - textbox "Optional GSTIN" [ref=e437]
+        - generic [ref=e438]:
+          - generic [ref=e439]:
+            - generic [ref=e440]: Currency Symbol
+            - combobox [ref=e441]:
+              - option "₹ (INR Rupee)" [selected]
+              - option "$ (USD Dollar)"
+              - option "€ (Euro)"
+              - option "£ (GBP Pound)"
+              - option "AED (Dirham)"
+          - generic [ref=e442]:
+            - generic [ref=e443]: Receipt Paper Size
+            - combobox [ref=e444]:
+              - option "58mm (2-Inch Thermal)" [selected]
+              - option "80mm (3-Inch Thermal)"
+      - generic [ref=e445]:
+        - heading "System Shortcuts" [level=4] [ref=e446]
+        - generic [ref=e447]:
+          - generic [ref=e448]: Interface Theme
+          - button "Light Mode" [ref=e456] [cursor=pointer]
+        - generic [ref=e457]:
+          - generic [ref=e458]: Thermal Printer Setup
+          - button "Configure" [ref=e464] [cursor=pointer]
+      - generic [ref=e469]:
+        - generic [ref=e470]:
+          - generic [ref=e471]: ACTIVE TERMINAL OPERATOR
+          - generic [ref=e472]: Ravi Kumar
+          - generic [ref=e473]: +91 9876543210 • Cashier
+        - button "Sign Out" [ref=e474] [cursor=pointer]
+    - generic [ref=e479]:
+      - button "Save Profile" [ref=e480] [cursor=pointer]
+      - button "Close" [ref=e485] [cursor=pointer]
+  - generic [ref=e722]:
+    - generic [ref=e723]:
+      - generic [ref=e724]:
+        - generic [ref=e730]:
+          - 'heading "Receipt #0001" [level=3] [ref=e731]'
+          - paragraph [ref=e732]: Thermal POS Print Preview
+        - generic [ref=e733]:
+          - button "Update" [active] [ref=e734] [cursor=pointer]
+          - button [ref=e738] [cursor=pointer]
+      - generic [ref=e742]:
+        - generic "Thermal Printer Ejection Slot" [ref=e743]
+        - generic [ref=e745]:
+          - generic [ref=e746]:
+            - heading "G. V. MILK AGENCY" [level=2] [ref=e747]
+            - paragraph [ref=e748]: SOLAN NAGAR
+            - paragraph [ref=e749]: CHENNAI - 600109
+            - paragraph [ref=e750]: MOB. 9840865510
+          - generic [ref=e751]:
+            - generic [ref=e752]:
+              - generic [ref=e753]: "BILL NO: 0001"
+              - generic [ref=e754]: "DATE: 08/09/26"
+            - generic [ref=e755]:
+              - generic [ref=e756]: "CUST: Walk-in Retail Customer"
+              - generic [ref=e757]: "TIME: 14:13"
+          - generic [ref=e759]:
+            - generic [ref=e760]: ITEM NAME
+            - generic [ref=e761]: QTY
+            - generic [ref=e762]: PRICE
+            - generic [ref=e763]: AMOUNT
+          - generic [ref=e764]:
+            - generic [ref=e765]:
+              - generic [ref=e766]: Aavin Blue
+              - generic [ref=e767]: "2"
+              - generic [ref=e768]: "20.00"
+              - generic [ref=e769]: "40.00"
+            - generic [ref=e770]:
+              - generic [ref=e771]: Aavin Green
+              - generic [ref=e772]: "2"
+              - generic [ref=e773]: "22.00"
+              - generic [ref=e774]: "44.00"
+          - generic [ref=e775]:
+            - generic [ref=e776]:
+              - generic [ref=e777]: "TOTAL ITEM(S): 2"
+              - generic [ref=e778]: "QTY: 4"
+            - generic [ref=e779]:
+              - generic [ref=e780]: "SUBTOTAL:"
+              - generic [ref=e781]: ₹84.00
+            - generic [ref=e782]:
+              - generic [ref=e783]: "GST (5%):"
+              - generic [ref=e784]: +₹4.20
+            - generic [ref=e785]:
+              - generic [ref=e786]: "CGST (2.5%):"
+              - generic [ref=e787]: ₹2.10
+            - generic [ref=e788]:
+              - generic [ref=e789]: "SGST (2.5%):"
+              - generic [ref=e790]: ₹2.10
+            - generic [ref=e791]:
+              - generic [ref=e792]: "CURRENT BILL:"
+              - generic [ref=e793]: ₹88.20
+            - generic [ref=e794]:
+              - generic [ref=e795]: "TOTAL PAYABLE:"
+              - generic [ref=e796]: ₹88.20
+            - generic [ref=e797]:
+              - generic [ref=e798]:
+                - generic [ref=e799]: "STATUS:"
+                - generic [ref=e800]: FULLY PAID
+              - generic [ref=e801]:
+                - generic [ref=e802]: "PAID:"
+                - generic [ref=e803]: ₹88.20
+              - generic [ref=e804]:
+                - generic [ref=e805]: "BALANCE DUE:"
+                - generic [ref=e806]: ₹0.00
+          - generic [ref=e807]:
+            - paragraph [ref=e808]: ═════════════════════════
+            - paragraph [ref=e809]: THANK YOU! VISIT AGAIN
+            - paragraph [ref=e810]: ═════════════════════════
+      - generic [ref=e812]:
+        - button "Save" [ref=e813] [cursor=pointer]
+        - button "Share" [ref=e819] [cursor=pointer]
+        - button "Print" [ref=e827] [cursor=pointer]
+        - button "New Bill" [ref=e833] [cursor=pointer]
+    - generic [ref=e838]:
+      - generic [ref=e839]:
+        - generic [ref=e845]:
+          - generic [ref=e846]:
+            - heading "Update Bill Record" [level=3] [ref=e847]
+            - generic [ref=e848]: "#0001"
+          - paragraph [ref=e849]: Modify items, customer information, rates, or payment details.
+        - button "Close" [ref=e850] [cursor=pointer]
+      - generic [ref=e854]:
+        - generic [ref=e855]:
+          - generic [ref=e856]:
+            - generic [ref=e857]: Bill Date
+            - textbox [ref=e859]: 2026-09-08
+          - generic [ref=e860]:
+            - generic [ref=e861]: Customer Type
+            - generic [ref=e862]:
+              - button "Registered Shop" [ref=e863] [cursor=pointer]
+              - button "Custom / Retail" [ref=e864] [cursor=pointer]
+        - generic [ref=e865]:
+          - generic [ref=e866]:
+            - generic [ref=e867]: Customer / Business Name
+            - textbox "Enter customer name..." [ref=e869]: Walk-in Retail Customer
+          - generic [ref=e870]:
+            - generic [ref=e871]: Customer Phone Number
+            - textbox "10-digit phone number" [ref=e873]
+        - generic [ref=e874]:
+          - generic [ref=e875]:
+            - generic [ref=e876]: Bill Line Items (2)
+            - generic [ref=e881]: "Total Units: 4"
+          - generic [ref=e882]:
+            - generic [ref=e883]:
+              - generic [ref=e884]:
+                - paragraph [ref=e885]: Aavin Blue
+                - text: Packet
+              - generic [ref=e886]:
+                - generic [ref=e887]: Rate (₹)
+                - spinbutton [ref=e888]: "20"
+              - generic [ref=e889]:
+                - generic [ref=e890]: Qty
+                - generic [ref=e891]:
+                  - button "-" [ref=e892] [cursor=pointer]
+                  - spinbutton [ref=e893]: "2"
+                  - button "+" [ref=e894] [cursor=pointer]
+              - generic [ref=e895]:
+                - generic [ref=e896]: Total
+                - text: ₹40.00
+              - button "Remove item" [ref=e897] [cursor=pointer]
+            - generic [ref=e901]:
+              - generic [ref=e902]:
+                - paragraph [ref=e903]: Aavin Green
+                - text: Packet
+              - generic [ref=e904]:
+                - generic [ref=e905]: Rate (₹)
+                - spinbutton [ref=e906]: "22"
+              - generic [ref=e907]:
+                - generic [ref=e908]: Qty
+                - generic [ref=e909]:
+                  - button "-" [ref=e910] [cursor=pointer]
+                  - spinbutton [ref=e911]: "2"
+                  - button "+" [ref=e912] [cursor=pointer]
+              - generic [ref=e913]:
+                - generic [ref=e914]: Total
+                - text: ₹44.00
+              - button "Remove item" [ref=e915] [cursor=pointer]
+          - generic [ref=e919]:
+            - combobox [ref=e920]:
+              - option "Aavin" [selected]
+              - option "Hatsun"
+              - option "Heritage"
+              - option "Milky Mist"
+            - combobox [ref=e921]:
+              - option "-- Select Product --"
+              - option "Aavin Blue (₹20.00)" [selected]
+              - option "Aavin Green (₹22.00)"
+              - option "Aavin Orange (₹30.00)"
+            - spinbutton "Qty" [ref=e922]: "1"
+            - button "Add" [ref=e923] [cursor=pointer]
+        - generic [ref=e926]:
+          - generic [ref=e927]:
+            - generic [ref=e928]: "Items Subtotal:"
+            - generic [ref=e929]: ₹84.00
+          - generic [ref=e930]:
+            - generic [ref=e931]: "GST (5%):"
+            - generic [ref=e932]: +₹4.20
+          - generic [ref=e933]:
+            - generic [ref=e934]: "Bill Items Total:"
+            - generic [ref=e935]: ₹88.20
+          - generic [ref=e936]:
+            - generic [ref=e937]: "Previous Balance Due:"
+            - generic [ref=e938]:
+              - generic [ref=e939]: ₹
+              - spinbutton [ref=e940]: "0"
+          - generic [ref=e941]:
+            - generic [ref=e942]: "Net Total Payable:"
+            - generic [ref=e943]: ₹88.20
+        - generic [ref=e944]:
+          - generic [ref=e945]: Payment Status & Reconciliation
+          - generic [ref=e946]:
+            - button "Fully Paid" [ref=e947] [cursor=pointer]
+            - button "Partial Paid" [ref=e952] [cursor=pointer]
+            - button "Unpaid (Credit)" [ref=e959] [cursor=pointer]
+      - generic [ref=e964]:
+        - button "Cancel" [ref=e965] [cursor=pointer]
+        - button "Save Changes" [ref=e966] [cursor=pointer]

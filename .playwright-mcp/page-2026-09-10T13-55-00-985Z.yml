@@ -1,0 +1,269 @@
+- generic [ref=f7e3]:
+  - banner [ref=f7e4]:
+    - generic [ref=f7e5]:
+      - generic [ref=f7e8]:
+        - generic [ref=f7e10]: products
+        - generic [ref=f7e11]: "|"
+        - generic [ref=f7e12]: 10 Sept 2026
+      - generic [ref=f7e13]:
+        - button "Toggle theme" [ref=f7e14] [cursor=pointer]
+        - button "Daily Entry" [ref=f7e21] [cursor=pointer]
+        - button "Open profile panel" [ref=f7e27] [cursor=pointer]:
+          - generic [ref=f7e51]: Ravi
+  - generic [ref=f7e53]:
+    - complementary [ref=f7e54]:
+      - generic [ref=f7e62]:
+        - heading "G. V. MILK AGENCY" [level=2] [ref=f7e63]
+        - paragraph [ref=f7e64]: CHENNAI - 600109 Hub
+      - generic [ref=f7e65]:
+        - paragraph [ref=f7e66]: MAIN MENU
+        - button "Dashboard" [ref=f7e67] [cursor=pointer]
+        - button "Billing" [ref=f7e75] [cursor=pointer]
+        - button "Brands" [ref=f7e81] [cursor=pointer]
+        - button "Products" [active] [ref=f7e88] [cursor=pointer]
+        - button "Shops" [ref=f7e95] [cursor=pointer]
+        - button "Bill History" [ref=f7e103] [cursor=pointer]
+        - button "Settings" [ref=f7e110] [cursor=pointer]
+      - generic [ref=f7e116]:
+        - generic [ref=f7e117]: Stitch POS v2.0
+        - generic [ref=f7e118]: Hub Live
+    - main [ref=f7e120]:
+      - generic [ref=f7e614]:
+        - generic [ref=f7e615]:
+          - generic [ref=f7e616]:
+            - heading "Product & Rate Management" [level=2] [ref=f7e622]
+            - paragraph [ref=f7e623]: Add products with selling price, unit type, brand association & active status.
+          - button "Create Product" [ref=f7e624] [cursor=pointer]
+        - generic [ref=f7e627]:
+          - generic [ref=f7e628]:
+            - button "All Brands (8)" [ref=f7e629] [cursor=pointer]
+            - button "Aavin 3" [ref=f7e630] [cursor=pointer]:
+              - generic [ref=f7e631]: Aavin
+              - generic [ref=f7e632]: "3"
+            - button "Hatsun 1" [ref=f7e633] [cursor=pointer]:
+              - generic [ref=f7e634]: Hatsun
+              - generic [ref=f7e635]: "1"
+            - button "Heritage 2" [ref=f7e636] [cursor=pointer]:
+              - generic [ref=f7e637]: Heritage
+              - generic [ref=f7e638]: "2"
+            - button "Milky Mist 2" [ref=f7e639] [cursor=pointer]:
+              - generic [ref=f7e640]: Milky Mist
+              - generic [ref=f7e641]: "2"
+          - textbox "Search products by name or brand..." [ref=f7e643]
+        - generic [ref=f7e644]:
+          - generic [ref=f7e645]:
+            - generic [ref=f7e646]:
+              - generic [ref=f7e647]:
+                - generic [ref=f7e648]: Aavin
+                - generic [ref=f7e654]: Active
+              - heading "Aavin Blue" [level=3] [ref=f7e656]
+              - paragraph [ref=f7e657]: "Unit: Packet"
+            - generic [ref=f7e658]:
+              - generic [ref=f7e659]:
+                - generic [ref=f7e660]: Selling Price
+                - generic "Click to quickly edit rate" [ref=f7e661] [cursor=pointer]:
+                  - generic [ref=f7e662]: ₹20.00
+                  - generic [ref=f7e663]: (edit)
+              - generic [ref=f7e664]:
+                - button "Edit Aavin Blue" [ref=f7e665] [cursor=pointer]
+                - button "Delete Aavin Blue" [ref=f7e668] [cursor=pointer]
+          - generic [ref=f7e672]:
+            - generic [ref=f7e673]:
+              - generic [ref=f7e674]:
+                - generic [ref=f7e675]: Aavin
+                - generic [ref=f7e681]: Active
+              - heading "Aavin Green" [level=3] [ref=f7e683]
+              - paragraph [ref=f7e684]: "Unit: Packet"
+            - generic [ref=f7e685]:
+              - generic [ref=f7e686]:
+                - generic [ref=f7e687]: Selling Price
+                - generic "Click to quickly edit rate" [ref=f7e688] [cursor=pointer]:
+                  - generic [ref=f7e689]: ₹22.00
+                  - generic [ref=f7e690]: (edit)
+              - generic [ref=f7e691]:
+                - button "Edit Aavin Green" [ref=f7e692] [cursor=pointer]
+                - button "Delete Aavin Green" [ref=f7e695] [cursor=pointer]
+          - generic [ref=f7e699]:
+            - generic [ref=f7e700]:
+              - generic [ref=f7e701]:
+                - generic [ref=f7e702]: Aavin
+                - generic [ref=f7e708]: Active
+              - heading "Aavin Orange" [level=3] [ref=f7e710]
+              - paragraph [ref=f7e711]: "Unit: Packet"
+            - generic [ref=f7e712]:
+              - generic [ref=f7e713]:
+                - generic [ref=f7e714]: Selling Price
+                - generic "Click to quickly edit rate" [ref=f7e715] [cursor=pointer]:
+                  - generic [ref=f7e716]: ₹30.00
+                  - generic [ref=f7e717]: (edit)
+              - generic [ref=f7e718]:
+                - button "Edit Aavin Orange" [ref=f7e719] [cursor=pointer]
+                - button "Delete Aavin Orange" [ref=f7e722] [cursor=pointer]
+          - generic [ref=f7e726]:
+            - generic [ref=f7e727]:
+              - generic [ref=f7e728]:
+                - generic [ref=f7e729]: Heritage
+                - generic [ref=f7e735]: Active
+              - heading "Heritage Curd" [level=3] [ref=f7e737]
+              - paragraph [ref=f7e738]: "Unit: Packet"
+            - generic [ref=f7e739]:
+              - generic [ref=f7e740]:
+                - generic [ref=f7e741]: Selling Price
+                - generic "Click to quickly edit rate" [ref=f7e742] [cursor=pointer]:
+                  - generic [ref=f7e743]: ₹9.00
+                  - generic [ref=f7e744]: (edit)
+              - generic [ref=f7e745]:
+                - button "Edit Heritage Curd" [ref=f7e746] [cursor=pointer]
+                - button "Delete Heritage Curd" [ref=f7e749] [cursor=pointer]
+          - generic [ref=f7e753]:
+            - generic [ref=f7e754]:
+              - generic [ref=f7e755]:
+                - generic [ref=f7e756]: Heritage
+                - generic [ref=f7e762]: Active
+              - heading "Heritage TM" [level=3] [ref=f7e764]
+              - paragraph [ref=f7e765]: "Unit: Packet"
+            - generic [ref=f7e766]:
+              - generic [ref=f7e767]:
+                - generic [ref=f7e768]: Selling Price
+                - generic "Click to quickly edit rate" [ref=f7e769] [cursor=pointer]:
+                  - generic [ref=f7e770]: ₹24.00
+                  - generic [ref=f7e771]: (edit)
+              - generic [ref=f7e772]:
+                - button "Edit Heritage TM" [ref=f7e773] [cursor=pointer]
+                - button "Delete Heritage TM" [ref=f7e776] [cursor=pointer]
+          - generic [ref=f7e780]:
+            - generic [ref=f7e781]:
+              - generic [ref=f7e782]:
+                - generic [ref=f7e783]: Hatsun
+                - generic [ref=f7e789]: Active
+              - heading "Supergold" [level=3] [ref=f7e791]
+              - paragraph [ref=f7e792]: "Unit: Packet"
+            - generic [ref=f7e793]:
+              - generic [ref=f7e794]:
+                - generic [ref=f7e795]: Selling Price
+                - generic "Click to quickly edit rate" [ref=f7e796] [cursor=pointer]:
+                  - generic [ref=f7e797]: ₹33.00
+                  - generic [ref=f7e798]: (edit)
+              - generic [ref=f7e799]:
+                - button "Edit Supergold" [ref=f7e800] [cursor=pointer]
+                - button "Delete Supergold" [ref=f7e803] [cursor=pointer]
+          - generic [ref=f7e807]:
+            - generic [ref=f7e808]:
+              - generic [ref=f7e809]:
+                - generic [ref=f7e810]: Milky Mist
+                - generic [ref=f7e816]: Active
+              - heading "Milky Mist Paneer 200g" [level=3] [ref=f7e818]
+              - paragraph [ref=f7e819]: "Unit: Piece"
+            - generic [ref=f7e820]:
+              - generic [ref=f7e821]:
+                - generic [ref=f7e822]: Selling Price
+                - generic "Click to quickly edit rate" [ref=f7e823] [cursor=pointer]:
+                  - generic [ref=f7e824]: ₹95.00
+                  - generic [ref=f7e825]: (edit)
+              - generic [ref=f7e826]:
+                - button "Edit Milky Mist Paneer 200g" [ref=f7e827] [cursor=pointer]
+                - button "Delete Milky Mist Paneer 200g" [ref=f7e830] [cursor=pointer]
+          - generic [ref=f7e834]:
+            - generic [ref=f7e835]:
+              - generic [ref=f7e836]:
+                - generic [ref=f7e837]: Milky Mist
+                - generic [ref=f7e843]: Active
+              - heading "Milky Mist Curd 500g" [level=3] [ref=f7e845]
+              - paragraph [ref=f7e846]: "Unit: Pouch"
+            - generic [ref=f7e847]:
+              - generic [ref=f7e848]:
+                - generic [ref=f7e849]: Selling Price
+                - generic "Click to quickly edit rate" [ref=f7e850] [cursor=pointer]:
+                  - generic [ref=f7e851]: ₹45.00
+                  - generic [ref=f7e852]: (edit)
+              - generic [ref=f7e853]:
+                - button "Edit Milky Mist Curd 500g" [ref=f7e854] [cursor=pointer]
+                - button "Delete Milky Mist Curd 500g" [ref=f7e857] [cursor=pointer]
+  - complementary "Profile Panel" [ref=f7e278]:
+    - generic [ref=f7e279]:
+      - generic [ref=f7e285]:
+        - heading "Profile & Identity" [level=2] [ref=f7e286]
+        - paragraph [ref=f7e287]: Business credentials & operator profile
+      - button "Close panel" [ref=f7e289] [cursor=pointer]
+    - generic [ref=f7e293]:
+      - generic [ref=f7e295]:
+        - generic [ref=f7e296]:
+          - generic "Click to change profile photo" [ref=f7e297] [cursor=pointer]
+          - button "Upload profile photo" [ref=f7e321] [cursor=pointer]
+        - generic [ref=f7e325]:
+          - generic [ref=f7e326]:
+            - generic [ref=f7e327]: ACTIVE POS
+            - generic [ref=f7e329]: Verified Operator
+          - heading "Store Administrator" [level=3] [ref=f7e333]
+          - paragraph [ref=f7e334]: G. V. MILK AGENCY
+          - paragraph [ref=f7e335]: CHENNAI - 600109
+          - button "Upload Photo" [ref=f7e337] [cursor=pointer]
+          - paragraph [ref=f7e342]: JPG, PNG or WebP • Auto-crops to circular profile photo
+      - generic [ref=f7e343]:
+        - generic [ref=f7e344]:
+          - generic [ref=f7e349]: "0"
+          - generic [ref=f7e350]: Today Bills
+        - generic [ref=f7e351]:
+          - generic [ref=f7e358]: "5"
+          - generic [ref=f7e359]: Total Shops
+        - generic [ref=f7e360]:
+          - generic [ref=f7e366]: "8"
+          - generic [ref=f7e367]: Products
+      - generic [ref=f7e368]:
+        - generic [ref=f7e369]:
+          - heading "Business Details" [level=4] [ref=f7e370]
+          - generic [ref=f7e371]: Prints on receipts
+        - generic [ref=f7e372]:
+          - generic [ref=f7e373]: Business Name *
+          - textbox "e.g. G. V. MILK AGENCY" [ref=f7e380]: G. V. MILK AGENCY
+        - generic [ref=f7e381]:
+          - generic [ref=f7e382]: Owner / Manager Name
+          - textbox "e.g. Store Owner / Cashier" [ref=f7e387]: Store Administrator
+        - generic [ref=f7e388]:
+          - generic [ref=f7e389]:
+            - generic [ref=f7e390]: Mobile / WhatsApp
+            - textbox "e.g. 9840865510" [ref=f7e394]: "9840865510"
+          - generic [ref=f7e395]:
+            - generic [ref=f7e396]: Email Address
+            - textbox "owner@agency.com" [ref=f7e401]
+        - generic [ref=f7e402]:
+          - generic [ref=f7e403]: Street / Area
+          - textbox "e.g. SOLAN NAGAR" [ref=f7e408]: SOLAN NAGAR
+        - generic [ref=f7e409]:
+          - generic [ref=f7e410]:
+            - generic [ref=f7e411]: City / State / Pincode
+            - textbox "e.g. CHENNAI - 600109" [ref=f7e412]: CHENNAI - 600109
+          - generic [ref=f7e413]:
+            - generic [ref=f7e414]: GSTIN / Tax ID
+            - textbox "Optional GSTIN" [ref=f7e419]
+        - generic [ref=f7e420]:
+          - generic [ref=f7e421]:
+            - generic [ref=f7e422]: Currency Symbol
+            - combobox [ref=f7e423]:
+              - option "₹ (INR Rupee)" [selected]
+              - option "$ (USD Dollar)"
+              - option "€ (Euro)"
+              - option "£ (GBP Pound)"
+              - option "AED (Dirham)"
+          - generic [ref=f7e424]:
+            - generic [ref=f7e425]: Receipt Paper Size
+            - combobox [ref=f7e426]:
+              - option "58mm (2-Inch Thermal)" [selected]
+              - option "80mm (3-Inch Thermal)"
+      - generic [ref=f7e427]:
+        - heading "System Shortcuts" [level=4] [ref=f7e428]
+        - generic [ref=f7e429]:
+          - generic [ref=f7e430]: Interface Theme
+          - button "Dark Mode" [ref=f7e434] [cursor=pointer]
+        - generic [ref=f7e435]:
+          - generic [ref=f7e436]: Thermal Printer Setup
+          - button "Configure" [ref=f7e442] [cursor=pointer]
+      - generic [ref=f7e447]:
+        - generic [ref=f7e448]:
+          - generic [ref=f7e449]: ACTIVE TERMINAL OPERATOR
+          - generic [ref=f7e450]: Ravi Kumar
+          - generic [ref=f7e451]: +91 9876543210 • Cashier
+        - button "Sign Out" [ref=f7e452] [cursor=pointer]
+    - generic [ref=f7e457]:
+      - button "Save Profile" [ref=f7e458] [cursor=pointer]
+      - button "Close" [ref=f7e463] [cursor=pointer]

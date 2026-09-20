@@ -1,0 +1,191 @@
+- generic [ref=f13e512]:
+  - banner [ref=f13e513]:
+    - generic [ref=f13e514]:
+      - generic [ref=f13e517]:
+        - generic [ref=f13e519]: settings
+        - generic [ref=f13e520]: "|"
+        - generic [ref=f13e521]: 10 Sept 2026
+      - generic [ref=f13e522]:
+        - button "Toggle theme" [ref=f13e523] [cursor=pointer]
+        - button "Daily Entry" [ref=f13e530] [cursor=pointer]
+        - button "Open profile panel" [ref=f13e536] [cursor=pointer]:
+          - generic [ref=f13e560]: Ravi
+  - generic [ref=f13e562]:
+    - complementary [ref=f13e563]:
+      - generic [ref=f13e571]:
+        - heading "G. V. MILK AGENCY" [level=2] [ref=f13e572]
+        - paragraph [ref=f13e573]: CHENNAI - 600109 Hub
+      - generic [ref=f13e574]:
+        - paragraph [ref=f13e575]: MAIN MENU
+        - button "Dashboard" [ref=f13e576] [cursor=pointer]
+        - button "Billing" [ref=f13e584] [cursor=pointer]
+        - button "Brands" [ref=f13e590] [cursor=pointer]
+        - button "Products" [ref=f13e597] [cursor=pointer]
+        - button "Shops" [ref=f13e604] [cursor=pointer]
+        - button "Bill History" [ref=f13e612] [cursor=pointer]
+        - button "Settings" [active] [ref=f13e619] [cursor=pointer]
+      - generic [ref=f13e625]:
+        - generic [ref=f13e626]: Stitch POS v2.0
+        - generic [ref=f13e627]: Hub Live
+    - main [ref=f13e629]:
+      - generic [ref=f13e631]:
+        - generic [ref=f13e632]:
+          - heading "Business & POS Settings" [level=2] [ref=f13e637]
+          - paragraph [ref=f13e638]: Configure appearance & dark mode, business details for thermal receipts, Bluetooth printer, and backups.
+        - generic [ref=f13e639]:
+          - heading "Appearance & Theme" [level=3] [ref=f13e643]
+          - paragraph [ref=f13e644]: Choose your interface theme. Dark mode provides superior comfort in low-light environments and reduces battery consumption on OLED displays.
+          - generic [ref=f13e645]:
+            - button "Light Theme Clean neutral canvas" [ref=f13e646] [cursor=pointer]:
+              - generic [ref=f13e654]:
+                - generic [ref=f13e655]: Light Theme
+                - generic [ref=f13e656]: Clean neutral canvas
+            - button "Dark Mode Deep obsidian & emerald" [ref=f13e657] [cursor=pointer]:
+              - generic [ref=f13e661]:
+                - generic [ref=f13e662]: Dark Mode
+                - generic [ref=f13e663]: Deep obsidian & emerald
+            - button "Sync with System Match OS preference" [ref=f13e664] [cursor=pointer]:
+              - generic [ref=f13e668]:
+                - generic [ref=f13e669]: Sync with System
+                - generic [ref=f13e670]: Match OS preference
+        - generic [ref=f13e671]:
+          - heading "Business / Agency Receipt Header" [level=3] [ref=f13e678]
+          - generic [ref=f13e679]:
+            - generic [ref=f13e681]:
+              - generic [ref=f13e682]:
+                - button "Upload Logo" [ref=f13e683] [cursor=pointer]
+                - generic [ref=f13e689]:
+                  - generic [ref=f13e690]:
+                    - heading "Business / Store Logo" [level=4] [ref=f13e691]
+                    - generic [ref=f13e692]: Optional
+                  - paragraph [ref=f13e693]: Displayed on thermal receipts, downloadable PDF bills, and navigation header.
+                  - button "Upload Image" [ref=f13e695] [cursor=pointer]
+              - generic [ref=f13e700]:
+                - generic [ref=f13e701]: PNG, JPG, SVG or WEBP
+                - generic [ref=f13e702]: Max 5MB • Auto-optimized
+            - generic [ref=f13e703]:
+              - generic [ref=f13e704]:
+                - generic [ref=f13e705]: Business / Agency Name *
+                - textbox "e.g. G. V. MILK AGENCY" [ref=f13e706]: G. V. MILK AGENCY
+              - generic [ref=f13e707]:
+                - generic [ref=f13e708]: Contact Phone / Mobile *
+                - textbox "e.g. 9840865510" [ref=f13e709]: "9840865510"
+            - generic [ref=f13e710]:
+              - generic [ref=f13e711]:
+                - generic [ref=f13e712]: Address / Street Line
+                - textbox "e.g. SOLAN NAGAR" [ref=f13e713]: SOLAN NAGAR
+              - generic [ref=f13e714]:
+                - generic [ref=f13e715]: Area / Locality
+                - textbox "e.g. SOLAN NAGAR" [ref=f13e716]: SOLAN NAGAR
+              - generic [ref=f13e717]:
+                - generic [ref=f13e718]: City & PIN Code
+                - textbox "e.g. CHENNAI - 600109" [ref=f13e719]: CHENNAI - 600109
+            - generic [ref=f13e720]:
+              - generic [ref=f13e721]:
+                - generic [ref=f13e722]: GSTIN / Tax ID (Optional)
+                - textbox "e.g. 33AAAAA0000A1Z5" [ref=f13e723]
+              - generic [ref=f13e724]:
+                - generic [ref=f13e725]: GST Rate (%)
+                - spinbutton "5" [ref=f13e726]
+              - generic [ref=f13e727]:
+                - generic [ref=f13e728]: Thermal Paper Width
+                - combobox [ref=f13e729]:
+                  - option "58mm (Standard 2-inch)" [selected]
+                  - option "80mm (Wide 3-inch)"
+            - button "Save Business Details" [ref=f13e731] [cursor=pointer]
+        - generic [ref=f13e737]:
+          - heading "Bluetooth Thermal Printer Setup" [level=3] [ref=f13e743]
+          - generic [ref=f13e744]:
+            - generic [ref=f13e749]:
+              - generic [ref=f13e750]:
+                - generic [ref=f13e751]: No Printer Paired
+                - generic [ref=f13e752]: NOT CONNECTED
+              - paragraph [ref=f13e753]: Pair your 58mm or 80mm ESC/POS Bluetooth thermal printer
+            - generic [ref=f13e754]:
+              - button "Test Print" [ref=f13e755] [cursor=pointer]
+              - button "Connect Printer" [ref=f13e761] [cursor=pointer]
+        - generic [ref=f13e765]:
+          - heading "Data Backup & Restore" [level=3] [ref=f13e770]
+          - generic [ref=f13e771]:
+            - button "Export Backup (JSON)" [ref=f13e772] [cursor=pointer]
+            - generic [ref=f13e777] [cursor=pointer]: Import Backup (JSON)
+            - button "Reset Database" [ref=f13e782] [cursor=pointer]
+  - complementary "Profile Panel" [ref=f13e787]:
+    - generic [ref=f13e788]:
+      - generic [ref=f13e794]:
+        - heading "Profile & Identity" [level=2] [ref=f13e795]
+        - paragraph [ref=f13e796]: Business credentials & operator profile
+      - button "Close panel" [ref=f13e798] [cursor=pointer]
+    - generic [ref=f13e802]:
+      - generic [ref=f13e804]:
+        - generic [ref=f13e805]:
+          - generic "Click to change profile photo" [ref=f13e806] [cursor=pointer]
+          - button "Upload profile photo" [ref=f13e830] [cursor=pointer]
+        - generic [ref=f13e834]:
+          - generic [ref=f13e835]:
+            - generic [ref=f13e836]: ACTIVE POS
+            - generic [ref=f13e838]: Verified Operator
+          - heading "Store Administrator" [level=3] [ref=f13e842]
+          - paragraph [ref=f13e843]: G. V. MILK AGENCY
+          - paragraph [ref=f13e844]: CHENNAI - 600109
+          - button "Upload Photo" [ref=f13e846] [cursor=pointer]
+          - paragraph [ref=f13e851]: JPG, PNG or WebP • Auto-crops to circular profile photo
+      - generic [ref=f13e852]:
+        - generic [ref=f13e853]:
+          - generic [ref=f13e858]: "0"
+          - generic [ref=f13e859]: Today Bills
+        - generic [ref=f13e860]:
+          - generic [ref=f13e867]: "5"
+          - generic [ref=f13e868]: Total Shops
+        - generic [ref=f13e869]:
+          - generic [ref=f13e875]: "8"
+          - generic [ref=f13e876]: Products
+      - generic [ref=f13e877]:
+        - generic [ref=f13e878]:
+          - heading "Business Details" [level=4] [ref=f13e879]
+          - generic [ref=f13e880]: Prints on receipts
+        - generic [ref=f13e881]:
+          - generic [ref=f13e882]: Business Name *
+          - textbox "e.g. G. V. MILK AGENCY" [ref=f13e889]: G. V. MILK AGENCY
+        - generic [ref=f13e890]:
+          - generic [ref=f13e891]: Owner / Manager Name
+          - textbox "e.g. Store Owner / Cashier" [ref=f13e896]: Store Administrator
+        - generic [ref=f13e897]:
+          - generic [ref=f13e898]:
+            - generic [ref=f13e899]: Mobile / WhatsApp
+            - textbox "e.g. 9840865510" [ref=f13e903]: "9840865510"
+          - generic [ref=f13e904]:
+            - generic [ref=f13e905]: Email Address
+            - textbox "owner@agency.com" [ref=f13e910]
+        - generic [ref=f13e911]:
+          - generic [ref=f13e912]: Street / Area
+          - textbox "e.g. SOLAN NAGAR" [ref=f13e917]: SOLAN NAGAR
+        - generic [ref=f13e918]:
+          - generic [ref=f13e919]:
+            - generic [ref=f13e920]: City / State / Pincode
+            - textbox "e.g. CHENNAI - 600109" [ref=f13e921]: CHENNAI - 600109
+          - generic [ref=f13e922]:
+            - generic [ref=f13e923]: GSTIN / Tax ID
+            - textbox "Optional GSTIN" [ref=f13e928]
+        - generic [ref=f13e929]:
+          - generic [ref=f13e930]: Receipt Paper Size
+          - combobox [ref=f13e931]:
+            - option "58mm (2-Inch Thermal)" [selected]
+            - option "80mm (3-Inch Thermal)"
+      - generic [ref=f13e932]:
+        - heading "System Shortcuts" [level=4] [ref=f13e933]
+        - generic [ref=f13e934]:
+          - generic [ref=f13e935]: Interface Theme
+          - button "Dark Mode" [ref=f13e939] [cursor=pointer]
+        - generic [ref=f13e940]:
+          - generic [ref=f13e941]: Thermal Printer Setup
+          - button "Configure" [ref=f13e947] [cursor=pointer]
+      - generic [ref=f13e952]:
+        - generic [ref=f13e953]:
+          - generic [ref=f13e954]: ACTIVE TERMINAL OPERATOR
+          - generic [ref=f13e955]: Ravi Kumar
+          - generic [ref=f13e956]: +91 9876543210 • Cashier
+        - button "Sign Out" [ref=f13e957] [cursor=pointer]
+    - generic [ref=f13e962]:
+      - button "Save Profile" [ref=f13e963] [cursor=pointer]
+      - button "Close" [ref=f13e968] [cursor=pointer]

@@ -1,0 +1,208 @@
+- generic [ref=f14e3]:
+  - banner [ref=f14e4]:
+    - generic [ref=f14e5]:
+      - generic [ref=f14e8]:
+        - generic [ref=f14e10]: dashboard
+        - generic [ref=f14e11]: "|"
+        - generic [ref=f14e12]: 10 Sept 2026
+      - generic [ref=f14e13]:
+        - button "Toggle theme" [ref=f14e14] [cursor=pointer]
+        - button "Daily Entry" [ref=f14e21] [cursor=pointer]
+        - button "Open profile panel" [ref=f14e27] [cursor=pointer]:
+          - generic [ref=f14e51]: Ravi
+  - generic [ref=f14e53]:
+    - complementary [ref=f14e54]:
+      - generic [ref=f14e62]:
+        - heading "G. V. MILK AGENCY" [level=2] [ref=f14e63]
+        - paragraph [ref=f14e64]: CHENNAI - 600109 Hub
+      - generic [ref=f14e65]:
+        - paragraph [ref=f14e66]: MAIN MENU
+        - button "Dashboard" [ref=f14e67] [cursor=pointer]
+        - button "Billing" [ref=f14e75] [cursor=pointer]
+        - button "Brands" [ref=f14e81] [cursor=pointer]
+        - button "Products" [ref=f14e88] [cursor=pointer]
+        - button "Shops" [ref=f14e95] [cursor=pointer]
+        - button "Bill History" [ref=f14e103] [cursor=pointer]
+        - button "Settings" [ref=f14e110] [cursor=pointer]
+      - generic [ref=f14e116]:
+        - generic [ref=f14e117]: Stitch POS v2.0
+        - generic [ref=f14e118]: Hub Live
+    - main [ref=f14e120]:
+      - generic [ref=f14e122]:
+        - generic [ref=f14e123]:
+          - generic [ref=f14e124]:
+            - generic [ref=f14e125]: GV
+            - generic [ref=f14e127]:
+              - heading "Dashboard" [level=1] [ref=f14e128]
+              - paragraph [ref=f14e129]: G. V. MILK AGENCY • Good Evening
+          - generic [ref=f14e130]:
+            - generic [ref=f14e131]:
+              - generic [ref=f14e132]: TODAY
+              - text: Thursday
+            - button "Create Bill" [ref=f14e133] [cursor=pointer]
+        - generic [ref=f14e136]:
+          - generic [ref=f14e137]:
+            - generic [ref=f14e138]:
+              - generic [ref=f14e139]:
+                - heading "Sales Revenue" [level=2] [ref=f14e140]
+                - paragraph [ref=f14e141]: Overview of milk & curd billing volume
+              - generic [ref=f14e142]:
+                - button "Daily" [ref=f14e143] [cursor=pointer]
+                - button "Weekly" [ref=f14e144] [cursor=pointer]
+                - button "Monthly" [ref=f14e145] [cursor=pointer]
+            - generic [ref=f14e146]:
+              - generic [ref=f14e147]:
+                - generic [ref=f14e148]: Counter Sales
+                - text: ₹0.00
+              - generic [ref=f14e149]:
+                - generic [ref=f14e150]: Shop Deliveries
+                - text: ₹0.00
+              - generic [ref=f14e151]:
+                - generic [ref=f14e152]: Total Volume
+                - text: ₹0.00
+            - generic [ref=f14e153]:
+              - img [ref=f14e154]:
+                - generic [ref=f14e155]: "0"
+                - generic [ref=f14e157]: "33"
+                - generic [ref=f14e159]: "66"
+                - generic [ref=f14e161]: "100"
+                - generic [ref=f14e163] [cursor=pointer]: Fri
+                - generic [ref=f14e166] [cursor=pointer]: Sat
+                - generic [ref=f14e169] [cursor=pointer]: Sun
+                - generic [ref=f14e172] [cursor=pointer]: Mon
+                - generic [ref=f14e175] [cursor=pointer]: Tue
+                - generic [ref=f14e178] [cursor=pointer]: Wed
+                - generic [ref=f14e181] [cursor=pointer]: Thu
+              - generic: No billing records for this period yet
+          - generic [ref=f14e184]:
+            - heading "Route Progress" [level=2] [ref=f14e186]
+            - generic [ref=f14e192]:
+              - generic [ref=f14e193]: 0%
+              - generic [ref=f14e194]: On Track
+            - generic [ref=f14e200] [cursor=pointer]:
+              - paragraph [ref=f14e201]: 0 of 0 Outlets Delivered
+              - paragraph [ref=f14e202]: Live outlet delivery count
+        - generic [ref=f14e205]:
+          - generic [ref=f14e206]:
+            - generic [ref=f14e207]: Today Revenue
+            - paragraph [ref=f14e208]: ₹0.00
+            - generic [ref=f14e209]:
+              - generic [ref=f14e210]: +8.4%
+              - generic [ref=f14e214]: vs yesterday
+          - generic [ref=f14e215]:
+            - generic [ref=f14e216]: Weekly Revenue
+            - paragraph [ref=f14e217]: ₹0.00
+            - generic [ref=f14e218]:
+              - generic [ref=f14e219]: +14.2%
+              - generic [ref=f14e223]: last 7 days
+          - generic [ref=f14e224] [cursor=pointer]:
+            - generic [ref=f14e225]: Today's Invoices
+            - paragraph [ref=f14e226]: 0 Bills
+            - generic [ref=f14e227]:
+              - generic [ref=f14e228]: ● Active POS
+              - generic [ref=f14e229]: recorded today
+          - generic [ref=f14e230] [cursor=pointer]:
+            - generic [ref=f14e231]: Dairy Varieties
+            - paragraph [ref=f14e232]: 0 Items
+            - generic [ref=f14e233]:
+              - generic [ref=f14e234]: All In Stock
+              - generic [ref=f14e237]: ready to bill
+        - generic [ref=f14e238]:
+          - generic [ref=f14e239]:
+            - generic [ref=f14e240]:
+              - heading "5 Top Products" [level=2] [ref=f14e241]
+              - generic [ref=f14e242]: "#1 of 1"
+            - generic [ref=f14e243]:
+              - generic [ref=f14e250]:
+                - paragraph [ref=f14e251]: 0 Sold
+                - paragraph [ref=f14e252]: Aavin Blue 500ml • ₹20.00
+                - generic [ref=f14e253]: High Demand
+              - generic [ref=f14e257]:
+                - button "Previous Top Product" [ref=f14e258] [cursor=pointer]
+                - button "Next Top Product" [ref=f14e261] [cursor=pointer]
+            - button "See All Products" [ref=f14e264] [cursor=pointer]
+          - generic [ref=f14e268]:
+            - generic [ref=f14e269]:
+              - heading "Recent Activity" [level=2] [ref=f14e270]
+              - button "See All" [ref=f14e271] [cursor=pointer]
+            - generic [ref=f14e272]: No recent billing transactions found.
+            - button "View Full Ledger Records" [ref=f14e274] [cursor=pointer]
+  - complementary "Profile Panel" [ref=f14e278]:
+    - generic [ref=f14e279]:
+      - generic [ref=f14e285]:
+        - heading "Profile & Identity" [level=2] [ref=f14e286]
+        - paragraph [ref=f14e287]: Business credentials & operator profile
+      - button "Close panel" [ref=f14e289] [cursor=pointer]
+    - generic [ref=f14e293]:
+      - generic [ref=f14e295]:
+        - generic [ref=f14e296]:
+          - generic "Click to change profile photo" [ref=f14e297] [cursor=pointer]
+          - button "Upload profile photo" [ref=f14e321] [cursor=pointer]
+        - generic [ref=f14e325]:
+          - generic [ref=f14e326]:
+            - generic [ref=f14e327]: ACTIVE POS
+            - generic [ref=f14e329]: Verified Operator
+          - heading "Store Administrator" [level=3] [ref=f14e333]
+          - paragraph [ref=f14e334]: G. V. MILK AGENCY
+          - paragraph [ref=f14e335]: CHENNAI - 600109
+          - button "Upload Photo" [ref=f14e337] [cursor=pointer]
+          - paragraph [ref=f14e342]: JPG, PNG or WebP • Auto-crops to circular profile photo
+      - generic [ref=f14e343]:
+        - generic [ref=f14e344]:
+          - generic [ref=f14e349]: "0"
+          - generic [ref=f14e350]: Today Bills
+        - generic [ref=f14e351]:
+          - generic [ref=f14e358]: "0"
+          - generic [ref=f14e359]: Total Shops
+        - generic [ref=f14e360]:
+          - generic [ref=f14e366]: "0"
+          - generic [ref=f14e367]: Products
+      - generic [ref=f14e368]:
+        - generic [ref=f14e369]:
+          - heading "Business Details" [level=4] [ref=f14e370]
+          - generic [ref=f14e371]: Prints on receipts
+        - generic [ref=f14e372]:
+          - generic [ref=f14e373]: Business Name *
+          - textbox "e.g. G. V. MILK AGENCY" [ref=f14e380]: G. V. MILK AGENCY
+        - generic [ref=f14e381]:
+          - generic [ref=f14e382]: Owner / Manager Name
+          - textbox "e.g. Store Owner / Cashier" [ref=f14e387]: Store Administrator
+        - generic [ref=f14e388]:
+          - generic [ref=f14e389]:
+            - generic [ref=f14e390]: Mobile / WhatsApp
+            - textbox "e.g. 9840865510" [ref=f14e394]: "9840865510"
+          - generic [ref=f14e395]:
+            - generic [ref=f14e396]: Email Address
+            - textbox "owner@agency.com" [ref=f14e401]
+        - generic [ref=f14e402]:
+          - generic [ref=f14e403]: Street / Area
+          - textbox "e.g. SOLAN NAGAR" [ref=f14e408]: SOLAN NAGAR
+        - generic [ref=f14e409]:
+          - generic [ref=f14e410]:
+            - generic [ref=f14e411]: City / State / Pincode
+            - textbox "e.g. CHENNAI - 600109" [ref=f14e412]: CHENNAI - 600109
+          - generic [ref=f14e413]:
+            - generic [ref=f14e414]: GSTIN / Tax ID
+            - textbox "Optional GSTIN" [ref=f14e419]
+        - generic [ref=f14e420]:
+          - generic [ref=f14e421]: Receipt Paper Size
+          - combobox [ref=f14e422]:
+            - option "58mm (2-Inch Thermal)" [selected]
+            - option "80mm (3-Inch Thermal)"
+      - generic [ref=f14e423]:
+        - heading "System Shortcuts" [level=4] [ref=f14e424]
+        - generic [ref=f14e425]:
+          - generic [ref=f14e426]: Interface Theme
+          - button "Dark Mode" [ref=f14e430] [cursor=pointer]
+        - generic [ref=f14e431]:
+          - generic [ref=f14e432]: Thermal Printer Setup
+          - button "Configure" [ref=f14e438] [cursor=pointer]
+      - generic [ref=f14e443]:
+        - generic [ref=f14e444]:
+          - generic [ref=f14e445]: ACTIVE TERMINAL OPERATOR
+          - generic [ref=f14e446]: Ravi Kumar
+          - generic [ref=f14e447]: +91 9876543210 • Cashier
+        - button "Sign Out" [ref=f14e448] [cursor=pointer]
+    - generic [ref=f14e453]:
+      - button "Save Profile" [ref=f14e454] [cursor=pointer]
+      - button "Close" [ref=f14e459] [cursor=pointer]

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>Companies - G.V. MILK AGENCY</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;900&amp;family=Inter:wght@400;500&amp;family=Public+Sans:wght@500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary": "#f9bd22",
+                        "primary": "#ecbf8a",
+                        "outline": "#7c746f",
+                        "surface-dim": "#100e0c",
+                        "error": "#f97758",
+                        "inverse-on-surface": "#595451",
+                        "secondary-fixed": "#ffdf9f",
+                        "surface-container-highest": "#2a2521",
+                        "outline-variant": "#4d4742",
+                        "background": "#100e0c",
+                        "on-error-container": "#ff9b82",
+                        "on-tertiary": "#592d00",
+                        "surface-variant": "#2a2521",
+                        "on-primary-fixed-variant": "#6f4e23",
+                        "on-background": "#eee3dd",
+                        "tertiary-container": "#fe932c",
+                        "surface-tint": "#ecbf8a",
+                        "tertiary-fixed": "#fe932c",
+                        "surface-container-high": "#231f1c",
+                        "surface-container-low": "#161310",
+                        "on-primary-container": "#ffdeba",
+                        "surface": "#100e0c",
+                        "on-tertiary-container": "#4a2500",
+                        "error-container": "#85230a",
+                        "on-secondary-fixed": "#523c00",
+                        "tertiary-dim": "#ed871e",
+                        "on-tertiary-fixed": "#240f00",
+                        "primary-container": "#6d4c22",
+                        "tertiary-fixed-dim": "#ed871e",
+                        "primary-dim": "#ddb17d",
+                        "secondary-dim": "#e9b00a",
+                        "secondary-container": "#4d3800",
+                        "on-primary": "#583a11",
+                        "surface-container-lowest": "#000000",
+                        "primary-fixed": "#fecf99",
+                        "on-surface": "#eee3dd",
+                        "on-surface-variant": "#b3a9a4",
+                        "inverse-primary": "#7b582d",
+                        "inverse-surface": "#fff8f5",
+                        "surface-container": "#1d1916",
+                        "on-secondary-container": "#f1b617",
+                        "error-dim": "#c44f34",
+                        "on-secondary": "#533c00",
+                        "tertiary": "#ffa85d",
+                        "on-primary-fixed": "#4f3209",
+                        "secondary-fixed-dim": "#ffcd61",
+                        "surface-bright": "#312b27",
+                        "on-error": "#450900",
+                        "on-tertiary-fixed-variant": "#572c00",
+                        "on-secondary-fixed-variant": "#755600",
+                        "primary-fixed-dim": "#efc18c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {},
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "display": ["Plus Jakarta Sans"],
+                        "body": ["Inter"],
+                        "label": ["Public Sans"],
+                        "mono": ["JetBrains Mono"]
+                    },
+                    "fontSize": {}
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+            -webkit-tap-highlight-color: transparent;
+        }
+        .glass-card {
+            background: rgba(42, 37, 33, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(77, 71, 66, 0.4);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body antialiased min-h-screen flex flex-col pt-16 pb-24">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-lg border-b border-outline-variant/30 shadow-sm flex justify-between items-center px-4 h-16 max-w-md mx-auto left-0 right-0">
+<button class="w-10 h-10 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-variant/50 transition-colors active:scale-95 duration-100">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="font-headline text-headline-sm font-bold tracking-tight text-primary">Companies</h1>
+<button class="w-10 h-10 flex items-center justify-center rounded-full text-primary hover:bg-surface-variant/50 transition-colors active:scale-95 duration-100">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+</header>
+<!-- Main Content -->
+<main class="flex-1 px-4 py-6 max-w-md mx-auto w-full flex flex-col gap-6">
+<!-- Search Bar -->
+<div class="relative">
+<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]" data-icon="search">search</span>
+</div>
+<input class="w-full bg-surface-container-high border-outline-variant/50 text-on-surface rounded-xl pl-10 pr-4 py-3 focus:ring-secondary focus:border-secondary transition-all placeholder:text-on-surface-variant/60 font-body outline-none" placeholder="Search companies..." type="text"/>
+</div>
+<!-- Companies List -->
+<div class="flex flex-col gap-3">
+<!-- Card: Aavin -->
+<div class="glass-card rounded-xl p-4 flex items-center gap-4 transition-transform active:scale-[0.98]">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container font-headline font-bold text-xl shrink-0">
+                    A
+                </div>
+<div class="flex-1 min-w-0">
+<h2 class="font-headline font-bold text-on-surface text-lg truncate">Aavin</h2>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-label font-medium uppercase tracking-wider bg-primary-container/30 text-primary-dim border border-primary-container">
+                            3 products
+                        </span>
+<span class="text-xs text-on-surface-variant truncate">Added 15 Jun 2026</span>
+</div>
+</div>
+<div class="flex items-center gap-1 shrink-0">
+<button class="w-8 h-8 flex items-center justify-center rounded-full text-secondary hover:bg-secondary/10 transition-colors">
+<span class="material-symbols-outlined text-[20px]" data-icon="edit">edit</span>
+</button>
+<button class="w-8 h-8 flex items-center justify-center rounded-full text-error-dim hover:bg-error-container/20 transition-colors">
+<span class="material-symbols-outlined text-[20px]" data-icon="delete">delete</span>
+</button>
+</div>
+</div>
+<!-- Card: Heritage -->
+<div class="glass-card rounded-xl p-4 flex items-center gap-4 transition-transform active:scale-[0.98]">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container font-headline font-bold text-xl shrink-0">
+                    H
+                </div>
+<div class="flex-1 min-w-0">
+<h2 class="font-headline font-bold text-on-surface text-lg truncate">Heritage</h2>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-label font-medium uppercase tracking-wider bg-primary-container/30 text-primary-dim border border-primary-container">
+                            4 products
+                        </span>
+<span class="text-xs text-on-surface-variant truncate">Added 15 Jun 2026</span>
+</div>
+</div>
+<div class="flex items-center gap-1 shrink-0">
+<button class="w-8 h-8 flex items-center justify-center rounded-full text-secondary hover:bg-secondary/10 transition-colors">
+<span class="material-symbols-outlined text-[20px]" data-icon="edit">edit</span>
+</button>
+<button class="w-8 h-8 flex items-center justify-center rounded-full text-error-dim hover:bg-error-container/20 transition-colors">
+<span class="material-symbols-outlined text-[20px]" data-icon="delete">delete</span>
+</button>
+</div>
+</div>
+<!-- Card: Hatsun -->
+<div class="glass-card rounded-xl p-4 flex items-center gap-4 transition-transform active:scale-[0.98]">
+<div class="w-12 h-12 rounded-full bg-tertiary-container flex items-center justify-center text-on-tertiary-container font-headline font-bold text-xl shrink-0">
+                    H
+                </div>
+<div class="flex-1 min-w-0">
+<h2 class="font-headline font-bold text-on-surface text-lg truncate">Hatsun</h2>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-label font-medium uppercase tracking-wider bg-primary-container/30 text-primary-dim border border-primary-container">
+                            2 products
+                        </span>
+<span class="text-xs text-on-surface-variant truncate">Added 20 Jun 2026</span>
+</div>
+</div>
+<div class="flex items-center gap-1 shrink-0">
+<button class="w-8 h-8 flex items-center justify-center rounded-full text-secondary hover:bg-secondary/10 transition-colors">
+<span class="material-symbols-outlined text-[20px]" data-icon="edit">edit</span>
+</button>
+<button class="w-8 h-8 flex items-center justify-center rounded-full text-error-dim hover:bg-error-container/20 transition-colors">
+<span class="material-symbols-outlined text-[20px]" data-icon="delete">delete</span>
+</button>
+</div>
+</div>
+<!-- Card: Milky Mist -->
+<div class="glass-card rounded-xl p-4 flex items-center gap-4 transition-transform active:scale-[0.98]">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container font-headline font-bold text-xl shrink-0">
+                    M
+                </div>
+<div class="flex-1 min-w-0">
+<h2 class="font-headline font-bold text-on-surface text-lg truncate">Milky Mist</h2>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-label font-medium uppercase tracking-wider bg-primary-container/30 text-primary-dim border border-primary-container">
+                            3 products
+                        </span>
+<span class="text-xs text-on-surface-variant truncate">Added 25 Jun 2026</span>
+</div>
+</div>
+<div class="flex items-center gap-1 shrink-0">
+<button class="w-8 h-8 flex items-center justify-center rounded-full text-secondary hover:bg-secondary/10 transition-colors">
+<span class="material-symbols-outlined text-[20px]" data-icon="edit">edit</span>
+</button>
+<button class="w-8 h-8 flex items-center justify-center rounded-full text-error-dim hover:bg-error-container/20 transition-colors">
+<span class="material-symbols-outlined text-[20px]" data-icon="delete">delete</span>
+</button>
+</div>
+</div>
+<!-- Card: Arokya -->
+<div class="glass-card rounded-xl p-4 flex items-center gap-4 transition-transform active:scale-[0.98]">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container font-headline font-bold text-xl shrink-0">
+                    A
+                </div>
+<div class="flex-1 min-w-0">
+<h2 class="font-headline font-bold text-on-surface text-lg truncate">Arokya</h2>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-label font-medium uppercase tracking-wider bg-primary-container/30 text-primary-dim border border-primary-container">
+                            1 product
+                        </span>
+<span class="text-xs text-on-surface-variant truncate">Added 01 Jul 2026</span>
+</div>
+</div>
+<div class="flex items-center gap-1 shrink-0">
+<button class="w-8 h-8 flex items-center justify-center rounded-full text-secondary hover:bg-secondary/10 transition-colors">
+<span class="material-symbols-outlined text-[20px]" data-icon="edit">edit</span>
+</button>
+<button class="w-8 h-8 flex items-center justify-center rounded-full text-error-dim hover:bg-error-container/20 transition-colors">
+<span class="material-symbols-outlined text-[20px]" data-icon="delete">delete</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<!-- FAB -->
+<button aria-label="Add Company" class="fixed bottom-24 right-4 z-40 w-14 h-14 rounded-full bg-secondary text-on-secondary shadow-lg flex items-center justify-center hover:bg-secondary-dim transition-colors active:scale-90 duration-200">
+<span class="material-symbols-outlined text-[28px]" data-icon="add">add</span>
+</button>
+</body></html>

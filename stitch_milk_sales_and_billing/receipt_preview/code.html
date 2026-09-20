@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Receipt Preview</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;900&amp;family=Inter:wght@400;500;600&amp;family=Public+Sans:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-surface": "#eee3dd",
+                      "surface": "#100e0c",
+                      "surface-container-lowest": "#000000",
+                      "primary": "#ecbf8a",
+                      "on-error-container": "#ff9b82",
+                      "surface-container": "#1d1916",
+                      "on-tertiary-container": "#4a2500",
+                      "secondary-dim": "#e9b00a",
+                      "on-surface-variant": "#b3a9a4",
+                      "on-secondary-fixed": "#523c00",
+                      "tertiary-fixed-dim": "#ed871e",
+                      "tertiary-dim": "#ed871e",
+                      "error-dim": "#c44f34",
+                      "inverse-on-surface": "#595451",
+                      "on-primary-container": "#ffdeba",
+                      "on-background": "#eee3dd",
+                      "surface-dim": "#100e0c",
+                      "surface-variant": "#2a2521",
+                      "primary-fixed": "#fecf99",
+                      "outline": "#7c746f",
+                      "on-primary": "#583a11",
+                      "on-error": "#450900",
+                      "on-tertiary-fixed": "#240f00",
+                      "tertiary-fixed": "#fe932c",
+                      "surface-tint": "#ecbf8a",
+                      "on-tertiary": "#592d00",
+                      "on-secondary-fixed-variant": "#755600",
+                      "background": "#100e0c",
+                      "secondary-fixed": "#ffdf9f",
+                      "on-tertiary-fixed-variant": "#572c00",
+                      "inverse-surface": "#fff8f5",
+                      "primary-dim": "#ddb17d",
+                      "tertiary": "#ffa85d",
+                      "error": "#f97758",
+                      "on-secondary": "#533c00",
+                      "tertiary-container": "#fe932c",
+                      "secondary-container": "#4d3800",
+                      "secondary-fixed-dim": "#ffcd61",
+                      "on-primary-fixed-variant": "#6f4e23",
+                      "surface-container-low": "#161310",
+                      "secondary": "#f9bd22",
+                      "inverse-primary": "#7b582d",
+                      "primary-fixed-dim": "#efc18c",
+                      "on-primary-fixed": "#4f3209",
+                      "surface-bright": "#312b27",
+                      "error-container": "#85230a",
+                      "primary-container": "#6d4c22",
+                      "on-secondary-container": "#f1b617",
+                      "surface-container-high": "#231f1c",
+                      "surface-container-highest": "#2a2521",
+                      "outline-variant": "#4d4742"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {},
+              "fontFamily": {
+                      "headline": [
+                              "Plus Jakarta Sans",
+                              "sans-serif"
+                      ],
+                      "display": [
+                              "Plus Jakarta Sans",
+                              "sans-serif"
+                      ],
+                      "body": [
+                              "Inter",
+                              "sans-serif"
+                      ],
+                      "label": [
+                              "Public Sans",
+                              "sans-serif"
+                      ],
+                      "mono": [
+                          "JetBrains Mono",
+                          "monospace"
+                      ]
+              },
+              "fontSize": {}
+      },
+          },
+        }
+      </script>
+<style>
+          .receipt-paper {
+              background-color: #f9f9f9;
+              color: #1a1a1a;
+              box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+              background-image: linear-gradient(to right, rgba(0,0,0,0.02) 1px, transparent 1px),
+                                linear-gradient(to bottom, rgba(0,0,0,0.02) 1px, transparent 1px);
+              background-size: 20px 20px;
+          }
+          .receipt-edge {
+              background: linear-gradient(135deg, transparent 25%, #f9f9f9 25%, #f9f9f9 75%, transparent 75%, transparent 100%), linear-gradient(45deg, transparent 25%, #f9f9f9 25%, #f9f9f9 75%, transparent 75%, transparent 100%);
+              background-size: 10px 10px;
+              background-position: 0 0, 5px 0;
+          }
+      </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body min-h-screen antialiased flex flex-col items-center justify-center relative overflow-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full bg-surface shadow-sm z-50">
+<div class="flex items-center justify-between px-4 h-16 w-full z-50">
+<button class="text-on-surface-variant hover:bg-surface-variant transition-colors rounded-full p-2 active:scale-95 duration-100">
+<span class="material-symbols-outlined" data-icon="close">close</span>
+</button>
+<h1 class="font-headline font-bold text-lg text-primary">Receipt Preview</h1>
+<button class="text-on-surface-variant hover:bg-surface-variant transition-colors rounded-full p-2 active:scale-95 duration-100">
+<span class="material-symbols-outlined" data-icon="more_vert">more_vert</span>
+</button>
+</div>
+</header>
+<!-- Main Content Area with Backdrop -->
+<main class="w-full h-full min-h-screen pt-16 pb-20 flex flex-col items-center justify-center bg-black/60 backdrop-blur-sm z-10 px-4 relative">
+<!-- Receipt Container -->
+<div class="flex flex-col items-center mb-8 relative w-full max-w-[320px]">
+<!-- Receipt Card -->
+<div class="receipt-paper w-[280px] p-6 font-mono text-sm leading-tight relative pb-10">
+<!-- Receipt Header -->
+<div class="text-center mb-4">
+<div>═════════════════════════</div>
+<div class="font-bold text-base mt-1">G. V. MILK AGENCY</div>
+<div>SOLAN NAGAR</div>
+<div>CHENNAI - 600109</div>
+<div>MOB. 9840865510</div>
+<div>═════════════════════════</div>
+</div>
+<!-- Bill Info -->
+<div class="mb-3 flex justify-between">
+<div>BILL NO: 0001</div>
+</div>
+<div class="mb-4 text-xs">
+<div>DATE: 31/07/26  TIME: 10:05</div>
+</div>
+<!-- Table Header -->
+<div class="flex justify-between font-bold border-y border-dashed border-gray-400 py-1 mb-2">
+<div class="w-32">ITEM NAME</div>
+<div class="w-8 text-right">QTY</div>
+<div class="w-12 text-right">PRICE</div>
+<div class="w-16 text-right">AMT</div>
+</div>
+<!-- Items -->
+<div class="space-y-1 mb-4">
+<div class="flex justify-between">
+<div class="w-32 truncate">AAVIN BLUE</div>
+<div class="w-8 text-right">1</div>
+<div class="w-12 text-right">20.00</div>
+<div class="w-16 text-right">20.00</div>
+</div>
+<div class="flex justify-between">
+<div class="w-32 truncate">AAVIN GREEN</div>
+<div class="w-8 text-right">2</div>
+<div class="w-12 text-right">22.00</div>
+<div class="w-16 text-right">44.00</div>
+</div>
+<div class="flex justify-between">
+<div class="w-32 truncate">AAVIN ORNGE</div>
+<div class="w-8 text-right">3</div>
+<div class="w-12 text-right">30.00</div>
+<div class="w-16 text-right">90.00</div>
+</div>
+</div>
+<!-- Totals -->
+<div class="border-t border-dashed border-gray-400 pt-2 mb-4">
+<div class="flex justify-between text-xs mb-1">
+<div>TOTAL ITEM(S): 3</div>
+<div>QTY: 6</div>
+</div>
+<div class="flex justify-between font-bold text-base mt-2">
+<div>TOTAL:</div>
+<div>₹154.00</div>
+</div>
+</div>
+<!-- Footer -->
+<div class="text-center mt-6">
+<div>═════════════════════════</div>
+<div class="mt-1 font-bold">THANK YOU! VISIT AGAIN</div>
+<div>═════════════════════════</div>
+</div>
+<!-- Jagged Edge -->
+<div class="receipt-edge h-2 w-full absolute bottom-[-4px] left-0"></div>
+</div>
+<!-- Action Buttons Grid -->
+<div class="grid grid-cols-4 gap-3 mt-8 w-full max-w-[320px]">
+<button class="flex flex-col items-center justify-center gap-1 bg-surface-container hover:bg-surface-container-high transition-colors p-3 rounded-xl border border-outline-variant active:scale-95">
+<span class="material-symbols-outlined text-primary" data-icon="save">save</span>
+<span class="text-[10px] font-label font-medium text-on-surface">Save</span>
+</button>
+<button class="flex flex-col items-center justify-center gap-1 bg-surface-container hover:bg-surface-container-high transition-colors p-3 rounded-xl border border-outline-variant active:scale-95">
+<svg class="w-6 h-6 text-green-500" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"></path></svg>
+<span class="text-[10px] font-label font-medium text-on-surface">Share</span>
+</button>
+<button class="flex flex-col items-center justify-center gap-1 bg-surface-container hover:bg-surface-container-high transition-colors p-3 rounded-xl border border-outline-variant active:scale-95">
+<span class="material-symbols-outlined text-tertiary" data-icon="print">print</span>
+<span class="text-[10px] font-label font-medium text-on-surface">Print</span>
+</button>
+<button class="flex flex-col items-center justify-center gap-1 bg-transparent hover:bg-surface-container transition-colors p-3 rounded-xl border-2 border-primary active:scale-95">
+<span class="material-symbols-outlined text-primary" data-icon="add">add</span>
+<span class="text-[10px] font-label font-medium text-primary">New Bill</span>
+</button>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full rounded-t-xl bg-surface-container shadow-[0_-2px_10px_rgba(0,0,0,0.3)] z-50">
+<div class="h-20 px-2 flex justify-around items-center w-full">
+<button class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-full px-5 py-1 active:scale-90 duration-200">
+<span class="material-symbols-outlined" data-icon="home" data-weight="fill" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-label text-xs font-medium mt-1">Home</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-all active:scale-90 duration-200 px-3">
+<span class="material-symbols-outlined" data-icon="history">history</span>
+<span class="font-label text-xs font-medium mt-1">History</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-all active:scale-90 duration-200 px-3">
+<span class="material-symbols-outlined" data-icon="receipt_long">receipt_long</span>
+<span class="font-label text-xs font-medium mt-1">Billing</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-all active:scale-90 duration-200 px-3">
+<span class="material-symbols-outlined" data-icon="inventory_2">inventory_2</span>
+<span class="font-label text-xs font-medium mt-1">Inventory</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-all active:scale-90 duration-200 px-3">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-label text-xs font-medium mt-1">Profile</span>
+</button>
+</div>
+</nav>
+</body></html>

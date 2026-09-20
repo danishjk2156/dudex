@@ -1,0 +1,211 @@
+- generic [ref=f5e3]:
+  - banner [ref=f5e4]:
+    - generic [ref=f5e5]:
+      - generic [ref=f5e8]:
+        - generic [ref=f5e10]: companies
+        - generic [ref=f5e11]: "|"
+        - generic [ref=f5e12]: 08 Sept 2026
+      - generic [ref=f5e13]:
+        - button "Toggle theme" [ref=f5e14] [cursor=pointer]
+        - button "Daily Entry 2 (₹62.00)" [ref=f5e21] [cursor=pointer]:
+          - generic [ref=f5e26]: Daily Entry
+          - generic [ref=f5e27]: "2"
+          - generic [ref=f5e28]: (₹62.00)
+        - button "Open profile panel" [ref=f5e29] [cursor=pointer]:
+          - generic [ref=f5e53]: Ravi
+  - generic [ref=f5e55]:
+    - complementary [ref=f5e56]:
+      - generic [ref=f5e64]:
+        - heading "G. V. MILK AGENCY" [level=2] [ref=f5e65]
+        - paragraph [ref=f5e66]: CHENNAI - 600109 Hub
+      - generic [ref=f5e67]:
+        - paragraph [ref=f5e68]: MAIN MENU
+        - button "Dashboard" [ref=f5e69] [cursor=pointer]
+        - button "Fast Billing 2" [ref=f5e77] [cursor=pointer]:
+          - generic [ref=f5e78]: Fast Billing
+          - generic [ref=f5e83]: "2"
+        - button "Products" [ref=f5e84] [cursor=pointer]
+        - button "Brands" [active] [ref=f5e91] [cursor=pointer]
+        - button "Shops" [ref=f5e98] [cursor=pointer]
+        - button "Bill History" [ref=f5e106] [cursor=pointer]
+        - button "Settings" [ref=f5e113] [cursor=pointer]
+      - generic [ref=f5e119]:
+        - generic [ref=f5e120]:
+          - generic [ref=f5e121]: Active Bill
+          - generic [ref=f5e122]: 2 item(s)
+        - generic [ref=f5e123]:
+          - generic [ref=f5e124]: "Total:"
+          - generic [ref=f5e125]: ₹62.00
+        - button "Review & Print" [ref=f5e126]
+      - generic [ref=f5e127]:
+        - generic [ref=f5e128]: Stitch POS v2.0
+        - generic [ref=f5e129]: Hub Live
+    - main [ref=f5e131]:
+      - generic [ref=f5e621]:
+        - generic [ref=f5e622]:
+          - generic [ref=f5e623]:
+            - heading "Brand & Company Management" [level=2] [ref=f5e629]
+            - paragraph [ref=f5e630]: Add, edit, or remove brands and suppliers whose products you sell.
+          - button "Add New Brand" [ref=f5e631] [cursor=pointer]
+        - textbox "Search brands by name or description..." [ref=f5e635]
+        - generic [ref=f5e636]:
+          - generic [ref=f5e637]:
+            - generic [ref=f5e638]:
+              - generic [ref=f5e639]:
+                - generic [ref=f5e640]:
+                  - generic [ref=f5e641]:
+                    - generic [ref=f5e642]: A
+                    - button "Update logo for Aavin" [ref=f5e643] [cursor=pointer]
+                  - generic [ref=f5e647]:
+                    - heading "Aavin" [level=3] [ref=f5e648]
+                    - generic [ref=f5e649]: 3 Product(s)
+                - generic [ref=f5e654]:
+                  - button "Update logo for Aavin" [ref=f5e655] [cursor=pointer]
+                  - button "Edit Aavin" [ref=f5e659] [cursor=pointer]
+                  - button "Delete Aavin" [ref=f5e662] [cursor=pointer]
+              - paragraph [ref=f5e666]: Fresh milk & dairy products
+            - generic [ref=f5e667]:
+              - generic [ref=f5e668]: "Brand ID: aavin"
+              - generic [ref=f5e669]: Active
+          - generic [ref=f5e670]:
+            - generic [ref=f5e671]:
+              - generic [ref=f5e672]:
+                - generic [ref=f5e673]:
+                  - generic [ref=f5e674]:
+                    - generic [ref=f5e675]: H
+                    - button "Update logo for Hatsun" [ref=f5e676] [cursor=pointer]
+                  - generic [ref=f5e680]:
+                    - heading "Hatsun" [level=3] [ref=f5e681]
+                    - generic [ref=f5e682]: 1 Product(s)
+                - generic [ref=f5e687]:
+                  - button "Update logo for Hatsun" [ref=f5e688] [cursor=pointer]
+                  - button "Edit Hatsun" [ref=f5e692] [cursor=pointer]
+                  - button "Delete Hatsun" [ref=f5e695] [cursor=pointer]
+              - paragraph [ref=f5e699]: Agro products & milk
+            - generic [ref=f5e700]:
+              - generic [ref=f5e701]: "Brand ID: hatsun"
+              - generic [ref=f5e702]: Active
+          - generic [ref=f5e703]:
+            - generic [ref=f5e704]:
+              - generic [ref=f5e705]:
+                - generic [ref=f5e706]:
+                  - generic [ref=f5e707]:
+                    - generic [ref=f5e708]: H
+                    - button "Update logo for Heritage" [ref=f5e709] [cursor=pointer]
+                  - generic [ref=f5e713]:
+                    - heading "Heritage" [level=3] [ref=f5e714]
+                    - generic [ref=f5e715]: 2 Product(s)
+                - generic [ref=f5e720]:
+                  - button "Update logo for Heritage" [ref=f5e721] [cursor=pointer]
+                  - button "Edit Heritage" [ref=f5e725] [cursor=pointer]
+                  - button "Delete Heritage" [ref=f5e728] [cursor=pointer]
+              - paragraph [ref=f5e732]: Dairy, Curd & Beverages
+            - generic [ref=f5e733]:
+              - generic [ref=f5e734]: "Brand ID: heritage"
+              - generic [ref=f5e735]: Active
+          - generic [ref=f5e736]:
+            - generic [ref=f5e737]:
+              - generic [ref=f5e738]:
+                - generic [ref=f5e739]:
+                  - generic [ref=f5e740]:
+                    - generic [ref=f5e741]: M
+                    - button "Update logo for Milky Mist" [ref=f5e742] [cursor=pointer]
+                  - generic [ref=f5e746]:
+                    - heading "Milky Mist" [level=3] [ref=f5e747]
+                    - generic [ref=f5e748]: 2 Product(s)
+                - generic [ref=f5e753]:
+                  - button "Update logo for Milky Mist" [ref=f5e754] [cursor=pointer]
+                  - button "Edit Milky Mist" [ref=f5e758] [cursor=pointer]
+                  - button "Delete Milky Mist" [ref=f5e761] [cursor=pointer]
+              - paragraph [ref=f5e765]: Paneer, Butter, Curd & Cheese
+            - generic [ref=f5e766]:
+              - generic [ref=f5e767]: "Brand ID: milkymist"
+              - generic [ref=f5e768]: Active
+  - complementary "Profile Panel" [ref=f5e403]:
+    - generic [ref=f5e404]:
+      - generic [ref=f5e410]:
+        - heading "Profile & Identity" [level=2] [ref=f5e411]
+        - paragraph [ref=f5e412]: Business credentials & operator profile
+      - button "Close panel" [ref=f5e414] [cursor=pointer]
+    - generic [ref=f5e418]:
+      - generic [ref=f5e420]:
+        - generic [ref=f5e421]:
+          - generic "Click to change profile photo" [ref=f5e422] [cursor=pointer]
+          - button "Upload profile photo" [ref=f5e446] [cursor=pointer]
+        - generic [ref=f5e450]:
+          - generic [ref=f5e451]:
+            - generic [ref=f5e452]: ACTIVE POS
+            - generic [ref=f5e454]: Verified Operator
+          - heading "Store Administrator" [level=3] [ref=f5e458]
+          - paragraph [ref=f5e459]: G. V. MILK AGENCY
+          - paragraph [ref=f5e460]: CHENNAI - 600109
+          - button "Upload Photo" [ref=f5e462] [cursor=pointer]
+          - paragraph [ref=f5e467]: JPG, PNG or WebP • Auto-crops to circular profile photo
+      - generic [ref=f5e468]:
+        - generic [ref=f5e469]:
+          - generic [ref=f5e474]: "1"
+          - generic [ref=f5e475]: Today Bills
+        - generic [ref=f5e476]:
+          - generic [ref=f5e483]: "5"
+          - generic [ref=f5e484]: Total Shops
+        - generic [ref=f5e485]:
+          - generic [ref=f5e491]: "8"
+          - generic [ref=f5e492]: Products
+      - generic [ref=f5e493]:
+        - generic [ref=f5e494]:
+          - heading "Business Details" [level=4] [ref=f5e495]
+          - generic [ref=f5e496]: Prints on receipts
+        - generic [ref=f5e497]:
+          - generic [ref=f5e498]: Business Name *
+          - textbox "e.g. G. V. MILK AGENCY" [ref=f5e505]: G. V. MILK AGENCY
+        - generic [ref=f5e506]:
+          - generic [ref=f5e507]: Owner / Manager Name
+          - textbox "e.g. Store Owner / Cashier" [ref=f5e512]: Store Administrator
+        - generic [ref=f5e513]:
+          - generic [ref=f5e514]:
+            - generic [ref=f5e515]: Mobile / WhatsApp
+            - textbox "e.g. 9840865510" [ref=f5e519]: "9840865510"
+          - generic [ref=f5e520]:
+            - generic [ref=f5e521]: Email Address
+            - textbox "owner@agency.com" [ref=f5e526]
+        - generic [ref=f5e527]:
+          - generic [ref=f5e528]: Street / Area
+          - textbox "e.g. SOLAN NAGAR" [ref=f5e533]: SOLAN NAGAR
+        - generic [ref=f5e534]:
+          - generic [ref=f5e535]:
+            - generic [ref=f5e536]: City / State / Pincode
+            - textbox "e.g. CHENNAI - 600109" [ref=f5e537]: CHENNAI - 600109
+          - generic [ref=f5e538]:
+            - generic [ref=f5e539]: GSTIN / Tax ID
+            - textbox "Optional GSTIN" [ref=f5e544]
+        - generic [ref=f5e545]:
+          - generic [ref=f5e546]:
+            - generic [ref=f5e547]: Currency Symbol
+            - combobox [ref=f5e548]:
+              - option "₹ (INR Rupee)" [selected]
+              - option "$ (USD Dollar)"
+              - option "€ (Euro)"
+              - option "£ (GBP Pound)"
+              - option "AED (Dirham)"
+          - generic [ref=f5e549]:
+            - generic [ref=f5e550]: Receipt Paper Size
+            - combobox [ref=f5e551]:
+              - option "58mm (2-Inch Thermal)" [selected]
+              - option "80mm (3-Inch Thermal)"
+      - generic [ref=f5e552]:
+        - heading "System Shortcuts" [level=4] [ref=f5e553]
+        - generic [ref=f5e554]:
+          - generic [ref=f5e555]: Interface Theme
+          - button "Light Mode" [ref=f5e619] [cursor=pointer]
+        - generic [ref=f5e560]:
+          - generic [ref=f5e561]: Thermal Printer Setup
+          - button "Configure" [ref=f5e567] [cursor=pointer]
+      - generic [ref=f5e572]:
+        - generic [ref=f5e573]:
+          - generic [ref=f5e574]: ACTIVE TERMINAL OPERATOR
+          - generic [ref=f5e575]: Ravi Kumar
+          - generic [ref=f5e576]: +91 9876543210 • Cashier
+        - button "Sign Out" [ref=f5e577] [cursor=pointer]
+    - generic [ref=f5e582]:
+      - button "Save Profile" [ref=f5e583] [cursor=pointer]
+      - button "Close" [ref=f5e588] [cursor=pointer]

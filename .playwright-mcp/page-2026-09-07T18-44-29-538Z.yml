@@ -1,0 +1,42 @@
+- generic [ref=e3]:
+  - button "Toggle theme" [ref=e5] [cursor=pointer]
+  - generic [ref=e12]:
+    - generic [ref=e13]:
+      - heading "G. V. MILK AGENCY" [level=1] [ref=e20]
+      - paragraph [ref=e21]: Register a new billing operator / manager account
+    - generic [ref=e22]:
+      - button "Sign In" [ref=e23] [cursor=pointer]
+      - button "Create Account" [ref=e28] [cursor=pointer]
+    - generic [ref=e33]:
+      - generic [ref=e34]:
+        - generic [ref=e35]: Full Name *
+        - textbox "e.g. Ramesh Kumar" [ref=e81]: Ravi Kumar
+      - generic [ref=e42]:
+        - generic [ref=e112]: Mobile Number *
+        - generic [ref=e113]:
+          - generic [ref=e114]: "+91"
+          - textbox "Enter 10-digit number" [ref=e118]: "9876543210"
+      - generic [ref=e119]:
+        - generic [ref=e120]: Account Role
+        - generic [ref=e121]:
+          - button "Store Owner" [ref=e122] [cursor=pointer]
+          - button "Cashier" [active] [ref=e123] [cursor=pointer]
+          - button "Manager" [ref=e124] [cursor=pointer]
+      - generic [ref=e125]:
+        - generic [ref=e126]:
+          - generic [ref=e127]: Optional Quick PIN
+          - generic [ref=e132]: 4 digits
+        - textbox "Set 4-digit lock PIN" [ref=e133]
+      - button "Complete Registration" [ref=e134] [cursor=pointer]
+    - generic [ref=e55]:
+      - paragraph [ref=e56]:
+        - generic [ref=e62]: Registered Terminal Operators
+      - button "V Venkatesh +91 9840865510 • Store Owner" [ref=e64] [cursor=pointer]:
+        - generic [ref=e65]:
+          - generic [ref=e66]: V
+          - generic [ref=e67]:
+            - generic [ref=e68]: Venkatesh
+            - generic [ref=e69]: +91 9840865510 • Store Owner
+    - generic [ref=e72]:
+      - generic [ref=e73]: Local Encrypted POS
+      - generic [ref=e77]: Offline Ready

@@ -1,0 +1,44 @@
+- generic [ref=e2]:
+  - generic [ref=e738]:
+    - button "Toggle theme" [ref=e740] [cursor=pointer]
+    - generic [ref=e747]:
+      - generic [ref=e748]:
+        - heading "G. V. MILK AGENCY" [level=1] [ref=e755]
+        - paragraph [ref=e756]: Enter your mobile number to begin your shift
+      - generic [ref=e757]:
+        - button "Sign In" [ref=e758] [cursor=pointer]
+        - button "Create Account" [ref=e763] [cursor=pointer]
+      - generic [ref=e768]:
+        - generic [ref=e769]:
+          - generic [ref=e770]: Mobile Number *
+          - generic [ref=e771]:
+            - generic [ref=e772]: "+91"
+            - textbox "Enter 10-digit number" [active] [ref=e776]
+        - generic [ref=e777]:
+          - generic [ref=e778]:
+            - generic [ref=e779]: Passcode / PIN
+            - generic [ref=e784]: (If set on account)
+          - textbox "4-digit PIN (Optional)" [ref=e785]
+        - button "Sign In to POS" [disabled] [ref=e786] [cursor=pointer]
+      - generic [ref=e790]:
+        - paragraph [ref=e791]:
+          - generic [ref=e797]: Registered Terminal Operators
+        - generic [ref=e798]:
+          - button "R Ravi Kumar +91 9876543210 • Cashier" [ref=e799] [cursor=pointer]:
+            - generic [ref=e800]:
+              - generic [ref=e801]: R
+              - generic [ref=e802]:
+                - generic [ref=e803]: Ravi Kumar
+                - generic [ref=e804]: +91 9876543210 • Cashier
+          - button "V Venkatesh +91 9840865510 • Store Owner" [ref=e807] [cursor=pointer]:
+            - generic [ref=e808]:
+              - generic [ref=e809]: V
+              - generic [ref=e810]:
+                - generic [ref=e811]: Venkatesh
+                - generic [ref=e812]: +91 9840865510 • Store Owner
+      - generic [ref=e815]:
+        - generic [ref=e816]: Local Encrypted POS
+        - generic [ref=e820]: Offline Ready
+  - generic [ref=e821]:
+    - generic [ref=e822]: Signed out successfully
+    - button [ref=e826] [cursor=pointer]

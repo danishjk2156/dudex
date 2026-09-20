@@ -1,0 +1,862 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-display: 'Plus Jakarta Sans', sans-serif;
+  --font-headline: 'Plus Jakarta Sans', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-label: 'Public Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Enhanced Multi-Layered Elevation Shadows for Crisp Light Theme Card Depth */
+  --shadow-2xs: 0 1px 2px rgba(15, 23, 42, 0.03);
+  --shadow-xs: 0 1px 3px rgba(15, 23, 42, 0.05), 0 1px 2px rgba(15, 23, 42, 0.03);
+  --shadow-sm: 0 4px 16px -2px rgba(15, 23, 42, 0.06), 0 1px 3px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 8px 24px -4px rgba(15, 23, 42, 0.08), 0 2px 6px rgba(15, 23, 42, 0.04);
+  --shadow-lg: 0 14px 36px -6px rgba(15, 23, 42, 0.1), 0 4px 12px rgba(15, 23, 42, 0.05);
+
+  /* Earthy Slate & Mint Primary Palette */
+  --color-mint-50: #ECFDF5;
+  --color-mint-100: #D1FAE5;
+  --color-mint-500: #10B981;
+  --color-mint-600: #059669;
+  --color-mint-700: #047857;
+  --color-mint-800: #065F46;
+
+  /* Primary High-Visibility Action Accent: Warm Amber (Generate Bill & Print) */
+  --color-amber-accent: #D97706;
+  --color-amber-accent-hover: #B45309;
+  --color-amber-accent-active: #92400E;
+  --color-amber-accent-light: #FEF3C7;
+  --color-amber-accent-glow: rgba(217, 119, 6, 0.25);
+}
+
+@layer base {
+  :root {
+    --font-display: 'Plus Jakarta Sans', -apple-system, sans-serif;
+    --font-headline: 'Plus Jakarta Sans', -apple-system, sans-serif;
+    --font-body: 'Inter', -apple-system, sans-serif;
+    --font-label: 'Public Sans', sans-serif;
+    --font-mono: 'JetBrains Mono', 'SF Mono', monospace;
+
+    /* Earthy Slate & Mint Foundation */
+    --color-bg-canvas: #EEF2F0;
+    --color-surface-white: #FFFFFF;
+    --color-surface-card: #FFFFFF;
+    --color-surface-warm: #EBF0EC;
+    --color-surface-mint: #ECFDF5;
+    --color-border-warm: #E2E8F0;
+    --color-border-warm-strong: #CBD5E1;
+
+    /* Text Scale */
+    --color-text-heading: #0F172A;
+    --color-text-body: #475569;
+    --color-text-muted: #94A3B8;
+
+    /* Brand Primary (Calm Earthy Slate & Mint) */
+    --color-brand-mint: #059669;
+    --color-brand-mint-hover: #047857;
+    --color-brand-mint-light: #ECFDF5;
+    --color-brand-slate: #1E293B;
+
+    /* High-Visibility Primary Action Accent (Generate Bill & Print) */
+    --color-action-accent: #D97706;
+    --color-action-accent-hover: #B45309;
+    --color-action-accent-light: #FEF3C7;
+
+    /* Secondary Trust Blue & Indicators */
+    --color-secondary-blue: #0284C7;
+    --color-success-emerald: #16A34A;
+    --color-warning-amber: #D97706;
+    --color-error-red: #DC2626;
+
+    --color-focus-ring: #D97706;
+    --color-brand-glow: rgba(217, 119, 6, 0.2);
+  }
+
+  html.dark {
+    color-scheme: dark;
+    --color-bg-canvas: #0A1110;
+    --color-surface-white: #111A18;
+    --color-surface-card: #111A18;
+    --color-surface-warm: #0A1110;
+    --color-surface-mint: #162220;
+    --color-border-warm: #1E2E2A;
+    --color-border-warm-strong: #2D423C;
+
+    --color-text-heading: #F8FAFC;
+    --color-text-body: #94A3B8;
+    --color-text-muted: #64748B;
+
+    --shadow-2xs: 0 1px 2px rgba(0, 0, 0, 0.4);
+    --shadow-xs: 0 1px 3px rgba(0, 0, 0, 0.5);
+    --shadow-sm: 0 4px 16px -2px rgba(0, 0, 0, 0.65), 0 1px 3px rgba(0, 0, 0, 0.4);
+    --shadow-md: 0 8px 24px -4px rgba(0, 0, 0, 0.8);
+    --shadow-lg: 0 14px 36px -6px rgba(0, 0, 0, 0.9);
+  }
+
+  html:not(.dark), :root {
+    color-scheme: light;
+  }
+
+  html, body, #root {
+    min-height: 100vh;
+    min-height: 100dvh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-bg-canvas);
+    color: var(--color-text-heading);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  html.dark, html.dark body, html.dark #root {
+    background-color: #0A1110;
+    color: #F8FAFC;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-headline);
+    color: var(--color-text-heading);
+    letter-spacing: -0.02em;
+  }
+
+  html.dark h1, html.dark h2, html.dark h3, html.dark h4 {
+    color: #F8FAFC;
+  }
+
+  .font-display {
+    font-family: var(--font-display);
+  }
+  .font-headline {
+    font-family: var(--font-headline);
+  }
+  .font-body {
+    font-family: var(--font-body);
+  }
+  .font-label {
+    font-family: var(--font-label);
+  }
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+
+  /* High contrast focus ring - Warm Amber */
+  :focus-visible {
+    outline: 2px solid #D97706 !important;
+    outline-offset: 2px !important;
+  }
+}
+
+/* ==========================================================================
+   CLEAN SANS-SERIF TYPOGRAPHY SCALE
+   ========================================================================== */
+.type-heading-xl {
+  font-family: var(--font-headline);
+  font-size: 1.625rem; /* 26px */
+  line-height: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  color: var(--color-text-heading);
+}
+
+.type-heading-lg {
+  font-family: var(--font-headline);
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.625rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--color-text-heading);
+}
+
+.type-heading-md {
+  font-family: var(--font-headline);
+  font-size: 1rem; /* 16px */
+  line-height: 1.375rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  color: var(--color-text-heading);
+}
+
+.type-heading-sm {
+  font-family: var(--font-headline);
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--color-text-heading);
+}
+
+.type-body {
+  font-family: var(--font-body);
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.375rem;
+  color: var(--color-text-body);
+}
+
+.type-body-sm {
+  font-family: var(--font-body);
+  font-size: 0.75rem; /* 12px */
+  line-height: 1.125rem;
+  color: var(--color-text-body);
+}
+
+.type-caption {
+  font-family: var(--font-label);
+  font-size: 0.6875rem; /* 11px */
+  line-height: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted);
+}
+
+/* ==========================================================================
+   TABULAR MONOSPACE NUMBERS (Rates, Quantities, Totals)
+   ========================================================================== */
+.font-tabular, .tabular-nums, .num-tabular {
+  font-family: var(--font-mono) !important;
+  font-variant-numeric: tabular-nums !important;
+  -webkit-font-feature-settings: "tnum" 1, "zero" 1;
+  font-feature-settings: "tnum" 1, "zero" 1;
+}
+
+.num-align-right {
+  font-family: var(--font-mono) !important;
+  font-variant-numeric: tabular-nums !important;
+  -webkit-font-feature-settings: "tnum" 1, "zero" 1;
+  font-feature-settings: "tnum" 1, "zero" 1;
+  text-align: right;
+}
+
+.num-align-center {
+  font-family: var(--font-mono) !important;
+  font-variant-numeric: tabular-nums !important;
+  -webkit-font-feature-settings: "tnum" 1, "zero" 1;
+  font-feature-settings: "tnum" 1, "zero" 1;
+  text-align: center;
+}
+
+/* ==========================================================================
+   SURFACES & CARDS (8px Rhythm, 16px Radius)
+   ========================================================================== */
+
+/* Standard POS Card */
+.glass-card, .pos-card {
+  background: #ffffff;
+  border: 1px solid var(--color-border-warm);
+  border-radius: 1rem; /* 16px */
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04), 
+              0 4px 12px -2px rgba(15, 23, 42, 0.05);
+  transition: transform 200ms cubic-bezier(0.34, 1.56, 0.64, 1), 
+              box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1), 
+              border-color 200ms cubic-bezier(0.4, 0, 0.2, 1), 
+              background-color 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html.dark .glass-card, html.dark .pos-card {
+  background: #111A18;
+  border-color: #1E2E2A;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.4);
+}
+
+.glass-card:hover, .pos-card:hover {
+  border-color: var(--color-border-warm-strong);
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06), 
+              0 8px 24px -4px rgba(15, 23, 42, 0.08);
+}
+
+html.dark .glass-card:hover, html.dark .pos-card:hover {
+  border-color: #2D423C;
+  box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.6);
+}
+
+/* Primary Highlight Card (New Bill CTA card) */
+.glass-card-primary {
+  background: linear-gradient(135deg, rgba(254, 243, 199, 0.65), rgba(236, 253, 245, 0.85)) !important;
+  border: 1px solid rgba(217, 119, 6, 0.3) !important;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(217, 119, 6, 0.08), 
+              0 4px 16px -2px rgba(15, 23, 42, 0.06);
+}
+
+html.dark .glass-card-primary {
+  background: rgba(17, 26, 24, 0.9) !important;
+  border-color: rgba(217, 119, 6, 0.4) !important;
+  box-shadow: 0 0 24px rgba(217, 119, 6, 0.12);
+}
+
+/* Secondary Container Tile */
+.glass-card-secondary {
+  background: var(--color-surface-warm);
+  border: 1px solid var(--color-border-warm);
+  border-radius: 0.75rem;
+}
+
+html.dark .glass-card-secondary {
+  background: #111A18;
+  border-color: #1E2E2A;
+}
+
+/* Interactive Card with Press / Hover */
+.pos-card-interactive, .glass-card-interactive {
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: transform 200ms cubic-bezier(0.34, 1.56, 0.64, 1), 
+              box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1), 
+              border-color 200ms cubic-bezier(0.4, 0, 0.2, 1), 
+              background-color 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pos-card-interactive:hover, .glass-card-interactive:hover {
+  transform: translateY(-2px);
+  border-color: #D97706;
+  box-shadow: 0 4px 16px -2px rgba(15, 23, 42, 0.08), 
+              0 12px 32px -8px rgba(217, 119, 6, 0.14);
+}
+
+.pos-card-interactive:active, .glass-card-interactive:active {
+  transform: scale(0.98) translateY(0);
+}
+
+/* Floating Dock / Bottom Bar */
+.glass-dock {
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-top: 1px solid var(--color-border-warm);
+  box-shadow: 0 -4px 20px rgba(15, 23, 42, 0.06), 
+              0 -1px 3px rgba(0, 0, 0, 0.04);
+}
+
+html.dark .glass-dock {
+  background: rgba(10, 17, 16, 0.95);
+  border-top-color: #1E2E2A;
+  box-shadow: 0 -8px 25px rgba(0, 0, 0, 0.6);
+}
+
+/* ==========================================================================
+   BUTTONS (8px SCALE, 12px RADIUS)
+   ========================================================================== */
+
+/* PRIMARY ACTION ACCENT: Warm Amber (Generate Bill & Print) */
+.btn-primary-action, .btn-action-amber, .btn-tactile-amber, .btn-tactile-primary, .btn-stitch-primary {
+  background-color: #D97706;
+  color: #ffffff !important;
+  border: 1px solid #B45309;
+  font-weight: 700;
+  min-height: 42px;
+  touch-action: manipulation;
+  border-radius: 0.75rem; /* 12px */
+  box-shadow: 0 2px 8px rgba(217, 119, 6, 0.28), 
+              0 4px 14px -2px rgba(217, 119, 6, 0.2);
+  transition: transform 180ms cubic-bezier(0.34, 1.56, 0.64, 1), 
+              box-shadow 180ms cubic-bezier(0.4, 0, 0.2, 1), 
+              background-color 180ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn-primary-action:hover, .btn-action-amber:hover, .btn-tactile-amber:hover, .btn-tactile-primary:hover, .btn-stitch-primary:hover {
+  background-color: #B45309;
+  border-color: #92400E;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(217, 119, 6, 0.38), 
+              0 8px 22px -4px rgba(217, 119, 6, 0.26);
+}
+
+.btn-primary-action:active, .btn-action-amber:active, .btn-tactile-amber:active, .btn-tactile-primary:active, .btn-stitch-primary:active {
+  transform: scale(0.97) translateY(0);
+  box-shadow: 0 1px 4px rgba(217, 119, 6, 0.2);
+}
+
+/* Calm Mint Primary Button */
+.btn-mint-primary, .btn-tactile-mint, .btn-tactile-emerald, .btn-tactile-forest {
+  background-color: #059669;
+  color: #ffffff;
+  border: 1px solid #047857;
+  font-weight: 700;
+  min-height: 42px;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(5, 150, 105, 0.22);
+  transition: all 180ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn-mint-primary:hover, .btn-tactile-mint:hover, .btn-tactile-emerald:hover {
+  background-color: #047857;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(5, 150, 105, 0.3);
+}
+
+.btn-mint-primary:active, .btn-tactile-mint:active, .btn-tactile-emerald:active {
+  transform: scale(0.97);
+}
+
+/* Secondary Container Button (Soft Mint / Slate Tint) */
+.btn-stitch-container {
+  background-color: #ECFDF5;
+  color: #065F46;
+  border: 1px solid rgba(5, 150, 105, 0.25);
+  font-weight: 600;
+  min-height: 42px;
+  border-radius: 0.75rem;
+  transition: all 180ms cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+html.dark .btn-stitch-container {
+  background-color: rgba(5, 150, 105, 0.15);
+  color: #34D399;
+  border-color: rgba(5, 150, 105, 0.35);
+}
+
+.btn-stitch-container:hover {
+  background-color: #D1FAE5;
+  color: #047857;
+}
+
+.btn-stitch-container:active {
+  transform: scale(0.97);
+}
+
+/* Secondary / Ghost Button */
+.btn-secondary-action, .btn-ghost-secondary, .btn-stitch-ghost {
+  background-color: #FFFFFF;
+  color: var(--color-text-heading);
+  border: 1px solid var(--color-border-warm-strong);
+  min-height: 40px;
+  border-radius: 0.75rem;
+  touch-action: manipulation;
+  transition: all 180ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+html.dark .btn-secondary-action, html.dark .btn-ghost-secondary, html.dark .btn-stitch-ghost {
+  background-color: #111A18;
+  color: #F8FAFC;
+  border-color: #1E2E2A;
+}
+
+.btn-secondary-action:hover, .btn-ghost-secondary:hover, .btn-stitch-ghost:hover {
+  background-color: #F8FAFC;
+  border-color: var(--color-border-warm-strong);
+  color: var(--color-text-heading);
+  transform: translateY(-0.5px);
+}
+
+html.dark .btn-secondary-action:hover, html.dark .btn-ghost-secondary:hover, html.dark .btn-stitch-ghost:hover {
+  background-color: #162220;
+  border-color: #2D423C;
+  color: #FFFFFF;
+}
+
+.btn-secondary-action:active, .btn-ghost-secondary:active, .btn-stitch-ghost:active {
+  transform: scale(0.97);
+}
+
+/* Brand Filter Pills */
+.filter-pill {
+  background-color: #F1F5F9;
+  color: var(--color-text-body);
+  border: 1px solid var(--color-border-warm);
+  min-height: 36px;
+  padding: 0.4rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  touch-action: manipulation;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+}
+
+html.dark .filter-pill {
+  background-color: #111A18;
+  color: #94A3B8;
+  border-color: #1E2E2A;
+}
+
+.filter-pill:hover {
+  background-color: #E2E8F0;
+  border-color: var(--color-border-warm-strong);
+  color: var(--color-text-heading);
+}
+
+html.dark .filter-pill:hover {
+  background-color: #162220;
+  border-color: #2D423C;
+  color: #F8FAFC;
+}
+
+/* Active Filter Pill: Mint Capsule */
+.filter-pill-active {
+  background-color: #059669 !important;
+  color: #ffffff !important;
+  border-color: #047857 !important;
+  font-weight: 700 !important;
+  box-shadow: 0 2px 10px rgba(5, 150, 105, 0.25), 
+              0 0 0 3px rgba(5, 150, 105, 0.08) !important;
+}
+
+/* Input Fields Focus State */
+.pos-input-focus {
+  background-color: #ffffff;
+  border: 1px solid var(--color-border-warm);
+  color: var(--color-text-heading);
+  border-radius: 0.75rem;
+  transition: border-color 200ms cubic-bezier(0.4, 0, 0.2, 1), 
+              box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1),
+              background-color 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html.dark .pos-input-focus {
+  background-color: #111A18;
+  border-color: #1E2E2A;
+  color: #F8FAFC;
+}
+
+.pos-input-focus:focus {
+  outline: none;
+  border-color: #D97706;
+  box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.15), 
+              0 2px 8px rgba(15, 23, 42, 0.06);
+}
+
+/* Status Pills */
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.2rem 0.625rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.6875rem;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.status-pill-emerald {
+  background-color: rgba(5, 150, 105, 0.1);
+  color: #059669;
+  border: 1px solid rgba(5, 150, 105, 0.25);
+}
+
+.status-pill-blue {
+  background-color: rgba(2, 132, 199, 0.1);
+  color: #0284C7;
+  border: 1px solid rgba(2, 132, 199, 0.25);
+}
+
+.status-pill-teal {
+  background-color: rgba(13, 148, 136, 0.1);
+  color: #0D9488;
+  border: 1px solid rgba(13, 148, 136, 0.25);
+}
+
+.status-pill-amber {
+  background-color: rgba(217, 119, 6, 0.1);
+  color: #D97706;
+  border: 1px solid rgba(217, 119, 6, 0.25);
+}
+
+.status-pill-red {
+  background-color: rgba(220, 38, 38, 0.1);
+  color: #DC2626;
+  border: 1px solid rgba(220, 38, 38, 0.25);
+}
+
+.status-pill-slate {
+  background-color: rgba(100, 116, 139, 0.1);
+  color: #64748B;
+  border: 1px solid rgba(100, 116, 139, 0.2);
+}
+
+/* ==========================================================================
+   TYPOGRAPHY & DATA ACCENTS
+   ========================================================================== */
+
+.revenue-value, .text-gold-amount {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  color: #D97706;
+  font-weight: 800;
+}
+
+html.dark .revenue-value, html.dark .text-gold-amount {
+  color: #FBBF24;
+}
+
+.text-gold-primary {
+  color: #D97706;
+}
+
+.glow-amber {
+  box-shadow: 0 0 18px rgba(217, 119, 6, 0.25);
+}
+
+.glow-mint {
+  box-shadow: 0 0 18px rgba(5, 150, 105, 0.2);
+}
+
+/* Circular Quantity Badge on Product Tile */
+.product-qty-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 26px;
+  height: 26px;
+  border-radius: 9999px;
+  background-color: #D97706;
+  color: #ffffff;
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-weight: 800;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(217, 119, 6, 0.4);
+  border: 2px solid #ffffff;
+  animation: badgePop 180ms cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+html.dark .product-qty-badge {
+  background-color: #D97706;
+  border-color: #111A18;
+}
+
+/* ==========================================================================
+   ANIMATIONS & TRANSITIONS (PREMIUM TACTILE POS)
+   ========================================================================== */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.animate-page-entrance {
+  animation: fadeInUp 450ms cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+.animate-stagger-1 { animation: fadeInUp 420ms cubic-bezier(0.34, 1.56, 0.64, 1) 0ms both; }
+.animate-stagger-2 { animation: fadeInUp 420ms cubic-bezier(0.34, 1.56, 0.64, 1) 60ms both; }
+.animate-stagger-3 { animation: fadeInUp 420ms cubic-bezier(0.34, 1.56, 0.64, 1) 120ms both; }
+.animate-stagger-4 { animation: fadeInUp 420ms cubic-bezier(0.34, 1.56, 0.64, 1) 180ms both; }
+.animate-stagger-5 { animation: fadeInUp 420ms cubic-bezier(0.34, 1.56, 0.64, 1) 240ms both; }
+
+@keyframes badgePop {
+  0% { transform: scale(0.5); opacity: 0; }
+  60% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes cartBump {
+  0% { transform: scale(1); }
+  35% { transform: scale(1.22); }
+  70% { transform: scale(0.94); }
+  100% { transform: scale(1); }
+}
+
+.animate-cart-bump {
+  animation: cartBump 300ms cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes pulseBlue {
+  0%, 100% { box-shadow: 0 0 12px rgba(37, 99, 235, 0.15); }
+  50% { box-shadow: 0 0 24px rgba(37, 99, 235, 0.35); }
+}
+
+.animate-pulse-gold, .animate-pulse-blue {
+  animation: pulseBlue 3s ease-in-out infinite;
+}
+
+html:not(.dark) .animate-pulse-gold {
+  animation: pulseBlue 3s ease-in-out infinite;
+}
+
+@keyframes riseBar {
+  from {
+    transform: scaleY(0);
+    opacity: 0.3;
+  }
+  to {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+.animate-bar-rise {
+  transform-origin: bottom;
+  animation: riseBar 550ms cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+@keyframes modalPopIn {
+  from {
+    opacity: 0;
+    transform: scale(0.92) translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.animate-modal-pop {
+  animation: modalPopIn 280ms cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+/* Shimmer accent for CTA hover */
+@keyframes shimmerGold {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.shimmer-hover:hover {
+  background-image: linear-gradient(
+    110deg,
+    transparent 25%,
+    rgba(255, 255, 255, 0.15) 37%,
+    transparent 50%
+  );
+  background-size: 200% 100%;
+  animation: shimmerGold 1.5s ease-in-out infinite;
+}
+
+/* Smooth sidebar nav slide highlight */
+@keyframes slideHighlight {
+  from {
+    opacity: 0;
+    transform: translateX(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-highlight {
+  animation: slideHighlight 250ms cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ==========================================================================
+   THERMAL RECEIPT PAPER & SLOT (STITCH PREVIEW)
+   ========================================================================== */
+
+.receipt-paper {
+  background-color: #f9f9f9 !important;
+  color: #1a1a1a !important;
+  box-shadow: 0 12px 35px -5px rgba(0, 0, 0, 0.7), 0 8px 10px -6px rgba(0, 0, 0, 0.2) !important;
+  background-image: linear-gradient(to right, rgba(0,0,0,0.02) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(0,0,0,0.02) 1px, transparent 1px) !important;
+  background-size: 20px 20px !important;
+  position: relative;
+  font-family: var(--font-mono) !important;
+}
+
+.thermal-dispenser-slot {
+  width: 160px;
+  height: 5px;
+  background: #000000;
+  border-radius: 9999px;
+  margin: 0 auto 10px auto;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.95), 0 1px 2px rgba(236, 191, 138, 0.15);
+}
+
+/* ==========================================================================
+   CUSTOM SLEEK SCROLLBARS
+   ========================================================================== */
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #312b27;
+  border-radius: 9999px;
+  transition: background 200ms ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4d4742;
+}
+
+html:not(.dark) ::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+}
+
+html:not(.dark) ::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ==========================================================================
+   LIGHT MODE UNIVERSAL HELPERS
+   ========================================================================== */
+
+/* Professional blue selection highlight */
+html:not(.dark) ::selection {
+  background: rgba(37, 99, 235, 0.2);
+  color: var(--color-text-heading);
+}
+
+/* ==========================================================================
+   MOBILE SLIDE-IN NAVIGATION ANIMATION
+   ========================================================================== */
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}

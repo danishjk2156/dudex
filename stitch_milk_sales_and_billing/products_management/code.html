@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Products Management</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&family=Public+Sans:wght@100..900&display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error": "#450900",
+                        "on-primary-fixed-variant": "#6f4e23",
+                        "on-error-container": "#ff9b82",
+                        "surface-container-low": "#161310",
+                        "secondary-fixed": "#ffdf9f",
+                        "primary-dim": "#ddb17d",
+                        "background": "#100e0c",
+                        "inverse-primary": "#7b582d",
+                        "surface-container-highest": "#2a2521",
+                        "surface-dim": "#100e0c",
+                        "error-dim": "#c44f34",
+                        "on-background": "#eee3dd",
+                        "surface-container": "#1d1916",
+                        "surface-bright": "#312b27",
+                        "tertiary": "#ffa85d",
+                        "tertiary-container": "#fe932c",
+                        "primary": "#ecbf8a",
+                        "on-secondary-container": "#f1b617",
+                        "on-tertiary-fixed-variant": "#572c00",
+                        "secondary-fixed-dim": "#ffcd61",
+                        "surface": "#100e0c",
+                        "error": "#f97758",
+                        "on-secondary-fixed": "#523c00",
+                        "on-surface": "#eee3dd",
+                        "surface-container-high": "#231f1c",
+                        "on-tertiary": "#592d00",
+                        "outline-variant": "#4d4742",
+                        "secondary-container": "#4d3800",
+                        "surface-tint": "#ecbf8a",
+                        "on-tertiary-fixed": "#240f00",
+                        "on-tertiary-container": "#4a2500",
+                        "secondary": "#f9bd22",
+                        "secondary-dim": "#e9b00a",
+                        "primary-fixed-dim": "#efc18c",
+                        "on-secondary-fixed-variant": "#755600",
+                        "on-surface-variant": "#b3a9a4",
+                        "outline": "#7c746f",
+                        "primary-fixed": "#fecf99",
+                        "on-primary-container": "#ffdeba",
+                        "surface-variant": "#2a2521",
+                        "tertiary-dim": "#ed871e",
+                        "on-primary-fixed": "#4f3209",
+                        "surface-container-lowest": "#000000",
+                        "on-primary": "#583a11",
+                        "on-secondary": "#533c00",
+                        "tertiary-fixed": "#fe932c",
+                        "primary-container": "#6d4c22",
+                        "inverse-surface": "#fff8f5",
+                        "error-container": "#85230a",
+                        "tertiary-fixed-dim": "#ed871e",
+                        "inverse-on-surface": "#595451"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "display": ["Plus Jakarta Sans"],
+                        "body": ["Inter"],
+                        "label": ["Public Sans"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .pb-safe {
+            padding-bottom: env(safe-area-inset-bottom, 20px);
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .glass-card {
+            background: rgba(42, 37, 33, 0.6);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(77, 71, 66, 0.4);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body antialiased min-h-screen flex flex-col pt-16 pb-20">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface dark:bg-surface shadow-sm hidden md:flex items-center justify-between px-4 h-16 w-full">
+<div class="flex items-center gap-3">
+<button class="p-2 -ml-2 rounded-full hover:bg-surface-container-highest transition-colors active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-primary dark:text-primary">storefront</span>
+</button>
+<h1 class="font-display font-black text-xl text-primary dark:text-primary">DairyFlow</h1>
+</div>
+<div class="flex items-center gap-2">
+<button class="p-2 rounded-full hover:bg-surface-container-highest transition-colors active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-on-surface-variant">search</span>
+</button>
+</div>
+</header>
+<!-- Mobile TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface dark:bg-surface border-b border-outline-variant shadow-sm flex md:hidden items-center justify-between px-4 h-16 w-full">
+<h1 class="font-headline text-headline-sm tracking-tight text-primary dark:text-primary">Products</h1>
+<button class="p-2 rounded-full hover:bg-surface-container-highest transition-colors active:scale-95 transition-transform text-primary">
+<span class="material-symbols-outlined">search</span>
+</button>
+</header>
+<main class="flex-1 px-4 py-6 max-w-3xl mx-auto w-full md:pt-8 flex flex-col gap-6">
+<!-- Search Bar -->
+<div class="relative w-full">
+<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-on-surface-variant">search</span>
+</div>
+<input class="block w-full pl-10 pr-3 py-3 border border-outline-variant rounded-xl leading-5 bg-surface-container-highest text-on-surface placeholder-on-surface-variant focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary sm:text-sm transition-colors" placeholder="Search products..." type="text"/>
+</div>
+<!-- Filters -->
+<div class="flex overflow-x-auto hide-scrollbar gap-2 pb-2 -mx-4 px-4">
+<button class="whitespace-nowrap px-4 py-2 rounded-full font-label text-sm font-medium bg-primary text-on-primary transition-colors">All</button>
+<button class="whitespace-nowrap px-4 py-2 rounded-full font-label text-sm font-medium border border-outline-variant text-on-surface-variant hover:bg-surface-container-highest transition-colors">Aavin</button>
+<button class="whitespace-nowrap px-4 py-2 rounded-full font-label text-sm font-medium border border-outline-variant text-on-surface-variant hover:bg-surface-container-highest transition-colors">Heritage</button>
+<button class="whitespace-nowrap px-4 py-2 rounded-full font-label text-sm font-medium border border-outline-variant text-on-surface-variant hover:bg-surface-container-highest transition-colors">Hatsun</button>
+<button class="whitespace-nowrap px-4 py-2 rounded-full font-label text-sm font-medium border border-outline-variant text-on-surface-variant hover:bg-surface-container-highest transition-colors">Milky Mist</button>
+</div>
+<!-- Product List -->
+<div class="flex flex-col gap-4 pb-16">
+<!-- Card 1 -->
+<div class="glass-card rounded-xl p-4 flex items-center justify-between">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<h3 class="font-headline font-bold text-on-surface text-lg">Aavin Blue</h3>
+<span class="px-2 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider bg-surface-container-high border border-outline-variant text-on-surface-variant">Aavin</span>
+</div>
+<div class="flex items-center gap-3 mt-1">
+<span class="font-body font-bold text-primary">₹20.00 / Packet</span>
+<div class="flex items-center gap-1 text-[#4ade80]">
+<div class="w-1.5 h-1.5 rounded-full bg-[#4ade80]"></div>
+<span class="text-xs font-medium">Active</span>
+</div>
+</div>
+</div>
+<button class="p-2 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-colors">
+<span class="material-symbols-outlined">edit</span>
+</button>
+</div>
+<!-- Card 2 -->
+<div class="glass-card rounded-xl p-4 flex items-center justify-between">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<h3 class="font-headline font-bold text-on-surface text-lg">Aavin Green</h3>
+<span class="px-2 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider bg-surface-container-high border border-outline-variant text-on-surface-variant">Aavin</span>
+</div>
+<div class="flex items-center gap-3 mt-1">
+<span class="font-body font-bold text-primary">₹22.00 / Packet</span>
+<div class="flex items-center gap-1 text-[#4ade80]">
+<div class="w-1.5 h-1.5 rounded-full bg-[#4ade80]"></div>
+<span class="text-xs font-medium">Active</span>
+</div>
+</div>
+</div>
+<button class="p-2 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-colors">
+<span class="material-symbols-outlined">edit</span>
+</button>
+</div>
+<!-- Card 3 -->
+<div class="glass-card rounded-xl p-4 flex items-center justify-between">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<h3 class="font-headline font-bold text-on-surface text-lg">Aavin Orange</h3>
+<span class="px-2 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider bg-surface-container-high border border-outline-variant text-on-surface-variant">Aavin</span>
+</div>
+<div class="flex items-center gap-3 mt-1">
+<span class="font-body font-bold text-primary">₹30.00 / Packet</span>
+<div class="flex items-center gap-1 text-[#4ade80]">
+<div class="w-1.5 h-1.5 rounded-full bg-[#4ade80]"></div>
+<span class="text-xs font-medium">Active</span>
+</div>
+</div>
+</div>
+<button class="p-2 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-colors">
+<span class="material-symbols-outlined">edit</span>
+</button>
+</div>
+<!-- Card 4 -->
+<div class="glass-card rounded-xl p-4 flex items-center justify-between">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<h3 class="font-headline font-bold text-on-surface text-lg">Heritage Curd</h3>
+<span class="px-2 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider bg-surface-container-high border border-outline-variant text-on-surface-variant">Heritage</span>
+</div>
+<div class="flex items-center gap-3 mt-1">
+<span class="font-body font-bold text-primary">₹9.00 / Packet</span>
+<div class="flex items-center gap-1 text-[#4ade80]">
+<div class="w-1.5 h-1.5 rounded-full bg-[#4ade80]"></div>
+<span class="text-xs font-medium">Active</span>
+</div>
+</div>
+</div>
+<button class="p-2 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-colors">
+<span class="material-symbols-outlined">edit</span>
+</button>
+</div>
+<!-- Card 5 -->
+<div class="glass-card rounded-xl p-4 flex items-center justify-between">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<h3 class="font-headline font-bold text-on-surface text-lg">Heritage TM</h3>
+<span class="px-2 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider bg-surface-container-high border border-outline-variant text-on-surface-variant">Heritage</span>
+</div>
+<div class="flex items-center gap-3 mt-1">
+<span class="font-body font-bold text-primary">₹24.00 / Packet</span>
+<div class="flex items-center gap-1 text-[#4ade80]">
+<div class="w-1.5 h-1.5 rounded-full bg-[#4ade80]"></div>
+<span class="text-xs font-medium">Active</span>
+</div>
+</div>
+</div>
+<button class="p-2 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-colors">
+<span class="material-symbols-outlined">edit</span>
+</button>
+</div>
+<!-- Card 6 Inactive -->
+<div class="glass-card rounded-xl p-4 flex items-center justify-between opacity-50 grayscale transition-opacity hover:opacity-75">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<h3 class="font-headline font-bold text-on-surface text-lg">Supergold</h3>
+<span class="px-2 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider bg-surface-container-high border border-outline-variant text-on-surface-variant">Hatsun</span>
+</div>
+<div class="flex items-center gap-3 mt-1">
+<span class="font-body font-bold text-primary">₹33.00 / Packet</span>
+<div class="flex items-center gap-1 text-error-dim">
+<div class="w-1.5 h-1.5 rounded-full bg-error-dim"></div>
+<span class="text-xs font-medium">Inactive</span>
+</div>
+</div>
+</div>
+<button class="p-2 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-colors">
+<span class="material-symbols-outlined">edit</span>
+</button>
+</div>
+</div>
+</main>
+<!-- FAB -->
+<button class="fixed bottom-24 right-4 z-40 bg-primary text-on-primary w-14 h-14 rounded-2xl shadow-lg flex items-center justify-center hover:bg-primary-dim transition-all active:scale-95 md:bottom-8 md:right-8">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">add</span>
+</button>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full z-50 rounded-t-xl bg-surface-container-high border-t border-outline-variant shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] flex md:hidden justify-around items-center h-20 px-2 pb-safe">
+<button class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:bg-surface-bright active:scale-90 transition-all duration-200 w-16 h-full">
+<span class="material-symbols-outlined mb-1">dashboard</span>
+<span class="font-label text-xs font-medium">Dashboard</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:bg-surface-bright active:scale-90 transition-all duration-200 w-16 h-full">
+<span class="material-symbols-outlined mb-1">receipt_long</span>
+<span class="font-label text-xs font-medium">Billing</span>
+</button>
+<button class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-full px-4 py-1 active:scale-90 transition-all duration-200 h-[3.25rem]">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">inventory_2</span>
+<span class="font-label text-xs font-medium mt-0.5">Products</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:bg-surface-bright active:scale-90 transition-all duration-200 w-16 h-full">
+<span class="material-symbols-outlined mb-1">history</span>
+<span class="font-label text-xs font-medium">History</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:bg-surface-bright active:scale-90 transition-all duration-200 w-16 h-full">
+<span class="material-symbols-outlined mb-1">settings</span>
+<span class="font-label text-xs font-medium">Settings</span>
+</button>
+</nav>
+</body></html>
