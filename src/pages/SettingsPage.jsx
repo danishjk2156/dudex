@@ -7,6 +7,7 @@ import {
   Bluetooth,
   Download,
   Upload,
+  UploadCloud,
   Trash2,
   Save,
   AlertTriangle,
