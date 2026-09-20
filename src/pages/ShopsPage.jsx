@@ -66,12 +66,12 @@ export function ShopsPage() {
   const filteredShops = useMemo(() => {
     return shops.filter((shop) => {
       const matchSearch =
-        shop.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        (shop.name || '').toLowerCase().includes(searchTerm.toLowerCase()) ||
         (shop.owner && shop.owner.toLowerCase().includes(searchTerm.toLowerCase())) ||
         (shop.phone && shop.phone.includes(searchTerm)) ||
         (shop.area && shop.area.toLowerCase().includes(searchTerm.toLowerCase()));
 
-      const matchArea = areaFilter === 'All Areas' || shop.area?.trim().toLowerCase() === areaFilter.toLowerCase();
+      const matchArea = areaFilter === 'All Areas' || (shop.area?.trim() || '').toLowerCase() === areaFilter.toLowerCase();
       const matchStatus = statusFilter === 'All Statuses' || shop.status === statusFilter;
 
       return matchSearch && matchArea && matchStatus;

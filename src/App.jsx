@@ -16,6 +16,7 @@ import { HistoryPage } from './pages/HistoryPage';
 import { SettingsPage } from './pages/SettingsPage';
 import { AuthPage } from './pages/AuthPage';
 import { ProfileDrawer } from './components/profile/ProfileDrawer';
+import { ErrorBoundary } from './components/ui/ErrorBoundary';
 
 function MainContent() {
   const { activePage, setActivePage, openProfile, currentUser, isLoading } = useApp();
@@ -86,11 +87,13 @@ function MainContent() {
     </div>
   );
 }
-
+ 
 export default function App() {
   return (
-    <AppProvider>
-      <MainContent />
-    </AppProvider>
+    <ErrorBoundary>
+      <AppProvider>
+        <MainContent />
+      </AppProvider>
+    </ErrorBoundary>
   );
 }

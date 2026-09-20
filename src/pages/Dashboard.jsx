@@ -50,7 +50,7 @@ function getBillDate(bill) {
 export function Dashboard() {
   const {
     activePage,
-    settings,
+    settings = {},
     bills = [],
     products = [],
     companies = [],

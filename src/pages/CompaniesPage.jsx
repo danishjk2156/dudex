@@ -43,8 +43,8 @@ export function CompaniesPage() {
   const [imageLoading, setImageLoading] = useState(false);
   const [isDragging, setIsDragging] = useState(false);
 
-  const filteredCompanies = companies.filter((c) =>
-    c.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+  const filteredCompanies = (companies || []).filter((c) =>
+    (c.name || '').toLowerCase().includes(searchTerm.toLowerCase()) ||
     (c.description && c.description.toLowerCase().includes(searchTerm.toLowerCase()))
   );
 

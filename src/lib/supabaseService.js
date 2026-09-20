@@ -541,3 +541,5 @@ export {
   isSupabaseConfigured,
 } from './supabaseClient';
 
+export { openDB } from './db';
+

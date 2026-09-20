@@ -5,9 +5,9 @@ import { formatCurrency } from '../../lib/utils';
 import { animateTactilePress } from '../../lib/animations';
 
 export function Sidebar() {
-  const { activePage, setActivePage, cart, settings, dailyDraftCount = 0, dailyDraftTotal = 0 } = useApp();
-  const cartCount = cart.items.reduce((sum, item) => sum + item.quantity, 0);
-  const cartTotal = cart.items.reduce((sum, item) => sum + item.quantity * item.rate, 0);
+  const { activePage, setActivePage, cart = { items: [] }, settings = {}, dailyDraftCount = 0, dailyDraftTotal = 0 } = useApp();
+  const cartCount = (cart?.items || []).reduce((sum, item) => sum + item.quantity, 0);
+  const cartTotal = (cart?.items || []).reduce((sum, item) => sum + item.quantity * item.rate, 0);
 
   const effectiveCount = dailyDraftCount > 0 ? dailyDraftCount : cartCount;
   const effectiveTotal = dailyDraftCount > 0 ? dailyDraftTotal : cartTotal;

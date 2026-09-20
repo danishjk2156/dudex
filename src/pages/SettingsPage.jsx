@@ -23,20 +23,20 @@ import { animateStaggerEntrance, animateTactilePress } from '../lib/animations';
 import { uploadAsset } from '../lib/supabaseService';
 
 export function SettingsPage() {
-  const { activePage, settings, updateSettings, showToast, refreshData, theme, setTheme } = useApp();
+  const { activePage, settings = {}, updateSettings, showToast, refreshData, theme, setTheme } = useApp();
   const fileInputRef = useRef(null);
   const settingsContainerRef = useRef(null);
 
   const [formData, setFormData] = useState({
-    businessName: settings.businessName || '',
-    address: settings.address || '',
-    area: settings.area || '',
-    city: settings.city || '',
-    phone: settings.phone || '',
-    gstin: settings.gstin || '',
-    currency: settings.currency || '₹',
-    paperSize: settings.paperSize || '58mm',
-    logo: settings.logo || '',
+    businessName: settings?.businessName || '',
+    address: settings?.address || '',
+    area: settings?.area || '',
+    city: settings?.city || '',
+    phone: settings?.phone || '',
+    gstin: settings?.gstin || '',
+    currency: settings?.currency || '₹',
+    paperSize: settings?.paperSize || '58mm',
+    logo: settings?.logo || '',
   });
 
   const [isDragging, setIsDragging] = useState(false);

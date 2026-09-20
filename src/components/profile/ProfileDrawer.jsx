@@ -32,7 +32,7 @@ export function ProfileDrawer() {
   const {
     isProfileOpen,
     closeProfile,
-    settings,
+    settings = {},
     updateSettings,
     showToast,
     bills = [],
@@ -51,18 +51,18 @@ export function ProfileDrawer() {
   const [photoLoading, setPhotoLoading] = useState(false);
 
   const [formData, setFormData] = useState({
-    businessName: settings.businessName || '',
-    ownerName: settings.ownerName || 'Store Administrator',
-    phone: settings.phone || '',
-    email: settings.email || '',
-    address: settings.address || '',
-    area: settings.area || '',
-    city: settings.city || '',
-    gstin: settings.gstin || '',
-    currency: settings.currency || '₹',
-    paperSize: settings.paperSize || '58mm',
-    logo: settings.logo || '',
-    userPhoto: settings.userPhoto || '',
+    businessName: settings?.businessName || '',
+    ownerName: settings?.ownerName || 'Store Administrator',
+    phone: settings?.phone || '',
+    email: settings?.email || '',
+    address: settings?.address || '',
+    area: settings?.area || '',
+    city: settings?.city || '',
+    gstin: settings?.gstin || '',
+    currency: settings?.currency || '₹',
+    paperSize: settings?.paperSize || '58mm',
+    logo: settings?.logo || '',
+    userPhoto: settings?.userPhoto || '',
   });
 
   // Keep form data synced when settings change

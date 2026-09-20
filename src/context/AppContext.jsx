@@ -311,11 +311,14 @@ export function AppProvider({ children }) {
   // Initialize data from IndexedDB
   const refreshData = async () => {
     try {
-      const db = await openDB();
-      const settings = (await getItem('settings', 'business_profile', db)) || initialState.settings;
-      const shops = await getAllItems('shops', db);
-      const companies = await getAllItems('companies', db);
-      const rawProducts = await getAllItems('products', db);
+      if (typeof openDB === 'function') {
+        await openDB();
+      }
+      const fetchedSettings = await getItem('settings', 'business_profile');
+      const settings = { ...initialState.settings, ...(fetchedSettings || {}) };
+      const shops = (await getAllItems('shops')) || [];
+      const companies = (await getAllItems('companies')) || [];
+      const rawProducts = (await getAllItems('products')) || [];
       const products = (rawProducts || []).map((p) => {
         const gstRate =
           p.gstRate !== undefined && p.gstRate !== null && p.gstRate !== ''
@@ -323,20 +326,21 @@ export function AppProvider({ children }) {
             : (/curd|paneer|butter|ghee|cheese/i.test(p.name || '') ? 5 : 0);
         return { ...p, gstRate };
       });
-      const bills = await getAllItems('bills', db);
-      const dbUsers = await getAllItems('users', db);
-      const cachedUsers = getCachedUsers();
+      const rawBills = (await getAllItems('bills')) || [];
+      const bills = Array.isArray(rawBills) ? [...rawBills] : [];
+      const dbUsers = (await getAllItems('users')) || [];
+      const cachedUsers = getCachedUsers() || [];
       
       // Combine and deduplicate by phone
       const userMap = new Map();
-      [...cachedUsers, ...dbUsers].forEach((u) => {
-        const p = String(u.phone || '').replace(/\D/g, '').slice(-10);
+      [...cachedUsers, ...(dbUsers || [])].forEach((u) => {
+        const p = String(u?.phone || '').replace(/\D/g, '').slice(-10);
         if (p && !userMap.has(p)) userMap.set(p, u);
       });
       const users = Array.from(userMap.values());
 
-      // Sort bills newest first
-      bills.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+      // Sort bills newest first safely
+      bills.sort((a, b) => new Date(b.createdAt || 0) - new Date(a.createdAt || 0));
 
       dispatch({
         type: 'SET_INITIAL_DATA',

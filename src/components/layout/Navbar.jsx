@@ -7,8 +7,8 @@ import { UserAvatar } from '../profile/UserAvatar';
 
 export function Navbar() {
   const {
-    settings,
-    cart,
+    settings = {},
+    cart = { items: [] },
     activePage,
     setActivePage,
     isDark,
@@ -21,8 +21,8 @@ export function Navbar() {
     logout,
     toggleMobileNav,
   } = useApp();
-  const cartItemCount = cart.items.reduce((sum, item) => sum + item.quantity, 0);
-  const cartTotal = cart.items.reduce((sum, item) => sum + item.quantity * item.rate, 0);
+  const cartItemCount = (cart?.items || []).reduce((sum, item) => sum + item.quantity, 0);
+  const cartTotal = (cart?.items || []).reduce((sum, item) => sum + item.quantity * item.rate, 0);
 
   const effectiveCount = dailyDraftCount > 0 ? dailyDraftCount : cartItemCount;
   const effectiveTotal = dailyDraftCount > 0 ? dailyDraftTotal : cartTotal;
