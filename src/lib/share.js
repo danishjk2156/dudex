@@ -94,13 +94,13 @@ export async function shareReceiptViaWhatsApp(bill, settings = {}, elementRef = 
 
   try {
     // 1. Generate the authentic Thermal Receipt PDF
-    const { pdfFile, pdfBlob, fileName } = await generateThermalReceiptPdf(bill, settings, elementRef);
+    const { pdfFile, pdfBlob, fileName } = await generateThermalReceiptPdf(bill, safeSettings, elementRef);
 
     // 2. Try native Web Share API with PDF Document file (works on Android Chrome, iOS Safari, etc.)
     if (navigator.canShare && navigator.canShare({ files: [pdfFile] })) {
       try {
         await navigator.share({
-          title: `Bill #${bill.billNumber} - ${settings.businessName || 'Receipt'}`,
+          title: `Bill #${bill.billNumber || ''} - ${safeSettings.businessName || 'Receipt'}`,
           text: receiptText,
           files: [pdfFile],
         });
