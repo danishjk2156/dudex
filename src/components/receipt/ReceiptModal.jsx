@@ -63,7 +63,7 @@ export function ReceiptModal() {
     setIsSharing(true);
     try {
       showToast('Preparing PDF receipt for WhatsApp...', 'info');
-      const res = await shareThermalReceiptViaWhatsApp(generatedBill, settings, generatedBill.customerPhone);
+      const res = await shareThermalReceiptViaWhatsApp(generatedBill, settings, receiptRef.current);
       if (res && res.success) {
         showToast('WhatsApp opened with receipt link & summary', 'success');
       }

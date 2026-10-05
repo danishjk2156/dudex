@@ -6,31 +6,34 @@ import { generateThermalReceiptPdf, downloadThermalReceiptPdf } from './pdf';
 /**
  * Format plain text receipt for WhatsApp sharing
  */
-export function generateReceiptText(bill, settings) {
-  const currency = settings.currency || '₹';
+export function generateReceiptText(bill, settings = {}) {
+  if (!bill) return '';
+  const safeSettings = settings || {};
+  const currency = safeSettings.currency || '₹';
   const divider = '────────────────────────';
   const doubleDivider = '════════════════════════';
 
-  let text = `*${settings.businessName || 'G. V. MILK AGENCY'}*\n`;
-  if (settings.address) text += `${settings.address}\n`;
-  if (settings.city) text += `${settings.city}\n`;
-  if (settings.phone) text += `Mob: ${settings.phone}\n`;
-  if (settings.gstin) text += `GSTIN: ${settings.gstin}\n`;
+  let text = `*${safeSettings.businessName || 'G. V. MILK AGENCY'}*\n`;
+  if (safeSettings.address) text += `${safeSettings.address}\n`;
+  if (safeSettings.city) text += `${safeSettings.city}\n`;
+  if (safeSettings.phone) text += `Mob: ${safeSettings.phone}\n`;
+  if (safeSettings.gstin) text += `GSTIN: ${safeSettings.gstin}\n`;
 
   text += `${doubleDivider}\n`;
-  text += `*BILL NO:* ${bill.billNumber}\n`;
-  text += `*DATE:* ${bill.date}  *TIME:* ${bill.time || ''}\n`;
+  text += `*BILL NO:* ${bill.billNumber || 'N/A'}\n`;
+  text += `*DATE:* ${bill.date || ''}  *TIME:* ${bill.time || ''}\n`;
   if (bill.customerName) text += `*CUSTOMER:* ${bill.customerName}\n`;
   text += `${divider}\n`;
   text += `*ITEM NAME | QTY | PRICE | AMT*\n`;
   text += `${divider}\n`;
 
-  if (bill.items && bill.items.length > 0) {
+  if (bill && bill.items && Array.isArray(bill.items)) {
     bill.items.forEach((item) => {
-      const itemName = (item.name || '').toUpperCase();
-      const qty = item.quantity || 1;
-      const price = Number(item.rate || 0).toFixed(2);
-      const amount = (Number(qty) * Number(price)).toFixed(2);
+      const itemName = (item.name || item.productName || 'Item').toUpperCase();
+      const qty = Number(item.quantity) || 1;
+      const unitRate = Number(item.rate !== undefined && item.rate !== null ? item.rate : (item.price || 0));
+      const price = unitRate.toFixed(2);
+      const amount = (qty * unitRate).toFixed(2);
       const gstNotice = item.gstRate > 0 ? ` (GST ${item.gstRate}%)` : '';
       text += `${itemName}${gstNotice} × ${qty} @ ${currency}${price} = *${currency}${amount}*\n`;
     });
@@ -82,8 +85,12 @@ export function generateReceiptText(bill, settings) {
  * Share Thermal Receipt via WhatsApp as a PDF document
  * Preserves authentic thermal format
  */
-export async function shareReceiptViaWhatsApp(bill, settings, elementRef = null) {
-  const receiptText = generateReceiptText(bill, settings);
+export async function shareReceiptViaWhatsApp(bill, settings = {}, elementRef = null) {
+  if (!bill) {
+    throw new Error('No bill data provided to share');
+  }
+  const safeSettings = settings || {};
+  const receiptText = generateReceiptText(bill, safeSettings);
 
   try {
     // 1. Generate the authentic Thermal Receipt PDF

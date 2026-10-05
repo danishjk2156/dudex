@@ -82,10 +82,11 @@ export const ThermalReceipt = React.forwardRef(({ bill, settings }, ref) => {
 
       {/* Items List */}
       <div className="py-2 border-b border-dashed border-stone-300 space-y-1.5 text-[11px]">
-        {bill.items.map((item, index) => {
-          const qty = item.quantity;
-          const price = Number(item.rate).toFixed(2);
-          const amount = (Number(item.quantity) * Number(item.rate)).toFixed(2);
+        {(bill.items || []).map((item, index) => {
+          const qty = Number(item.quantity) || 1;
+          const unitRate = Number(item.rate !== undefined && item.rate !== null ? item.rate : (item.price || 0));
+          const price = unitRate.toFixed(2);
+          const amount = (qty * unitRate).toFixed(2);
 
           return (
             <div key={item.id || index} className="grid grid-cols-12 gap-1 items-start leading-tight">

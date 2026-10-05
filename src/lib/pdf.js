@@ -25,13 +25,14 @@ function createOffscreenReceiptElement(bill, settings) {
   container.style.border = '1px solid #d6d3d1';
 
   let itemsHtml = '';
-  if (bill.items && bill.items.length > 0) {
+  if (bill && bill.items && bill.items.length > 0) {
     itemsHtml = bill.items
       .map((item) => {
-        const name = (item.name || '').toUpperCase();
-        const qty = item.quantity || 1;
-        const rate = Number(item.rate || 0).toFixed(2);
-        const amount = (Number(qty) * Number(rate)).toFixed(2);
+        const name = (item.name || item.productName || 'Item').toUpperCase();
+        const qty = Number(item.quantity) || 1;
+        const unitRate = Number(item.rate !== undefined && item.rate !== null ? item.rate : (item.price || 0));
+        const rate = unitRate.toFixed(2);
+        const amount = (qty * unitRate).toFixed(2);
 
         return `
         <div style="display: flex; justify-content: space-between; margin-bottom: 6px; line-height: 1.2;">
@@ -285,7 +286,8 @@ function buildThermalPdfBinary(jpegBytes, widthPt, heightPt, imageWidth, imageHe
  * Capture receipt DOM element or create offscreen element to generate high-res canvas
  */
 export async function captureReceiptCanvas(bill, settings, elementRef) {
-  let targetElement = elementRef;
+  const isDomElement = elementRef && typeof elementRef === 'object' && elementRef.nodeType === 1;
+  let targetElement = isDomElement ? elementRef : null;
   let isTemp = false;
 
   if (!targetElement) {
