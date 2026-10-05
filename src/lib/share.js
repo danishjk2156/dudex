@@ -30,6 +30,7 @@ export function generateReceiptText(bill, settings) {
       const itemName = (item.name || '').toUpperCase();
       const qty = item.quantity || 1;
       const price = Number(item.rate || 0).toFixed(2);
+      const amount = (Number(qty) * Number(price)).toFixed(2);
       const gstNotice = item.gstRate > 0 ? ` (GST ${item.gstRate}%)` : '';
       text += `${itemName}${gstNotice} × ${qty} @ ${currency}${price} = *${currency}${amount}*\n`;
     });
